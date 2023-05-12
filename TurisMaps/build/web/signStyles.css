@@ -1,0 +1,266 @@
+.botones{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: x-large;
+    border-radius: 40px;
+
+}
+.botones:hover:not(.active){
+    background-color: #6558db;
+    transition-duration: 0.5s;
+    color: white;        
+}
+
+.div-boton{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family: monospace;
+    background: linear-gradient(#ffffff, #afafaf);
+}
+  
+.signIn-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.562);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+  
+.signIn-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+}
+  
+.signIn-box .user-box {
+    position: relative;
+}
+  
+.inputs{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #5c5b5b;
+    outline: none;
+    background: transparent;
+}
+
+.inputs-date{
+    width: 100%;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #585858;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #5c5b5b;
+    outline: none;
+    background: transparent;
+    
+}
+
+.selects{
+    width: 100%;
+    height: 30PX;
+    font-size: 16px;
+    color: #585858;
+    margin-bottom: 30px;
+    border-top: 0px;
+
+    border-bottom: 1px solid #5c5b5b;
+    outline: none;
+    background: transparent;
+    vertical-align: middle;    
+}
+
+option{
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    background: #585858;
+}
+
+.labels-gen{
+    position: absolute;
+    top:-15px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #666565;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+.labels{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #666565;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.labels-date{
+    position: absolute;
+    top:-15px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #666565;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+.labels-pais{
+    position: absolute;
+    top:-18px;
+    left: 0;
+    padding: 0px 0;
+    font-size: 16px;
+    color: #666565;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+
+  
+.signIn-box .user-box input:focus ~ label,
+.signIn-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+}
+  
+.signIn-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+ 
+.signIn-box a:hover {
+    background: #dadada;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #6558db,
+                0 0 10px #6558db,
+                0 0 20px #6558db,
+                0 0 50px #6558db;
+}
+  
+.signIn-box a span {
+    position: absolute;
+    display: block;
+}
+  
+.signIn-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #6558db);
+    animation: btn-anim1 3s linear infinite;
+}
+  
+@keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+}
+  
+.signIn-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #6558db);
+    animation: btn-anim2 3s linear infinite;
+    animation-delay: .25s
+}
+  
+@keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+}
+  
+.signIn-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #6558db);
+    animation: btn-anim3 3s linear infinite;
+    animation-delay: .5s
+}
+  
+@keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+}
+  
+.signIn-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #6558db);
+    animation: btn-anim4 3s linear infinite;
+    animation-delay: .75s
+}
+  
+@keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+}
