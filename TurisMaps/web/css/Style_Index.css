@@ -1,0 +1,232 @@
+/*
+Barra de navegacion
+*/ 
+
+#NavBarXD
+{
+    padding-bottom: 0;
+}
+#navBarID
+{
+    z-index: 5;
+    padding: 0 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.LogoText
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#liNav
+{
+padding: 4px 7px;    
+}
+
+.navegacionspan 
+{
+    font-weight: bold;
+}
+
+
+/*
+FIN Barra de navegacion
+*/
+
+/*
+Foto inicio
+*/
+#main
+{
+    padding-top: 80px;
+    max-width: 100% ;
+    height: 48vh;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.8) ) ,url(./Imagenes/BellasArtes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.textomain
+{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 50px 24px;
+    padding-bottom: 0px;
+}
+
+.botonesmain
+{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 40px;
+}
+
+.botonesmain .btn
+{
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+/*
+FIN Inicio
+*/
+
+/*
+Cards
+*/
+.card
+{
+    padding-top: 2rem;
+}
+#iconoCard
+{  
+    max-width: 64px;
+    align-self: center;
+    
+}
+
+.card-title
+{
+    text-align: center;
+}
+
+.card-text
+{
+    text-align: center;
+}
+/*
+FinCards
+*/
+
+/*
+Featured
+*/
+
+#Featured
+{
+    padding-top: 54px ;
+}
+
+.TitleFeat
+{
+    text-align: center;
+}
+
+.barra
+{
+    display: flex;
+    color: rgb(0, 0, 0);
+    opacity: 100;
+    min-height: 4px;
+    width: 5%;
+    position: relative;
+    margin: 0 0;
+    margin-top: 5px;
+    left: 47.6%;
+
+}
+
+#Featured .card-img-top
+{
+    padding-top: 0;
+    max-height: 400px;
+    min-height: 400px;
+    max-width: 100%;
+
+}
+
+#Featured .card
+{
+    padding-top: 0;
+    margin-top: 5rem;
+    max-width: 600px;
+    max-height: 700px;
+    padding-right: 0;
+
+}
+
+#Featured .Visitas
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+/*
+FinFeatured
+*/
+
+
+
+
+
+
+/*=========================================================================================================================*/
+/*================================================== Desktop VER ==========================================================*/
+/*=========================================================================================================================*/
+@media (min-width: 916px)
+{
+    #main
+{
+    max-width: 100% ;
+    min-height: 440px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url(./Imagenes/Zocalo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#SearchBar
+{
+    margin-left: 24% ;
+    width: 35%;
+}
+    .textomain
+{
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    padding: 50px 24px;
+    padding-bottom: 0px;
+}
+
+.botonesmain
+{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 20px;
+    padding: 0px 30px;
+}
+
+.botonesmain .btn
+{
+    padding: 10px 70px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-group
+{
+    padding: 20px 50px ;
+    justify-content: space-between;
+}
+.card
+{
+    border: 0px 
+}
+}
+
+
+
+
