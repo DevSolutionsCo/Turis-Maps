@@ -56,9 +56,12 @@
               <li class="nav-item" id="liNav">
                 <a class="nav-link active" aria-current="page" href="#mapa"> <span class="navegacionspan"> Mapa </span> </a>
               </li>
-              <li class="nav-item" id="liNav">
-                <a class="btn btn-dark btn-dark-outline-success" aria-current="page" href="index1.html"> <span class="navegacionspan"> Iniciar Sesión </span> </a>
-              </li>
+           
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="signIn.jsp">Iniciar Sesión</a></li>
+                  <li><a class="dropdown-item" href="signUp.jsp">Crear Usuario</a></li>
+              </ul>
             </ul>
           </div>
         </div>

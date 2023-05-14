@@ -1,3 +1,10 @@
+<%-- 
+    Document   : signUp
+    Created on : 14 may 2023, 1:54:56
+    Author     : USUARIO
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>

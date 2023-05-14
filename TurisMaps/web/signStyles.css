@@ -29,7 +29,7 @@ body {
     margin:0;
     padding:0;
     font-family: monospace;
-    background: linear-gradient(#ffffff, #afafaf);
+    background-image: url(img/fondologin.webp);
 }
   
 .signIn-box {
@@ -39,20 +39,42 @@ body {
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.562);
+    background: rgba(255, 255, 255, 0.8);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
 }
+
+.signUp-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    max-width:  500px;
+    min-height: 563px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+
+
+.btn-iniciar{
+    justify-content: center;
+    display: flex;
+}
   
-.signIn-box h2 {
+.h2 {
     margin: 0 0 30px;
     padding: 0;
     color: #000000;
     text-align: center;
 }
   
-.signIn-box .user-box {
+.user-box {
     position: relative;
 }
   
@@ -153,8 +175,8 @@ option{
 
 
   
-.signIn-box .user-box input:focus ~ label,
-.signIn-box .user-box input:valid ~ label {
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
     top: -20px;
     left: 0;
     color: #000000;
@@ -263,4 +285,85 @@ option{
     50%,100% {
       bottom: 100%;
     }
+}
+
+
+.signUp-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+ 
+.signUp-box a:hover {
+    background: #dadada;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #6558db,
+                0 0 10px #6558db,
+                0 0 20px #6558db,
+                0 0 50px #6558db;
+}
+  
+.signUp-box a span {
+    position: absolute;
+    display: block;
+}
+  
+.signUp-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #6558db);
+    animation: btn-anim1 3s linear infinite;
+}
+  
+  
+.signUp-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #6558db);
+    animation: btn-anim2 3s linear infinite;
+    animation-delay: .25s
+}
+  
+  
+.signUp-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #6558db);
+    animation: btn-anim3 3s linear infinite;
+    animation-delay: .5s
+}
+  
+  
+.signUp-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #6558db);
+    animation: btn-anim4 3s linear infinite;
+    animation-delay: .75s
+}
+  
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+    
 }

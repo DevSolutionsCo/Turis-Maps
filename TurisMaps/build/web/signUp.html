@@ -8,28 +8,28 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <div  class="signIn-box">
+    <div  class="signUp-box">
         <h2>Creacion de la cuenta</h2>
-        <form>
+        <form id="signUp">
             <div class="user-box">
-                <input type="email" name="correo" class="inputs" required="">
+                <input type="email" name="correo" class="inputs" id="correo">
                 <label class="labels">Correo</label>
             </div>
             <div class="user-box">
-                <input type="text" class="inputs" name="nomb" required="">
+                <input type="text" class="inputs" name="nomb" id="nombre">
                 <label class="labels">Nombre</label>
             </div>
             <div class="user-box">
-                <input class="inputs" type="text" name="apelli" required="">
+                <input class="inputs" type="text" name="apelli" id="apellidos">
                 <label class="labels">Apellidos</label>
             </div>
             <div class="user-box">
-                <input class="inputs-date" type="date" name="nac" required="" value="00/00/000">
+                <input class="inputs-date" type="date" name="nac" id="fecha_nac" value="2023-01-01" min="1922-01-01" max="2008-12-31">
                 <label class="labels-date">Fecha de Nacimiento</label>
             </div>
             <div class="user-box">
                 <label class="labels-pais">Pais de Procedencia</label>
-                <select class="selects" type="text" name="pais" required="">
+                <select class="selects" type="text" name="pais" id="pais">
                     <option class="selects" selected>Elige tu Pais</option>
                     <option class="inputs" value="Afganistán">Afganistán</option>
                     <option class="inputs" value="Albania">Albania</option>
@@ -230,7 +230,7 @@
             <div class="user-box">
                 <label class="labels-gen">Genero</label>
                 <BR>
-                <select type="text" class="selects" name="gene" required="">
+                <select type="text" class="selects" name="gene" id="genero">
                     <option class="selects" selected>Elige tu Genero</option>
                     <option class="inputs" value="Masculino">Masculino</option>
                     <option class="inputs" value="Femenino">Femenino</option>
@@ -239,20 +239,21 @@
                 
             </div>
             <div class="user-box">
-                <input type="password" name="passw" class="inputs" required="">
+                <input type="password" name="passw" class="inputs" id="contraseña">
                 <label class="labels">Contraseña</label>
             </div>
-            <div>
-                <p>Aun no sirve:(</p>
+            <p class="warnings" id="warnings"></p>
+            <div class="btn-iniciar">
+                <a id="crear" type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Crear Cuenta
+                </a>
             </div>
-            <a href="index.html">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Crear Cuenta
-            </a>
         </form>
     </div>
+    <script src="signUp.js"></script>
 </body>
 </html>
