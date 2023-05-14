@@ -1,3 +1,10 @@
+<%-- 
+    Document   : signIn
+    Created on : 14 may 2023, 1:53:38
+    Author     : USUARIO
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,15 +26,13 @@
                 <input class="inputs" type="password" name="passw" required="">
                 <label class="labels">Contraseña</label>
             </div>
-            <div class="btn-iniciar">
             <a href="index.html">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Inicar Sesión
+                Iniciar Sesion
             </a>
-            </div>
         </form>
     </div>
 </body>
