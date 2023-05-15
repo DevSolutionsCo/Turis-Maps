@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
  */
 
-const correo = document.getElementById("correo");
+const  correo = document.getElementById("correo");
 const nombre = document.getElementById("nombre");
 const apellidos = document.getElementById("apellidos");
 const fecha_nac = document.getElementById("fecha_nac");
@@ -15,28 +15,17 @@ const crear = document.getElementById("crear");
 
 crear.addEventListener('click', e=>{
     e.preventDefault();
-    var edad
-    function calcularEdad(fecha_nac) {
-        var hoy = new Date();
-        var cumpleanos = new Date(fecha_nac);
-        var edad = hoy.getFullYear() - cumpleanos.getFullYear();
-        var m = hoy.getMonth() - cumpleanos.getMonth();
-        if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
-            edad--;
-        }
-        return edad;
-    }
     let generoNull = "Elige tu Genero";
     let paisNull= "Elige tu Pais";
+    var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     let warnings ="";
     let entrar = false;
-    let regexEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\. \w{2,4})+$/;
     parrafo.innerHTML = "";
     if(nombre.value.length > 40 || nombre.value.length < 3){
         warnings = "Los nombres deben tener de 3-40 caracteres <br>";
         entrar = true;
     }
-    if(regexEmail.test(correo.value) || correo.value > 30){
+    if(!regexEmail.test(correo.value)){
         warnings="El email no es valido <br>";
         entrar=true;
     }
@@ -49,21 +38,18 @@ crear.addEventListener('click', e=>{
         entrar = true;
     }
     if(pais.value === paisNull)  {
-        warnings = "Debes elegir un pais<<br>";
+        warnings = "Debes elegir un pais<br>";
         entrar = true;
     }
     if(genero.value === generoNull)  {
         warnings = "Debes elegir un genero<br>";
         entrar = true;
     }
-    if(edad < 15 || edad > 100){
-        warnings = "La fecha de nacimiento no es valida<br>";
-        entrar = true;
-    }
     if(entrar){
         parrafo.innerHTML = warnings;
     }else{
-        window.location="index.jsp";
+        window.location="../../index.jsp";
+        
     }
         
 })

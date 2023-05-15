@@ -11,7 +11,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream:TurisMaps/build/web/signUp.jsp
     <link rel="stylesheet" href="signStyles.css">
+=======
+    <link rel="stylesheet" href="../../css/signStyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+>>>>>>> Stashed changes:TurisMaps/build/web/secure/inicio/signUp.jsp
     <title>Sign Up</title>
 </head>
 <body>
@@ -31,7 +36,7 @@
                 <label class="labels">Apellidos</label>
             </div>
             <div class="user-box">
-                <input class="inputs-date" type="date" name="nac" id="fecha_nac" value="2023-01-01" min="1922-01-01" max="2008-12-31">
+                <input class="inputs-date" type="date" name="nac" id="fecha_nac" value="2008-01-01" min="1922-01-01" max="2008-12-31">
                 <label class="labels-date">Fecha de Nacimiento</label>
             </div>
             <div class="user-box">
@@ -261,6 +266,6 @@
             </div>
         </form>
     </div>
-    <script src="signUp.js"></script>
+    <script src="../javascript/signUp.js"></script>
 </body>
 </html>

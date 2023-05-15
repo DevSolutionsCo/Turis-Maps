@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
+<<<<<<< Updated upstream
 <head>
     <meta charset="UTF-8">
 
@@ -64,6 +65,70 @@
               </ul>
             </ul>
           </div>
+=======
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"   crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/Style_Index.css">
+
+        <link rel="stylesheet" href="css/mapaStyles.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TurisMaps</title>
+    </head>
+    <body>
+        <!--header?? -->
+        <header></header>
+        <!-- ============================ -->
+
+        <!-- ===============BARRA DE NAVEGACION===============-->
+        <div id="navBarID">
+            <nav class="navbar navbar-expand-md navbar-light bg-light" id="NavBarXD">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_Dev_Mini.png" alt="" width="54" height="54">
+                        <span class ="LogoText">TurisMaps</span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="d-flex" id="SearchBar">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-dark btn-dark-outline-success" type="submit">Buscar</button>
+                        </form>
+                        <ul class="navbar-nav d-flex ms-auto" id="navlista">
+                            <li class="nav-item" id="liNav">
+                                <a class="nav-link active" aria-current="page" href="#"> <span class="navegacionspan"> Inicio </span> </a>
+                            </li>
+                            <li class="nav-item" id="liNav">
+                                <a class="nav-link active" target="_blank" href="http://devsolutions.gerdoc.com/"> <span class="navegacionspan">Descúbrenos</span></a>
+                            </li>
+                            <li class="nav-item" id="liNav">
+                                <a class="nav-link active" aria-current="page" href="#mapa"> <span class="navegacionspan"> Mapa </span> </a>
+                            </li>
+                            <li class="nav-item" id="liNav">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</button>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                        <li><a class="dropdown-item" href="secure/inicio/signIn.jsp">Iniciar Sesión</a></li>
+                                        <li><a class="dropdown-item" href="secure/inicio/signUp.jsp">Crear Usuario</a></li>
+                                    </ul>
+                                </div>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+>>>>>>> Stashed changes
         </div>
       </nav>
     </div>
