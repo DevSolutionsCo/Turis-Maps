@@ -30,13 +30,13 @@ crear.addEventListener('click', e=>{
     let paisNull= "Elige tu Pais";
     let warnings ="";
     let entrar = false;
-    let regexEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\. \w{2,4})+$/;
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     parrafo.innerHTML = "";
     if(nombre.value.length > 40 || nombre.value.length < 3){
         warnings = "Los nombres deben tener de 3-40 caracteres <br>";
         entrar = true;
     }
-    if(regexEmail.test(correo.value) || correo.value > 30){
+    if(!regexEmail.test(correo.value) || correo.value > 30){
         warnings="El email no es valido <br>";
         entrar=true;
     }
@@ -49,7 +49,7 @@ crear.addEventListener('click', e=>{
         entrar = true;
     }
     if(pais.value === paisNull)  {
-        warnings = "Debes elegir un pais<<br>";
+        warnings = "Debes elegir un pais<br>";
         entrar = true;
     }
     if(genero.value === generoNull)  {
@@ -63,7 +63,7 @@ crear.addEventListener('click', e=>{
     if(entrar){
         parrafo.innerHTML = warnings;
     }else{
-        window.location="index.jsp";
+        window.location="../../index.jsp";
     }
         
 })
