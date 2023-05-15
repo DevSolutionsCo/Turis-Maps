@@ -40,6 +40,18 @@ padding: 4px 7px;
     margin-bottom: 1rem!important;
 }
 
+#botonsesion
+{
+    margin-top: 2.5%;
+}
+
+#borderboton
+{
+   border-width:2px;
+   font-weight: bold;
+   font-size: 16px;
+}
+
 /*
 FIN Barra de navegacion
 */

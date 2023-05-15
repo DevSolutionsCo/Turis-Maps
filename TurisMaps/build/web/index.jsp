@@ -15,7 +15,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"   crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/Style_Index.css">
-
+ 
         <link rel="stylesheet" href="css/mapaStyles.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -57,11 +57,11 @@
                                 <a class="nav-link active" aria-current="page" href="#mapa"> <span class="navegacionspan"> Mapa </span> </a>
                             </li>
                             <li class="nav-item" id="liNav">
-                                <div class="input-group mb-3">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                                <div class="input-group mb-3" id ="botonsesion">
+                                    <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="borderboton">Inicio de sesión</button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="secure/inicio/signIn.jsp">Iniciar Sesión</a></li>
-                                        <li><a class="dropdown-item" href="secure/inicio/signUp.jsp">Crear Usuario</a></li>
+                                        <li><a class="dropdown-item" href="secure/inicio/signUp.jsp">Crear cuenta</a></li>
                                     </ul>
                                 </div>
 
