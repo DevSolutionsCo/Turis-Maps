@@ -14,6 +14,10 @@ Barra de navegacion
     top: 0;
     width: 100%;
 }
+#navlista
+{
+    margin-left: 20%;
+}
 .LogoText
 {
     font-size: 24px;
@@ -209,7 +213,7 @@ FinFeatured
 
 #SearchBar
 {
-    margin-left: 24% ;
+    margin-left: 10% ;
     width: 35%;
 }
     .textomain
