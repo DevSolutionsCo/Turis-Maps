@@ -18,18 +18,21 @@ import org.turis.service.TuristaService;
  *
  * @author ruizl
  */
-public class TuristaHelper extends Helpers<Turista> implements Serializable{
+public class TuristaHelper extends Helpers<Turista> implements Serializable {
 
     private TuristaService turistaService;
 
     public TuristaHelper() {
     }
-    
-    public boolean isValidaCamposOk( ){
-        return isNotNullAndNotEmpity(Integer.toString(t.getId_turista())) && isNotNullAndNotEmpity(t.getCorreo()) && isNotNullAndNotEmpity(t.getNombre()) && isNotNullAndNotEmpity(t.getApellido_pat()) && isNotNullAndNotEmpity(t.getApellido_mat()) && isNotNullAndNotEmpity(t.getFecha_nac().toString()) && isNotNullAndNotEmpity(t.getLugar_proc()) && isNotNullAndNotEmpity(t.getGenero()) && isNotNullAndNotEmpity(t.getContraseña()) && isNotNullAndNotEmpity(t.getNombre_user());
+
+    public boolean isValidaCamposOk() {
+        return isNotNullAndNotEmpity(Integer.toString(t.getId_turista())) && isNotNullAndNotEmpity(t.getCorreo())
+                && isNotNullAndNotEmpity(t.getNombre()) && isNotNullAndNotEmpity(t.getApellido_pat())
+                && isNotNullAndNotEmpity(t.getApellido_mat()) && isNotNullAndNotEmpity(t.getFecha_nac().toString())
+                && isNotNullAndNotEmpity(t.getLugar_proc()) && isNotNullAndNotEmpity(t.getGenero())
+                && isNotNullAndNotEmpity(t.getContraseña()) && isNotNullAndNotEmpity(t.getNombre_user());
     }
-    
-    
+
     @Override
     public boolean addT() {
         turistaService = new TuristaService();
@@ -52,8 +55,7 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable{
         t.setGenero(getParameter("genero"));
         t.setContraseña(getParameter("contraseña"));
         t.setNombre_user(getParameter("nombre_user"));
-        if( isValidaCamposOk( ) )
-        {
+        if (isValidaCamposOk()) {
             return turistaService.addTurista(t);
         }
         return false;
@@ -87,9 +89,8 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable{
         t.setGenero(getParameter("genero"));
         t.setContraseña(getParameter("contraseña"));
         t.setNombre_user(getParameter("nombre_user"));
-        if( isValidaCamposOk( ) )
-        {
-            return turistaService.updateTurista(t );
+        if (isValidaCamposOk()) {
+            return turistaService.updateTurista(t);
         }
         return false;
     }
@@ -99,9 +100,8 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable{
         turistaService = new TuristaService();
         t = new Turista();
         t.setId_turista(Integer.parseInt(getParameter("rol")));
-        if( t.getId_turista()!= null && t.getId_turista() > 0 )
-        {
-            return turistaService.deleteTurista(t );
+        if (t.getId_turista() != null && t.getId_turista() > 0) {
+            return turistaService.deleteTurista(t);
         }
         return false;
     }
@@ -109,14 +109,13 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable{
     @Override
     public Turista getTByKey() {
         String id_turista = null;
-        
-        id_turista = getParameter("id_turista" );
-        if( id_turista == null || id_turista.length( ) <= 0 )
-        {
+
+        id_turista = getParameter("id_turista");
+        if (id_turista == null || id_turista.length() <= 0) {
             return null;
         }
-        turistaService = new TuristaService( );
-        return turistaService.getTuristaByTurista( id_turista );
+        turistaService = new TuristaService();
+        return turistaService.getTuristaByTurista(id_turista);
     }
-    
+
 }

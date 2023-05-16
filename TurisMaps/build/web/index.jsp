@@ -15,7 +15,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"   crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/Style_Index.css">
-
+ 
         <link rel="stylesheet" href="css/mapaStyles.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -46,7 +46,7 @@
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                             <button class="btn btn-dark btn-dark-outline-success" type="submit">Buscar</button>
                         </form>
-                        <ul class="navbar-nav d-flex ms-auto" id="navlista">
+                        <ul class="navbar-nav d-flex ms-auto " id="navlista">
                             <li class="nav-item" id="liNav">
                                 <a class="nav-link active" aria-current="page" href="#"> <span class="navegacionspan"> Inicio </span> </a>
                             </li>
@@ -57,12 +57,26 @@
                                 <a class="nav-link active" aria-current="page" href="#mapa"> <span class="navegacionspan"> Mapa </span> </a>
                             </li>
                             <li class="nav-item" id="liNav">
-                                <div class="input-group mb-3">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</button>
+                                <div class="input-group mb-3" id ="botonsesion">
+                                    <%
+                                    String botonPresionado = request.getParameter("botonPresionado");
+                                    if (botonPresionado != null && botonPresionado.equals("Iniciar Sesion")) {
+                                        %>
+                                    <button class="btn btn-outline-dark"  type="button" id="borderboton" data-bs-toggle="dropdown" >Nombre de usuario</button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="secure/inicio/signIn.jsp">Iniciar Sesión</a></li>
-                                        <li><a class="dropdown-item" href="secure/inicio/signUp.jsp">Crear Usuario</a></li>
-                                    </ul>
+                                        <li><a class="dropdown-item" href="secure/inicio/editarperfil.jsp">Editar Perfil</a></li>
+                                    </ul>   
+                                        <%
+                                    } else {
+                                        %>
+                                    <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="borderboton">Inicio de sesión</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="signIn.jsp">Iniciar Sesión</a></li>
+                                        <li><a class="dropdown-item" href="secure/inicio/signUp.jsp">Crear cuenta</a></li>
+                                    </ul>   
+                                        <%
+                                    }
+                                    %>                                    
                                 </div>
 
                         </ul>
@@ -91,7 +105,7 @@
                         public
                     </span>
                     <div class="card-body">
-                        <h5 class="card-title">About Us</h5>
+                        <h5 class="card-title">Sobre nosotros</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eius adipisci officia quos labore unde, delectus corporis officiis nostrum quas est ipsam eligendi ad accusantium odit, tempore esse. Incidunt, corporis?
                             Similique quia odit doloremque dolores nobis, in soluta excepturi aliquam debitis impedit labore necessitatibus expedita alias molestiae dolor accusamus minima animi fugiat, fugit, perferendis quaerat aut! Error voluptatum aliquid dolorum.</p>
                     </div>
@@ -103,7 +117,7 @@
                         travel_explore
                     </span>
                     <div class="card-body">
-                        <h5 class="card-title">Explore CDMX</h5>
+                        <h5 class="card-title">Explora la CDMX</h5>
                         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda minus non, aperiam ipsa natus quisquam cum autem quas et nobis molestiae asperiores, eaque culpa itaque nostrum officia veniam sunt fugit?
                             Odio quam explicabo sequi, ipsam delectus ad, esse voluptates qui soluta dicta repudiandae accusantium ab quibusdam veniam eos consequatur? Totam nisi veritatis nesciunt at excepturi soluta distinctio voluptatem recusandae suscipit!</p>
                     </div>

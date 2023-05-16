@@ -1,9 +1,3 @@
-<%-- 
-    Document   : signUp
-    Created on : 14 may 2023, 1:54:56
-    Author     : USUARIO
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +10,8 @@
 </head>
 <body>
     <div  class="signUp-box">
-        <h2>Creacion de la cuenta</h2>
+        <h2>Editar Perfil</h2>
         <form id="signUp">
-            <div class="user-box">
-                <input type="email" name="correo" class="inputs" id="correo">
-                <label class="labels">Correo</label>
-            </div>
             <div class="user-box">
                 <input type="text" class="inputs" name="nomb" id="nombre">
                 <label class="labels">Nombre</label>
@@ -29,10 +19,6 @@
             <div class="user-box">
                 <input class="inputs" type="text" name="apelli" id="apellidos">
                 <label class="labels">Apellidos</label>
-            </div>
-            <div class="user-box">
-                <input class="inputs-date" type="date" name="nac" id="fecha_nac" value="2023-01-01" min="1922-01-01" max="2008-12-31">
-                <label class="labels-date">Fecha de Nacimiento</label>
             </div>
             <div class="user-box">
                 <label class="labels-pais">Pais de Procedencia</label>
@@ -249,6 +235,10 @@
                 <input type="password" name="passw" class="inputs" id="contraseña">
                 <label class="labels">Contraseña</label>
             </div>
+                        <div class="user-box">
+                <input type="password" name="passw" class="inputs" id="contraseña">
+                <label class="labels">Confirmar contraseña</label>
+            </div>
             <p class="warnings" id="warnings"></p>
             <div class="btn-iniciar">
                 <a id="crear" type="submit">
@@ -256,7 +246,7 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    Crear Cuenta
+                    Confirmar cambios
                 </a>
             </div>
         </form>
