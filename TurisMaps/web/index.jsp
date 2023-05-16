@@ -65,6 +65,7 @@
                                     <button class="btn btn-outline-dark"  type="button" id="borderboton" data-bs-toggle="dropdown" >Nombre de usuario</button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="secure/inicio/editarperfil.jsp">Editar Perfil</a></li>
+                                         <li><a class="dropdown-item" href="">Cerrar sesión</a></li>
                                     </ul>   
                                         <%
                                     } else {

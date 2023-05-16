@@ -31,7 +31,7 @@
                 <label class="labels">Apellidos</label>
             </div>
             <div class="user-box">
-                <input class="inputs-date" type="date" name="nac" id="fecha_nac" value="2023-01-01" min="1922-01-01" max="2008-12-31">
+                <input class="inputs-date" type="date" name="nac" id="fecha_nac" value="2008-01-01" min="1922-01-01" max="2008-12-31">
                 <label class="labels-date">Fecha de Nacimiento</label>
             </div>
             <div class="user-box">
@@ -261,6 +261,6 @@
             </div>
         </form>
     </div>
-    <script src="signUp.js"></script>
+    <script src="../../secure/javascript/signUp.js"></script>
 </body>
 </html>

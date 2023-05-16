@@ -38,7 +38,7 @@ public class TuristaService extends Conexion<Turista>{
             if (statement == null) {
                 return null;
             }
-            resultSet = statement.executeQuery("SELECT * FROM ROL");
+            resultSet = statement.executeQuery("SELECT * FROM TURISTA");
             if (resultSet == null) 
             {
                 return null;
@@ -74,7 +74,7 @@ public class TuristaService extends Conexion<Turista>{
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "INSERT INTO ROL(ROL,DESCRIPCION) VALUES(?,?)";
+        String sql = "INSERT INTO TURISTA(ID_TURISTA, CORREO, NOMBRE, APELLIDO_PAT, APELLIDO_MAT, FECHA_NAC, LUGAR_PROC, GENERO, CONTRASEÑA,NOMBRE_USER) VALUES(?,?,?,?,?,?,?,?,?,?)";
         int row = 0;
         try 
         {
