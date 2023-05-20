@@ -8,6 +8,16 @@
     border-radius: 40px;
 
 }
+.wrap {
+    flex-wrap: initial;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.kike {
+    padding: 0px 10px;
+}
 .botones:hover:not(.active){
     background-color: #6558db;
     transition-duration: 0.5s;
