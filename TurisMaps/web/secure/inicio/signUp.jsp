@@ -17,35 +17,36 @@
 <body>
     < <div class="signUp-box">
         <h2 align="center">Creacion de la cuenta</h2>
-        <form id="signUp">
+        <form id="signUp" action="registro.jsp">
     <div class="wrap"><div class="kike">
+            <input type="hidden" name="id_turista" class="inputs" id="id_turista" value="0" >
             <div class="user-box">
-                <input type="email" name="correo" class="inputs" id="correo">
+                <input type="email" name="nombre_user" class="inputs" id="nombre_user" value="${param.nombre_user}">
                 <label class="labels">Nombre de Usuario</label>
             <div class="user-box">
-                <input type="email" name="correo" class="inputs" id="correo">
+                <input type="email" name="correo" class="inputs" id="correo" value="${param.correo}">
                 <label class="labels">Correo</label>
             </div></div>
             <div class="user-box">
-                <input type="text" class="inputs" name="nomb" id="nombre">
+                <input type="text" class="inputs" name="nombre" id="nombre" value="${param.nombre}">
                 <label class="labels">Nombre</label>
             </div>
             <div class="user-box">
-                <input class="inputs" type="text" name="apelli" id="apellidos">
+                <input class="inputs" type="text" name="apellido_pat" id="apellido_pat" value="${param.apellido_pat}">
                 <label class="labels">Apellido paterno</label>
             <div class="user-box">
-                <input class="inputs" type="text" name="apelli" id="apellidos">
+                <input class="inputs" type="text" name="apellido_mat" id="apellido_mat" value="${param.apellido_mat}">
                 <label class="labels">Apellido materno</label>
             </div></div></div>
 
     <div class="kike">
             <div class="user-box">
-                <input class="inputs-date" type="date" name="nac" id="fecha_nac" value="2008-01-01" min="1922-01-01" max="2008-12-31">
+                <input class="inputs-date" type="date" name="fecha_nac" id="fecha_nac" value="${param.fecha_nac}" min="1922-01-01" max="2008-12-31">
                 <label class="labels-date">Fecha de Nacimiento</label>
             </div>
             <div class="user-box">
                 <label class="labels-pais">Pais de Procedencia</label>
-                <select class="selects" type="text" name="pais" id="pais">
+                <select class="selects" type="text" name="lugar_proc" id="lugar_proc" >
                     <option class="selects" selected="">Elige tu Pais</option>
                     <option class="inputs" value="Afganistán">Afganistán</option>
                     <option class="inputs" value="Albania">Albania</option>
@@ -246,7 +247,7 @@
             <div class="user-box">
                 <label class="labels-gen">Genero</label>
                 <br>
-                <select type="text" class="selects" name="gene" id="genero">
+                <select type="text" class="selects" name="genero" id="genero" >
                     <option class="selects" selected="">Elige tu Genero</option>
                     <option class="inputs" value="Masculino">Masculino</option>
                     <option class="inputs" value="Femenino">Femenino</option>
@@ -255,20 +256,21 @@
                 
             </div>
             <div class="user-box">
-                <input type="password" name="passw" class="inputs" id="contraseña">
+                <input type="password" name="contraseña" class="inputs" id="contraseña" value="${param.contraseña}">
                 <label class="labels">Contraseña</label>
             </div>
                 </div>
         </div>
-            <p class="warnings" id="warnings">Debes elegir un genero<br></p>
+            <p class="warnings" id="warnings"><br></p>
             <div class="btn-iniciar">
-                <a id="crear" type="submit">
+                <input id="accion" type="hidden" value="Guardar" name="accion">
+                <input id="action" type="submit" value="Crear Cuenta" name="action">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    Crear Cuenta
-                </a>
+                    
+                    
             </div>
         </form>
     </div>

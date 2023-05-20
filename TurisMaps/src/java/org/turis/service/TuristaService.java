@@ -47,16 +47,16 @@ public class TuristaService extends Conexion<Turista>{
             while (resultSet.next()) 
             {
                 turista = new Turista();
-                turista.setId_turista(resultSet.getInt(1));
-                turista.setCorreo(resultSet.getString(2));
-                turista.setNombre(resultSet.getString(3));
-                turista.setApellido_pat(resultSet.getString(4));
-                turista.setApellido_mat(resultSet.getString(5));
-                turista.setFecha_nac(resultSet.getDate(6));
-                turista.setLugar_proc(resultSet.getString(7));
-                turista.setGenero(resultSet.getString(8));
-                turista.setContraseña(resultSet.getString(9));
-                turista.setNombre_user(resultSet.getString(10));
+                
+                turista.setCorreo(resultSet.getString(1));
+                turista.setNombre(resultSet.getString(2));
+                turista.setApellido_pat(resultSet.getString(3));
+                turista.setApellido_mat(resultSet.getString(4));
+                turista.setFecha_nac(resultSet.getDate(5));
+                turista.setLugar_proc(resultSet.getString(6));
+                turista.setGenero(resultSet.getString(7));
+                turista.setContraseña(resultSet.getString(8));
+                turista.setNombre_user(resultSet.getString(9));
                 turistaList.add(turista);
             }
             resultSet.close();
@@ -74,7 +74,7 @@ public class TuristaService extends Conexion<Turista>{
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "INSERT INTO TURISTA(ID_TURISTA, CORREO, NOMBRE, APELLIDO_PAT, APELLIDO_MAT, FECHA_NAC, LUGAR_PROC, GENERO, CONTRASEÑA,NOMBRE_USER) VALUES(?,?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO TURISTA( ID_TURISTA,CORREO, NOMBRE, APELLIDO_PAT, APELLIDO_MAT, FECHA_NAC, LUGAR_PROC, GENERO, CONTRASEÑA, NOMBRE_USER) VALUES(?,?,?,?,?,?,?,?,?,?)";
         int row = 0;
         try 
         {
@@ -93,7 +93,7 @@ public class TuristaService extends Conexion<Turista>{
             preparedStatement.setString(3, turista.getNombre());
             preparedStatement.setString(4, turista.getApellido_pat());
             preparedStatement.setString(5, turista.getApellido_mat());
-            preparedStatement.setDate(6, (Date) turista.getFecha_nac());
+            preparedStatement.setDate(6, dateUtil2DateSql(turista.getFecha_nac()));
             preparedStatement.setString(7, turista.getLugar_proc());
             preparedStatement.setString(8, turista.getGenero());
             preparedStatement.setString(9, turista.getContraseña());
@@ -132,7 +132,7 @@ public class TuristaService extends Conexion<Turista>{
             preparedStatement.setString(3, turista.getNombre());
             preparedStatement.setString(4, turista.getApellido_pat());
             preparedStatement.setString(5, turista.getApellido_mat());
-            preparedStatement.setDate(6, (Date) turista.getFecha_nac());
+            preparedStatement.setDate(6, dateUtil2DateSql(turista.getFecha_nac()));
             preparedStatement.setString(7, turista.getLugar_proc());
             preparedStatement.setString(8, turista.getGenero());
             preparedStatement.setString(9, turista.getContraseña());

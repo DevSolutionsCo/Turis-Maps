@@ -5,7 +5,12 @@
 package org.turis.helper;
 
 import java.io.Serializable;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -52,5 +57,27 @@ public abstract class Helpers<T> implements Serializable {
     public boolean isNotNullAndNotEmpity(String valor) {
         return valor != null && valor.length() > 0;
     }
-
+    public boolean isNotNull( Object valor )
+    {
+        return valor != null;
+    }
+    public Date string2Date( String fecha_nac ) 
+    {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        try 
+        {
+            return simpleDateFormat.parse(fecha_nac );
+        } 
+        catch (ParseException ex) 
+        {
+            Logger.getLogger(Helpers.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
+    
+    public String date2String( Date fecha_nac ) 
+    {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        return simpleDateFormat.format(fecha_nac );
+    }
 }

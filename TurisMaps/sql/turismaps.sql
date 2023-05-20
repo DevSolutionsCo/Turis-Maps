@@ -22,7 +22,7 @@ USE `turismaps` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `turismaps`.`lugar` (
   `id_lugar` INT NOT NULL,
-  `nombre_lugar` VARCHAR(40) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
+  `nombre_lugar` VARCHAR(40) CHARACTER SET 'utf8' NULL DEFAULT NULL,
   PRIMARY KEY (`id_lugar`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
@@ -34,15 +34,15 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `turismaps`.`turista` (
   `id_turista` INT NOT NULL,
-  `correo` VARCHAR(30) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
-  `nombre` VARCHAR(40) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
-  `apellido_pat` VARCHAR(40) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
-  `apellido_mat` VARCHAR(40) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
+  `correo` VARCHAR(30) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `nombre` VARCHAR(40) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `apellido_pat` VARCHAR(40) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `apellido_mat` VARCHAR(40) CHARACTER SET 'utf8' NULL DEFAULT NULL,
   `fecha_nac` DATE NULL DEFAULT NULL,
-  `lugar_proc` VARCHAR(30) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
-  `genero` VARCHAR(10) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
-  `contraseña` VARCHAR(20) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
-  `nombre_user` VARCHAR(45) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
+  `lugar_proc` VARCHAR(30) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `genero` VARCHAR(10) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `contraseña` VARCHAR(20) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `nombre_user` VARCHAR(45) CHARACTER SET 'utf8' NULL DEFAULT NULL,
   PRIMARY KEY (`id_turista`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
@@ -54,7 +54,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `turismaps`.`comentarios` (
   `id_comentario` INT NOT NULL,
-  `comentario` VARCHAR(100) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
+  `comentario` VARCHAR(100) CHARACTER SET 'utf8' NULL DEFAULT NULL,
   `calificacion` INT NULL DEFAULT NULL,
   `fecha` DATE NULL DEFAULT NULL,
   `id_turista` INT NULL DEFAULT NULL,

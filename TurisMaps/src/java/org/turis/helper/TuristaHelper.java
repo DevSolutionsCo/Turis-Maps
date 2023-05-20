@@ -26,9 +26,9 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable {
     }
 
     public boolean isValidaCamposOk() {
-        return isNotNullAndNotEmpity(Integer.toString(t.getId_turista())) && isNotNullAndNotEmpity(t.getCorreo())
+        return  isNotNullAndNotEmpity(t.getCorreo())
                 && isNotNullAndNotEmpity(t.getNombre()) && isNotNullAndNotEmpity(t.getApellido_pat())
-                && isNotNullAndNotEmpity(t.getApellido_mat()) && isNotNullAndNotEmpity(t.getFecha_nac().toString())
+                && isNotNullAndNotEmpity(t.getApellido_mat()) && isNotNull(t.getFecha_nac())
                 && isNotNullAndNotEmpity(t.getLugar_proc()) && isNotNullAndNotEmpity(t.getGenero())
                 && isNotNullAndNotEmpity(t.getContraseña()) && isNotNullAndNotEmpity(t.getNombre_user());
     }
@@ -37,24 +37,16 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable {
     public boolean addT() {
         turistaService = new TuristaService();
         t = new Turista();
-        t.setId_turista(Integer.parseInt(getParameter("id_turista")));
+        t.setId_turista(Integer.parseInt(""));
+        t.setNombre_user(getParameter("nombre_user"));
         t.setCorreo(getParameter("correo"));
         t.setNombre(getParameter("nombre"));
         t.setApellido_pat(getParameter("apellido_pat"));
         t.setApellido_mat(getParameter("apellido_mat"));
-        String fechaNacString = getParameter("fecha_nac");
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Date fechaNac = null;
-        try {
-            fechaNac = sdf.parse(fechaNacString);
-        } catch (ParseException ex) {
-            Logger.getLogger(TuristaHelper.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        t.setFecha_nac(fechaNac);
+        t.setFecha_nac(string2Date(getParameter("fecha_nac")));
         t.setLugar_proc(getParameter("lugar_proc"));
         t.setGenero(getParameter("genero"));
         t.setContraseña(getParameter("contraseña"));
-        t.setNombre_user(getParameter("nombre_user"));
         if (isValidaCamposOk()) {
             return turistaService.addTurista(t);
         }
@@ -71,20 +63,12 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable {
     public boolean updateT() {
         turistaService = new TuristaService();
         t = new Turista();
-        t.setId_turista(Integer.parseInt(getParameter("id_turista")));
+       
         t.setCorreo(getParameter("correo"));
         t.setNombre(getParameter("nombre"));
         t.setApellido_pat(getParameter("apellido_pat"));
         t.setApellido_mat(getParameter("apellido_mat"));
-        String fechaNacString = getParameter("fecha_nac");
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Date fechaNac = null;
-        try {
-            fechaNac = sdf.parse(fechaNacString);
-        } catch (ParseException ex) {
-            Logger.getLogger(TuristaHelper.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        t.setFecha_nac(fechaNac);
+        t.setFecha_nac(string2Date("fecha_nac"));
         t.setLugar_proc(getParameter("lugar_proc"));
         t.setGenero(getParameter("genero"));
         t.setContraseña(getParameter("contraseña"));
