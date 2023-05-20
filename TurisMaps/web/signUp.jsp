@@ -11,17 +11,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/signStyles.css">
+    <link rel="stylesheet" href="css/signStyles.css">
     <title>Sign Up</title>
 </head>
 <body>
-    < <div class="signUp-box">
+     <div class="signUp-box">
         <h2 align="center">Creacion de la cuenta</h2>
         <form id="signUp" action="registro.jsp">
     <div class="wrap"><div class="kike">
-            <input type="hidden" name="id_turista" class="inputs" id="id_turista" value="0" >
             <div class="user-box">
-                <input type="email" name="nombre_user" class="inputs" id="nombre_user" value="${param.nombre_user}">
+                <input type="text" name="nombre_user" class="inputs" id="nombre_user" value="${param.nombre_user}">
                 <label class="labels">Nombre de Usuario</label>
             <div class="user-box">
                 <input type="email" name="correo" class="inputs" id="correo" value="${param.correo}">
@@ -274,6 +273,6 @@
             </div>
         </form>
     </div>
-    <script src="./Sign Up_files/signUp.js.download"></script>
+                <script src="secure/javascript/signUp.js"></script>
 </body>
 </html>

@@ -73,7 +73,7 @@
                                     <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="borderboton">Inicio de sesión</button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="signIn.jsp">Iniciar Sesión</a></li>
-                                        <li><a class="dropdown-item" href="secure/inicio/registro.jsp?accion=Nuevo">Crear cuenta</a></li>
+                                        <li><a class="dropdown-item" href="registro.jsp?accion=Nuevo">Crear cuenta</a></li>
                                     </ul>   
                                         <%
                                     }

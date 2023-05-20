@@ -37,7 +37,6 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable {
     public boolean addT() {
         turistaService = new TuristaService();
         t = new Turista();
-        t.setId_turista(Integer.parseInt(""));
         t.setNombre_user(getParameter("nombre_user"));
         t.setCorreo(getParameter("correo"));
         t.setNombre(getParameter("nombre"));

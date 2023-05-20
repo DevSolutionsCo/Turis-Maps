@@ -31,7 +31,7 @@
                 if( "Nuevo".equals( accion ) )
                 {
                     turista = new Turista();
-                    turista.setId_turista(Integer.parseInt(""));
+                 
                     turista.setNombre_user("");
                     turista.setCorreo("");
                     turista.setNombre("");
@@ -76,6 +76,9 @@
                 if( "Guardar".equals( accion ) )
                 {
                     flag = helpers.addT( );
+                   
+                response.sendRedirect("index.jsp");
+
                 }
                 if( "Borrar".equals( accion ) )
                 {
@@ -88,14 +91,14 @@
                 if( flag )
                 {
         %>
-        <jsp:forward page="../../index.jsp" />
+        
         <%
                 }                
             }
             if( accion == null || "list".equals(accion ))
             {
         %>
-        <jsp:include page="../../index.jsp" />
+        <jsp:forward page="index.jsp" />
         <%
             }
         %>
