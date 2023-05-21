@@ -19,7 +19,7 @@
         <h2>Inicio de Sesion</h2>
 
 
-        <form action="index.jsp" method="post">
+        <form action="jalasOque.jsp" method="post">
             <div class="user-box">
                 <input class="inputs" type="text" name="correo_signIN" required="">
                 <label class="labels">Correo</label>

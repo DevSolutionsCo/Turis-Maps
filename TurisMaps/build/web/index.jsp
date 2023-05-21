@@ -63,8 +63,21 @@
                             <li class="nav-item" id="liNav">
                                 <div class="input-group mb-3" id ="botonsesion">
                                     <%
+                                       int valor = 0;
+                                        String signUp = (String) session.getAttribute("signUp");
+                                        if (signUp != null) {
+                                            if (signUp.equals("crearCuenta")) {
+                                                valor = 1;
+                                            }else 
+                                                if (signUp.equals("inicioSesion")) {
+                                            
+                                            }
+                                            session.removeAttribute("accionRealizada");
+                                        } else {
+                                            valor = 0;
+                                        }
+                                        
                                         String nombre_user = request.getParameter("nombre_user");
-                                        String signUPhecho = request.getParameter("inciado");
                                         String botonPresionado = request.getParameter("botonPresionado");
                                     if (botonPresionado != null && botonPresionado.equals("Iniciar Sesion")) 
                                     {
@@ -77,7 +90,7 @@
                                     </ul>   
                                         <%
                                     }else
-                                        if (nombre_user != null ) {
+                                        if (nombre_user != null && valor == 1) {
 
 
                                    

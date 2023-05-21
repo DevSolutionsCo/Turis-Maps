@@ -22,15 +22,17 @@ public class Turista implements Serializable{
     private String genero;
     private String contraseña;
     private String nombre_user;
-    private String iniciado;
+    private int iniciado;
 
-    public String getIniciado() {
+    public int getIniciado() {
         return iniciado;
     }
 
-    public void setIniciado(String iniciado) {
+    public void setIniciado(int iniciado) {
         this.iniciado = iniciado;
     }
+
+
 
 
     public Turista() {

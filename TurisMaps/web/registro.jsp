@@ -80,7 +80,9 @@
                 if( "Guardar".equals( accion ) )
                 {
                     flag = helpers.addT( );
-                   
+                  
+
+                session.setAttribute("signUp", "crearCuenta"); 
                 response.sendRedirect("index.jsp?nombre_user="+request.getParameter("nombre_user"));
 
                 }
