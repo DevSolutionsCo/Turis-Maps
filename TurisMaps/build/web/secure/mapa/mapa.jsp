@@ -80,6 +80,7 @@
                     id="rect4" />
             </clipPath>
             </defs>
+            <!--mapa-->
             <path 
                 id="path17-6"
                 style="font-size:12px;font-family:'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.27737;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -158,6 +159,8 @@
             </svg>
         </div>
 
+        <!--aqui empieza coyoacan-->
+
         <div class="overlay overflow-auto mapa" id="overlay_coyo">
             <div class="popup" id="popup_coyo">
                 <a  href="#" id="cerrar_alca_coyo" class="cerrar_alca" >X</a>
@@ -222,6 +225,9 @@
                 </section>
             </div>
         </div>
+
+        <!--museo frida-->
+
         <div class="overlay overflow-auto mapa mapa" id="overlay_l1_coyo">
             <div class="popup" id="popup_l1_coyo">
                 <a  href="#" id="cerrar_l1_coyo" class="cerrar_alca" >X</a>
@@ -248,8 +254,8 @@
                                 <i class="fa-solid fa-clock"></i><span class="textlogitos">10:00-18:00 Martes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">10:00-18:00 Martes-Domingo</span>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 3 - Coyoacan</span>
                             </div>
                         </div>
                         <div class="line2">
@@ -287,29 +293,37 @@
                 </div>
             </div>
         </div>
+
+        <!--mercado coyo-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l2_coyo">
             <div class="popup" id="popup_l2_coyo">
                 <a  href="#" id="cerrar_l2_coyo" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://media.cntraveler.com/photos/5a92f24a20dfb6552425e8b5/16:9/w_2560,c_limit/Mercado-Coyoacan_Alamy_E0EXB8.jpg" alt="">
-                        <img src="https://media.timeout.com/images/102876677/image.jpg" alt="">
-                        <img src="https://offloadmedia.feverup.com/cdmxsecreta.com/wp-content/uploads/2021/08/26043641/Mercado-Coyoaca%CC%81n.jpg" alt="">
-                        <img src="https://cdn1.matadornetwork.com/blogs/2/2018/03/Mercado-de-comida-Coyoacan.jpg" alt="">
-                        <img src="https://img10.naventcdn.com/avisos/18/00/54/76/94/85/1200x1200/103519235.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://media.cntraveler.com/photos/5a92f24a20dfb6552425e8b5/16:9/w_2560,c_limit/Mercado-Coyoacan_Alamy_E0EXB8.jpg" alt="">
+                            <img src="https://media.timeout.com/images/102876677/image.jpg" alt="">
+                            <img src="https://offloadmedia.feverup.com/cdmxsecreta.com/wp-content/uploads/2021/08/26043641/Mercado-Coyoaca%CC%81n.jpg" alt="">
+                            <img src="https://cdn1.matadornetwork.com/blogs/2/2018/03/Mercado-de-comida-Coyoacan.jpg" alt="">
+                            <img src="https://img10.naventcdn.com/avisos/18/00/54/76/94/85/1200x1200/103519235.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.387411121407!2d-99.16402908509454!3d19.352370886929993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc464ce8279%3A0x77e3dbe6da694814!2sMercado%20de%20Coyoac%C3%A1n!5e0!3m2!1ses-419!2smx!4v1684622566161!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>11:00-20:00 LaV <br>11:00-22:00 SyD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">11:00-20:00 Lunes-Viernes<br>11:00-22:00 Sabado/Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 3 - Metro Coyoacan</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 3-Coyoacan</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -320,12 +334,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Amarilla. <br>Cuidado</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/r8G1yTrgGWVHMfdy9" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #dbd400;"></i><span class="color_zona_amarilla textlogitos">Zona amarilla</span>
+                                <p class="color_zona_amarilla">La zona no es totalmente segura no se recomienda ir muy lejos del lugar</p>
                             </div>
                         </div>
                     </div>
@@ -351,29 +361,37 @@
                 </div>
             </div>
         </div>
+
+        <!--viveros-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l3_coyo">
             <div class="popup" id="popup_l3_coyo">
                 <a  href="#" id="cerrar_l3_coyo" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://www.archivo.cdmx.gob.mx/storage/app/media/uploaded-files/26808154426_178a3ae214_z.jpg" alt="">
-                        <img src="https://img.local.mx/2019/11/troncomovil-destacada.jpg" alt="">
-                        <img src="https://cdn1.matadornetwork.com/blogs/2/2019/03/Snapseed-2.jpg" alt="">
-                        <img src="https://www.gob.mx/cms/uploads/image/file/409589/donde-correr-en-la-cdmx-viveros-coyoacan.jpg" alt="">
-                        <img src="https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/03/IMG_4873-940x705.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://www.archivo.cdmx.gob.mx/storage/app/media/uploaded-files/26808154426_178a3ae214_z.jpg" alt="">
+                            <img src="https://img.local.mx/2019/11/troncomovil-destacada.jpg" alt="">
+                            <img src="https://cdn1.matadornetwork.com/blogs/2/2019/03/Snapseed-2.jpg" alt="">
+                            <img src="https://www.gob.mx/cms/uploads/image/file/409589/donde-correr-en-la-cdmx-viveros-coyoacan.jpg" alt="">
+                            <img src="https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/03/IMG_4873-940x705.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.3585630576863!2d-99.1746333274275!3d19.353621003237954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff66b59be2e5%3A0xd5f61a0cc58532bb!2sViveros%20de%20Coyoac%C3%A1n!5e0!3m2!1ses-419!2smx!4v1684623393123!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>6:00-18:00 LaD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">06:00-18:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 3 - Metro Viveros</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 3-Viveros</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -384,12 +402,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/aD1fZddA3Zf48BEa8" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y los alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -415,29 +429,37 @@
                 </div>
             </div>
         </div>
+
+        <!--jardin centenario-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l4_coyo">
             <div class="popup" id="popup_l4_coyo">
                 <a  href="#" id="cerrar_l4_coyo" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://mxcity.org/wp-content/uploads/2015/08/jardin-centenario.jpg" alt="">
-                        <img src="https://s3.amazonaws.com/onthegrid.city/assets/grid/mexico-city/coyoacan/jardin-centenario/jardin_centenario_01.jpg" alt="">
-                        <img src="https://mxcity.org/wp-content/uploads/2015/08/jardin_centenario_03.jpg" alt="">
-                        <img src="https://images.myguide-cdn.com/mexicocity/companies/jardin-centenario/large/jardin-centenario-208866.jpg" alt="">
-                        <img src="https://jorgalbrtotranseunte.files.wordpress.com/2017/02/image.jpeg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://mxcity.org/wp-content/uploads/2015/08/jardin-centenario.jpg" alt="">
+                            <img src="https://s3.amazonaws.com/onthegrid.city/assets/grid/mexico-city/coyoacan/jardin-centenario/jardin_centenario_01.jpg" alt="">
+                            <img src="https://mxcity.org/wp-content/uploads/2015/08/jardin_centenario_03.jpg" alt="">
+                            <img src="https://images.myguide-cdn.com/mexicocity/companies/jardin-centenario/large/jardin-centenario-208866.jpg" alt="">
+                            <img src="https://jorgalbrtotranseunte.files.wordpress.com/2017/02/image.jpeg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.4588809498346!2d-99.16625952556421!3d19.349273443338234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffdccb88854d%3A0xaa9e1894ccbcd375!2sJard%C3%ADn%20Centenario!5e0!3m2!1ses-419!2smx!4v1684623530874!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>8:00-18:00 LaD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">08:00-18:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 3 - Metro Coyoacán</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 3-Coyóacan</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -448,12 +470,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Amarilla. <br>Cuidado</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/t2sMphKsaRdYtxzR7" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #dbd400;"></i><span class="color_zona_amarilla textlogitos">Zona amarilla</span>
+                                <p class="color_zona_amarilla">La zona no es totalmente segura no se recomienda ir muy lejos del lugar</p>
                             </div>
                         </div>
                     </div>
@@ -479,29 +497,37 @@
                 </div>
             </div>
         </div>
+
+        <!--museo de culturas populares-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l5_coyo">
             <div class="popup" id="popup_l5_coyo">
                 <a  href="#" id="cerrar_l5_coyo" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2014/10/mncp.jpg" alt="">
-                        <img src="https://media.timeout.com/images/100469027/image.jpg" alt="">
-                        <img src="https://www.cashum.unam.mx/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-28-at-12.03.16-PM-1.jpeg" alt="">
-                        <img src="https://columnadigital.com/wp-content/uploads/2021/08/museo-nacional-de-culturas-populares-coyoacan-distrito-federal.jpg" alt="">
-                        <img src="https://www.mexicoescultura.com/galerias/espacios/fotogalerias/POPULARES3.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2014/10/mncp.jpg" alt="">
+                            <img src="https://media.timeout.com/images/100469027/image.jpg" alt="">
+                            <img src="https://www.cashum.unam.mx/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-28-at-12.03.16-PM-1.jpeg" alt="">
+                            <img src="https://columnadigital.com/wp-content/uploads/2021/08/museo-nacional-de-culturas-populares-coyoacan-distrito-federal.jpg" alt="">
+                            <img src="https://www.mexicoescultura.com/galerias/espacios/fotogalerias/POPULARES3.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.445533586018!2d-99.16326002556416!3d19.349851943319848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc284c5a0b3%3A0x64d8e9be1a4fe593!2sMuseo%20Nacional%20de%20Culturas%20Populares!5e0!3m2!1ses-419!2smx!4v1684623592989!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>11:00-19:00 MaD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">11:00-19:00 Martes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 2 - Metro General Anaya</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 2-General Anaya</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -512,12 +538,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/KNa6wK25Zj6u4fjt6" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -543,6 +565,9 @@
                 </div>
             </div>
         </div>
+
+        <!--COMIENZO MIGUEL HIDALGO-->
+
         <div class="overlay overflow-auto mapa" id="overlay_mh">
             <div class="popup" id="popup_mh">
                 <a  href="#" id="cerrar_alca_mh" class="cerrar_alca" >X</a>
@@ -607,29 +632,37 @@
                 </section>
             </div>
         </div>
+
+        <!--castillo de chapultepec-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l1_mh">
             <div class="popup" id="popup_l1_mh">
                 <a  href="#" id="cerrar_l1_mh" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://www.chapultepec.com.mx/imagenes/contenido/main_CastilloChapultepec.jpg" alt="">
-                        <img src="https://topadventure.com/__export/1649438019693/sites/laverdad/img/2022/04/08/castillo_de_chapultepec_portada.jpg_486633154.jpg" alt="">
-                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/ee/58/f6/garden-on-the-roof.jpg?w=1200&h=-1&s=1" alt="">
-                        <img src="https://www.elsoldepuebla.com.mx/incoming/buncb3-castillo-de-chapultepec.jpg/ALTERNATES/LANDSCAPE_768/Castillo-de-Chapultepec.jpg" alt="">
-                        <img src="https://cdn.milenio.com/uploads/media/2018/12/28/inmueble-convirtio-museo-nacional-historia-1_0_184_1543_960.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://www.chapultepec.com.mx/imagenes/contenido/main_CastilloChapultepec.jpg" alt="">
+                            <img src="https://topadventure.com/__export/1649438019693/sites/laverdad/img/2022/04/08/castillo_de_chapultepec_portada.jpg_486633154.jpg" alt="">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/ee/58/f6/garden-on-the-roof.jpg?w=1200&h=-1&s=1" alt="">
+                            <img src="https://www.elsoldepuebla.com.mx/incoming/buncb3-castillo-de-chapultepec.jpg/ALTERNATES/LANDSCAPE_768/Castillo-de-Chapultepec.jpg" alt="">
+                            <img src="https://cdn.milenio.com/uploads/media/2018/12/28/inmueble-convirtio-museo-nacional-historia-1_0_184_1543_960.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8139104159477!2d-99.18450992556241!3d19.420444741070487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fecd47ed8f23%3A0xa6e0008524818b32!2sCastillo%20de%20Chapultepec!5e0!3m2!1ses-419!2smx!4v1684623845692!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>9:00-17:00 LaV</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">09:00-17:00 Lunes-Viernes</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 1</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 1-Chapultepec</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -640,12 +673,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/57U3BQK9AKBJbZBs6" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -671,29 +700,37 @@
                 </div>
             </div>
         </div>
+
+        <!--parque bicentenario-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l2_mh">
             <div class="popup" id="popup_l2_mh">
                 <a  href="#" id="cerrar_l2_mh" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://www.dondeir.com/wp-content/uploads/2020/06/parque-bicentenario-areas-verdes.jpg" alt="">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Parque_Bicentenario%2C_D.f..JPG" alt="">
-                        <img src="https://parquesalegres.org/wp-content/uploads/2021/06/Bicentenario-parque.jpeg" alt="">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Parque_Bicentenario%2C_Vitacura%2C_Santiago_20200314_02.jpg" alt="">
-                        <img src="https://cdn.wegow.com/media/venues/parque-bicentenario-cdad-mexico/parque-bicentenario-cdad-mexico-1578072045.0049078.2560x1440.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://www.dondeir.com/wp-content/uploads/2020/06/parque-bicentenario-areas-verdes.jpg" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Parque_Bicentenario%2C_D.f..JPG" alt="">
+                            <img src="https://parquesalegres.org/wp-content/uploads/2021/06/Bicentenario-parque.jpeg" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Parque_Bicentenario%2C_Vitacura%2C_Santiago_20200314_02.jpg" alt="">
+                            <img src="https://cdn.wegow.com/media/venues/parque-bicentenario-cdad-mexico/parque-bicentenario-cdad-mexico-1578072045.0049078.2560x1440.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.704524080298!2d-99.19728339036519!3d19.46830219617884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d202791baf9b01%3A0x9e821838a7209c66!2sParque%20Bicentenario!5e0!3m2!1ses-419!2smx!4v1684624037814!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>7:00-18:00 MaD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">07:00-18:00 Martes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 7 - Metro Refineria</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 7-Refineria</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -704,12 +741,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/Y2pHTfxAM6fXEyVE7" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -735,29 +768,37 @@
                 </div>
             </div>
         </div>
+
+        <!--auditorio nacional-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l3_mh">
             <div class="popup" id="popup_l3_mh">
                 <a  href="#" id="cerrar_l3_mh" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://www.turimexico.com/wp-content/uploads/2019/07/Auditorio-Nacional-en-la-Ciudad-de-M%C3%A9xico-900x500.jpg" alt="">
-                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/36/a4/8e/auditorio-nacional.jpg?w=1200&h=-1&s=1" alt="">
-                        <img src="https://www.digitalavmagazine.com/wp-content/uploads/2021/03/L-Acoustic-en-Teatro-de-Mexico.jpg" alt="">
-                        <img src="https://cdn-3.expansion.mx/dims4/default/e0fcda6/2147483647/strip/true/crop/659x462+0+0/resize/1200x841!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F83%2F835e7c3f8084c711e29c650bcdda54cc%2Fauditorio-nacional.jpg" alt="">
-                        <img src="https://cdn.mexicodestinos.com/lugares/auditorio-nacional-ciudad-de-mexico-principal.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://www.turimexico.com/wp-content/uploads/2019/07/Auditorio-Nacional-en-la-Ciudad-de-M%C3%A9xico-900x500.jpg" alt="">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/36/a4/8e/auditorio-nacional.jpg?w=1200&h=-1&s=1" alt="">
+                            <img src="https://www.digitalavmagazine.com/wp-content/uploads/2021/03/L-Acoustic-en-Teatro-de-Mexico.jpg" alt="">
+                            <img src="https://cdn-3.expansion.mx/dims4/default/e0fcda6/2147483647/strip/true/crop/659x462+0+0/resize/1200x841!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F83%2F835e7c3f8084c711e29c650bcdda54cc%2Fauditorio-nacional.jpg" alt="">
+                            <img src="https://cdn.mexicodestinos.com/lugares/auditorio-nacional-ciudad-de-mexico-principal.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.71271810761!2d-99.19750052556228!3d19.424814740931005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201fc02a01ef9%3A0x5e14b5cd4b968d6f!2sAuditorio%20Nacional!5e0!3m2!1ses-419!2smx!4v1684624084054!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>Variable</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">Variable conforme al evento que asista</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 7 - Metro Auditorio</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 7- Auditorio</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -768,12 +809,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/WvdRUb23kKqm6kcq9" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -799,45 +836,49 @@
                 </div>
             </div>
         </div>
+
+        <!--museo de antropologia-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l4_mh">
             <div class="popup" id="popup_l4_mh">
                 <a  href="#" id="cerrar_l4_mh" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://lugares.inah.gob.mx/images/museos/portada/_thumb1/MNA_2021_1.jpg" alt="">
-                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2021/03/Captura-de-Pantalla-2021-03-10-a-las-14.32.24.png" alt="">
-                        <img src="https://lugares.inah.gob.mx/images/museos/media/471/_thumb1/DSC_6256FOTOS_HECTOR_MONTANO_INAHJPG.JPG" alt="">
-                        <img src="https://cinelatura.files.wordpress.com/2020/03/museo-nacional-de-antropologc3ada-ciudad-de-mc3a9xico.jpg" alt="">
-                        <img src="https://www.eleconomista.com.mx/__export/1605069292999/sites/eleconomista/img/2020/11/10/ina-antropologia-10112020.jpg_554688468.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://lugares.inah.gob.mx/images/museos/portada/_thumb1/MNA_2021_1.jpg" alt="">
+                            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2021/03/Captura-de-Pantalla-2021-03-10-a-las-14.32.24.png" alt="">
+                            <img src="https://lugares.inah.gob.mx/images/museos/media/471/_thumb1/DSC_6256FOTOS_HECTOR_MONTANO_INAHJPG.JPG" alt="">
+                            <img src="https://cinelatura.files.wordpress.com/2020/03/museo-nacional-de-antropologc3ada-ciudad-de-mc3a9xico.jpg" alt="">
+                            <img src="https://www.eleconomista.com.mx/__export/1605069292999/sites/eleconomista/img/2020/11/10/ina-antropologia-10112020.jpg_554688468.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6850774555382!2d-99.18885352556218!3d19.426008240892887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201b420c8c849%3A0x84231ae36f6ec524!2sMuseo%20Nacional%20de%20Antropolog%C3%ADa!5e0!3m2!1ses-419!2smx!4v1684624192648!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>10:00-17:00 MaS</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">10:00-17:00 Martes-Sabádo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 7 - Metro Auditorio</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 7- Auditorio</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>El Museo Nacional de Antropología es uno de los recintos museográficos más importantes de México y de América.​</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/o5QNggoxDtLxU5Sy9" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -863,45 +904,49 @@
                 </div>
             </div>
         </div>
+
+        <!--batiz-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l5_mh">
             <div class="popup" id="popup_l5_mh">
                 <a  href="#" id="cerrar_l5_mh" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/batiz.jpg" alt="">
-                        <img src="../../img/berni.jpg" alt="">
-                        <img src="../../img/elchueck.jpg" alt="">
-                        <img src="../../img/lego.jpg" alt="">
-                        <img src="../../img/batiz.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/batiz.jpg" alt="">
+                            <img src="../../img/berni.jpg" alt="">
+                            <img src="../../img/elchueck.jpg" alt="">
+                            <img src="../../img/lego.jpg" alt="">
+                            <img src="../../img/batiz.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60202.93109725391!2d-99.22747858941027!3d19.42608958254852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffeaf6b0a85d%3A0xb6ad4ff925a0d906!2sCentro%20Estudios%20Cient%C3%ADficos%20y%20Tecnol%C3%B3gicos%20(CECyT%209)%20%22Juan%20de%20Dios%20B%C3%A1tiz%22!5e0!3m2!1ses-419!2smx!4v1684624250225!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>7:00-21:00 LaV</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">07:00-21:00 Lunes-Viernes</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 2 - Metro Popotla</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 2-  Popotla</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>Centro de Estudios Cientificos y Tecnologicos No. 9 "Juan de Dios Batiz", mejor conocido como Batiz. Es una escuela nivel medio superior del IPN en el cual se imparten 5 carreras entre ellas la de tecnico en programacion.​</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui, bueno aqui lo dudo.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/MzfjuGLgNi5Bu5Lq9" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -927,6 +972,9 @@
                 </div>
             </div>
         </div>
+
+        <!--Aqui empieza delegacion cuautemoc-->
+
         <div class="overlay overflow-auto mapa" id="overlay_cuau">
             <div class="popup" id="popup_cuau" >
                 <a href="#mapa" id="cerrar_alca_cuau" class="cerrar_alca" >X</a>
@@ -994,46 +1042,49 @@
                 </section>
             </div>
         </div>
+
+        <!--plaza 3 culturas-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l1_cuau">
             <div class="popup" id="popup_l1_cuau">
                 <a  href="#mapa" id="cerrar_l1_cuau" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/plaza-tres-culturas-tlatelolco.jpg" alt="">
-                        <img src="../../img/plaza3culturas2.jpg" alt="">
-                        <img src="../../img/plaza3culturas3.jpg" alt="">
-                        <img src="../../img/plaza3culturas4.jpg" alt="">
-                        <img src="../../img/PLAZA_DE_LAS_TRES_CULTURAS-1.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/plaza-tres-culturas-tlatelolco.jpg" alt="">
+                            <img src="../../img/plaza3culturas2.jpg" alt="">
+                            <img src="../../img/plaza3culturas3.jpg" alt="">
+                            <img src="../../img/plaza3culturas4.jpg" alt="">
+                            <img src="../../img/PLAZA_DE_LAS_TRES_CULTURAS-1.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.089928303313!2d-99.14209801114497!3d19.451689200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9221eea8673%3A0x8b211c885185f287!2sPlaza%20de%20las%20Tres%20Culturas!5e0!3m2!1ses-419!2smx!4v1684625215789!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>8:00 AM - 18:00 PM</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">08:00-18:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 3 - Metro Tlatelolco</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 2-  Tlatelolco</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
                                 <h5>Descripción</h5>
                                 <p>La plaza fue inaugurada el 21 de noviembre de 1964, por el presidente Adolfo López Mateos, como elemento central del nuevo conjunto habitacional.
-                                </p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/o4Sw4Hdqqa6WtrEr7" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1059,29 +1110,37 @@
                 </div>
             </div>
         </div>
+
+        <!--plaza de la constitucion-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l2_cuau">
             <div class="popup" id="popup_l2_cuau">
                 <a  href="#mapa" id="cerrar_l2_cuau" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/Zócalo_cdmx1.jpg" alt="">
-                        <img src="../../img/Zócalo_cdmx2.jpg" alt="">
-                        <img src="../../img/Zócalo_cdmx3.jpg" alt="">
-                        <img src="../../img/Zócalo_cdmx4.png" alt="">
-                        <img src="../../img/Zócalo_cdmx5.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/Zócalo_cdmx1.jpg" alt="">
+                            <img src="../../img/Zócalo_cdmx2.jpg" alt="">
+                            <img src="../../img/Zócalo_cdmx3.jpg" alt="">
+                            <img src="../../img/Zócalo_cdmx4.png" alt="">
+                            <img src="../../img/Zócalo_cdmx5.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.532228880202!2d-99.13577982556204!3d19.43260684068216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fecd4864aaff%3A0x4cff0c5cb291360c!2sPlaza%20de%20la%20Constituci%C3%B3n!5e0!3m2!1ses-419!2smx!4v1684625668676!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>Horario Variable</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 24/7</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 2 - Metro Zócalo/Tenochtitlán</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 2-  Zócalo-Tenochtitlán</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -1092,12 +1151,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/LciytpaRCxWNLdsP9" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1123,45 +1178,49 @@
                 </div>
             </div>
         </div>
+
+        <!--monumento a la revolucion-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l3_cuau">
             <div class="popup" id="popup_l3_cuau">
                 <a  href="#mapa" id="cerrar_l3_cuau" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/Revolucion1.jpg" alt="">
-                        <img src="../../img/Revolucion2.jpg" alt="">
-                        <img src="../../img/Revolucion3.jpg" alt="">
-                        <img src="../../img/Revolucion4.jpg" alt="">
-                        <img src="../../img/Revolucion5.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/Revolucion1.jpg" alt="">
+                            <img src="../../img/Revolucion2.jpg" alt="">
+                            <img src="../../img/Revolucion3.jpg" alt="">
+                            <img src="../../img/Revolucion4.jpg" alt="">
+                            <img src="../../img/Revolucion5.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.4486606335076!2d-99.157204725562!3d19.436213640567008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d24522071f%3A0x20fdc6dd3dcc0c20!2sMonumento%20a%20la%20Revoluci%C3%B3n!5e0!3m2!1ses-419!2smx!4v1684625915908!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>12:00 PM - 20:00 PM</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 12:00-20:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 2 - Metro Revolucion</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 2-Revolución</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>Monumento famoso dedicado a la Revolución mexicana; cuenta con un mirador y un museo.</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/9wUs3F1EDvSfnDAg6" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1187,45 +1246,49 @@
                 </div>
             </div>
         </div>
+
+        <!--Bellas artes-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l4_cuau">
             <div class="popup" id="popup_l4_cuau">
                 <a  href="#mapa" id="cerrar_l4_cuau" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/BellasArtes1.jpg" alt="">
-                        <img src="../../img/BellasArtes2.jpg" alt="">
-                        <img src="../../img/BellasArtes3.jpg" alt="">
-                        <img src="../../img/BellasArtes4.jpg" alt="">
-                        <img src="../../img/BellasArtes5.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/BellasArtes1.jpg" alt="">
+                            <img src="../../img/BellasArtes2.jpg" alt="">
+                            <img src="../../img/BellasArtes3.jpg" alt="">
+                            <img src="../../img/BellasArtes4.jpg" alt="">
+                            <img src="../../img/BellasArtes5.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15049.792326745877!2d-99.16492956138421!3d19.436238625637788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92b75aa014d%3A0x17d810d20da6e8cf!2sPalacio%20de%20Bellas%20Artes!5e0!3m2!1ses-419!2smx!4v1684626464013!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p> 10:00 AM - 17:30 MaD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 10:00-17:30 Martes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 2 - Metro Bellas Artes</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 2-Bellas Artes</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>Fastuoso museo y teatro construido en mármol, que incluye murales de Diego Rivera y otros artistas.</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/wdif68MQDAZwwB8x8" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1251,45 +1314,49 @@
                 </div>
             </div>
         </div>
+
+        <!--angel de la independencia-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l5_cuau">
             <div class="popup" id="popup_l5_cuau">
                 <a  href="#mapa" id="cerrar_l5_cuau" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/Angel1.jpg" alt="">
-                        <img src="../../img/Angel2.jpg" alt="">
-                        <img src="../../img/Angel3.jpeg" alt="">
-                        <img src="../../img/Angel4.jpg" alt="">
-                        <img src="../../img/Angel5.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/Angel1.jpg" alt="">
+                            <img src="../../img/Angel2.jpg" alt="">
+                            <img src="../../img/Angel3.jpeg" alt="">
+                            <img src="../../img/Angel4.jpg" alt="">
+                            <img src="../../img/Angel5.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.3307860711266!2d-99.16888681155405!3d19.427023124965032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1684626724249!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>10:00 AM - 4:30 PM</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 10:00-16:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 1 - Metro Sevilla</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 1-Sevilla</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>Famoso monumento coronado con estatua de la diosa de la Victoria, que conmemora la independencia de México.</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/iba7G32kaPWQt3N17" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1315,6 +1382,9 @@
                 </div>
             </div>
         </div>
+
+        <!--Cuajimalpa de Morelos-->
+
         <div class="overlay overflow-auto mapa" id="overlay_morelos">
             <div class="popup" id="popup_morelos" >
                 <a href="#mapa" id="cerrar_alca_morelos" class="cerrar_alca" >X</a>
@@ -1382,29 +1452,37 @@
                 </section>
             </div>
         </div>
+
+        <!--Parque la mexicana-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l1_morelos">
             <div class="popup" id="popup_l1_morelos">
                 <a  href="#mapa" id="cerrar_l1_morelos" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/apaqrue1.jpg" alt="">
-                        <img src="../../img/apaqrue2.jpg" alt="">
-                        <img src="../../img/apaqrue3.jpg" alt="">
-                        <img src="../../img/apaqrue4.jpg" alt="">
-                        <img src="../../img/apaqrue5.webp" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/apaqrue1.jpg" alt="">
+                            <img src="../../img/apaqrue2.jpg" alt="">
+                            <img src="../../img/apaqrue3.jpg" alt="">
+                            <img src="../../img/apaqrue4.jpg" alt="">
+                            <img src="../../img/apaqrue5.webp" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.2787618691937!2d-99.272166325564!3d19.357078743089907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d200b61f4f9119%3A0xeb1aa1132041ced2!2sParque%20La%20Mexicana!5e0!3m2!1ses-419!2smx!4v1684627395765!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>5:00 AM - 21:30 PM</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 05:00-21:30 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea K - Metro Miguel Angel de Quevedo</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea K-Metro Miguel Ángel de Quevedo</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -1415,12 +1493,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/1Q9hZBsLMUpZ951e8" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1446,29 +1520,37 @@
                 </div>
             </div>
         </div>
+
+        <!--pasaje del shiro-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l2_morelos">
             <div class="popup" id="popup_l2_morelos">
                 <a  href="#mapa" id="cerrar_l2_morelos" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/pasaje1.png" alt="">
-                        <img src="../../img/pasaje2.png" alt="">
-                        <img src="../../img/pasaje3.png" alt="">
-                        <img src="../../img/pasaje4.png" alt="">
-                        <img src="../../img/pasaje5.png" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/pasaje1.png" alt="">
+                            <img src="../../img/pasaje2.png" alt="">
+                            <img src="../../img/pasaje3.png" alt="">
+                            <img src="../../img/pasaje4.png" alt="">
+                            <img src="../../img/pasaje5.png" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.182575497783!2d-99.32582082556614!3d19.27442494571483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdf96def2d742f%3A0x20607fcd4b5387e4!2sPasaje%20del%20Shiro%20-%20Caballete!5e0!3m2!1ses-419!2smx!4v1684628341756!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>24/7</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 24/7 </span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Ninguna Cerca</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos"> Ninguno cercano</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -1479,12 +1561,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/QrSEGe8m3Kq9LjKS8" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1510,45 +1588,49 @@
                 </div>
             </div>
         </div>
+
+        <!--club de golf-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l3_morelos">
             <div class="popup" id="popup_l3_morelos">
                 <a  href="#mapa" id="cerrar_l3_morelos" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/club1.jpg" alt="">
-                        <img src="../../img/club2.jpg" alt="">
-                        <img src="../../img/club3.jpg" alt="">
-                        <img src="../../img/club4.webp" alt="">
-                        <img src="../../img/club5.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/club1.jpg" alt="">
+                            <img src="../../img/club2.jpg" alt="">
+                            <img src="../../img/club3.jpg" alt="">
+                            <img src="../../img/club4.webp" alt="">
+                            <img src="../../img/club5.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15055.249107409738!2d-99.2768655!3d19.3772794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d207298c4eca03%3A0x1fc0b38487611309!2sClub%20de%20Golf%20Bosques!5e0!3m2!1ses-419!2smx!4v1684629071936!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>6:00 PM - 21:00 PM</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 06:00-21:00 Lunes-Domingo </span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Ninguno/p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos"> Ninguno cercano</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>Un lugar comodo para pasar el rato y jugar un poco</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/cjN2HX6rxaqAy2xj9" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1574,46 +1656,48 @@
                 </div>
             </div>
         </div>
+
+        <!--Exconvento--> 
+
         <div class="overlay overflow-auto mapa" id="overlay_l4_morelos">
             <div class="popup" id="popup_l4_morelos">
                 <a  href="#mapa" id="cerrar_l4_morelos" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/covento1.jpg" alt="">
-                        <img src="../../img/covento2.webp" alt="">
-                        <img src="../../img/covento3.jpg" alt="">
-                        <img src="../../img/covento4.jpg" alt="">
-                        <img src="../../img/covento5.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/covento1.jpg" alt="">
+                            <img src="../../img/covento2.webp" alt="">
+                            <img src="../../img/covento3.jpg" alt="">
+                            <img src="../../img/covento4.jpg" alt="">
+                            <img src="../../img/covento5.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15061.170635247416!2d-99.3106408!3d19.3131029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdf8918cda75e7%3A0xb3286389c3835639!2sEx%20Convento%20Desierto%20de%20los%20Leones!5e0!3m2!1ses-419!2smx!4v1684629450059!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p> 10:00 AM - 17:00 PM</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 10:00-17:00 Lunes-Domingo </span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Ninguna</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos"> Ninguno cercano</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
-                                <p>
-                                    Ruinas de un convento de carmelitas del siglo XVII dentro del parque nacional Desierto de los Leones.</p>
-                            </div>
+                                <h5>Descripción</h5>
+                                <p>Ruinas de un convento de carmelitas del siglo XVII dentro del parque nacional Desierto de los Leones.</p>                            </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/hL9qf4gcHRkAyrez6" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1639,45 +1723,49 @@
                 </div>
             </div>
         </div>
+
+        <!--Valle de las monjas-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l5_morelos">
             <div class="popup" id="popup_l5_morelos">
                 <a  href="#mapa" id="cerrar_l5_morelos" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="../../img/monjas1.png" alt="">
-                        <img src="../../img/monjas2.webp" alt="">
-                        <img src="../../img/monjas3.jpg" alt="">
-                        <img src="../../img/monjas4.webp" alt="">
-                        <img src="../../img/monjas5.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="../../img/monjas1.png" alt="">
+                            <img src="../../img/monjas2.webp" alt="">
+                            <img src="../../img/monjas3.jpg" alt="">
+                            <img src="../../img/monjas4.webp" alt="">
+                            <img src="../../img/monjas5.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3764.8762218712345!2d-99.3030073!3d19.3311767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2075ffc7a9999%3A0x7aca9384ee765586!2sParque%20Valle%20de%20Las%20Monjas!5e0!3m2!1ses-419!2smx!4v1684629695881!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>7:00 AM - 17:00 PM</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 07:00-17:00 Lunes-Domingo </span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Ninguno</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos"> Ninguno cercano</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
-                                <p>Lugar acojedor y recomendado para dar un paseo en familia.</p>
+                                <h5>Descripción</h5>
+                                <p>Lugar acojedor y recomendado para dar un paseo en familia</p>  
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/VJNN3Fot1Lok6Giq5" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1703,6 +1791,9 @@
                 </div>
             </div>
         </div>
+
+        <!--Aqui empieza Benito Juárez-->
+
         <div class="overlay overflow-auto mapa" id="overlay_bj">
             <div class="popup" id="popup_bj">
                 <a  href="#" id="cerrar_alca_bj" class="cerrar_alca" >X</a>
@@ -1767,29 +1858,37 @@
                 </section>
             </div>
         </div>
+
+        <!--Parque hundido-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l1_bj">
             <div class="popup" id="popup_l1_bj">
                 <a  href="#" id="cerrar_l1_bj" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2021/07/Parque-Hundido-1.jpg">
-                        <img src="https://media.timeout.com/images/103083637/image.jpg">
-                        <img src="https://mxcity.mx/wp-content/uploads/2016/12/8455915e639c20e67949aa973e142f43.jpg">
-                        <img src="https://ddmbj.mx/sites/default/files/articles/D%C3%ADa%20de%20la%20Visibilidad%20Transg%C3%A9nero%20-%202021-10-20T153153.947.jpg">
-                        <img src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2021/07/Parque-Hundido-2.jpg">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2021/07/Parque-Hundido-1.jpg">
+                            <img src="https://media.timeout.com/images/103083637/image.jpg">
+                            <img src="https://mxcity.mx/wp-content/uploads/2016/12/8455915e639c20e67949aa973e142f43.jpg">
+                            <img src="https://ddmbj.mx/sites/default/files/articles/D%C3%ADa%20de%20la%20Visibilidad%20Transg%C3%A9nero%20-%202021-10-20T153153.947.jpg">
+                            <img src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2021/07/Parque-Hundido-2.jpg">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.7738831077572!2d-99.1801023!3d19.3789411!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff83579e4d6d%3A0xd30ad3537f5ef604!2sParque%20Hundido!5e0!3m2!1ses!2smx!4v1684632391268!5m2!1ses!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>Abierto las 24 horas LaD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 24/7</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metrobus</h5>
-                                <p>Linea 1 - Parque Hundido</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 1 - Parque Hundido</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -1800,12 +1899,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificación Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Dirección</h5>
-                                <a href="https://goo.gl/maps/QQUNjDaq8wTh1Fu56" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1831,30 +1926,37 @@
                 </div>
             </div>
         </div>
+
+        <!--cineteca nacional-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l2_bj">
             <div class="popup" id="popup_l2_bj">
                 <a  href="#" id="cerrar_l2_bj" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/2020-01/historia-cineteca-nacional.jpg">
-                        <img src="https://cdn-3.expansion.mx/dims4/default/981f91f/2147483647/strip/true/crop/1200x680+0+0/resize/1800x1020!/format/webp/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0c%2F25%2F53a8a02f48fc932b7db433a9a6df%2Funnamed-9.jpg">
-                        <img src="https://images.adsttc.com/media/images/5303/9dad/e8e4/4ec6/9a00/0074/large_jpg/2013_10_29_CINETECA_by_Paul_Rivera_05.jpg?1392745867">
-                        <img src="https://cronicadexalapa.com.mx/wp-content/uploads/2021/12/Casi-medio-medio-millon-acudio-a-la-Cineteca-Nacional-en-2021.jpg">
-                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/03/1_Cineteca-Nacional-Alex-Moscosso.jpg">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/2020-01/historia-cineteca-nacional.jpg">
+                            <img src="https://cdn-3.expansion.mx/dims4/default/981f91f/2147483647/strip/true/crop/1200x680+0+0/resize/1800x1020!/format/webp/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0c%2F25%2F53a8a02f48fc932b7db433a9a6df%2Funnamed-9.jpg">
+                            <img src="https://images.adsttc.com/media/images/5303/9dad/e8e4/4ec6/9a00/0074/large_jpg/2013_10_29_CINETECA_by_Paul_Rivera_05.jpg?1392745867">
+                            <img src="https://cronicadexalapa.com.mx/wp-content/uploads/2021/12/Casi-medio-medio-millon-acudio-a-la-Cineteca-Nacional-en-2021.jpg">
+                            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/03/1_Cineteca-Nacional-Alex-Moscosso.jpg">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.200687179424!2d-99.16399899999999!3d19.3604611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc0bdd5331d%3A0x96e188ebb2ad7d82!2sCineteca%20Nacional%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1684633021538!5m2!1ses!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>1:30pm - 9:00pm LaV </p>
-                                <p>11:30am - 9:00pm SyD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 01:30-09:00 Lunes-Viernes <br> 11:30-09:00 Sabádo/Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 3 - Coyoacan</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 3-Coyóacan</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -1865,12 +1967,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificación Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Dirección</h5>
-                                <a href="https://goo.gl/maps/1g59LsEia2iqP9SS8" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1896,29 +1994,37 @@
                 </div>
             </div>
         </div>
+
+        <!--World Trade Center-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l3_bj">
             <div class="popup" id="popup_l3_bj">
                 <a  href="#" id="cerrar_l3_bj" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/RJ7ZX4GDQFDDJNO5NRO4GQSZYY.jpg">
-                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/10/105032761_2787070051514717_7729985200009584494_o-900x1125.jpg">
-                        <img src="https://wtcmexico.mx/wp-content/uploads/2022/01/centro-comercial-home-c.jpg">
-                        <img src="https://acerobsv.com/blog/img/post/wtc.jpg">
-                        <img src="https://cdn.forbes.com.mx/2022/06/WTC-03-819x1024.jpg">  
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/RJ7ZX4GDQFDDJNO5NRO4GQSZYY.jpg">
+                            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/10/105032761_2787070051514717_7729985200009584494_o-900x1125.jpg">
+                            <img src="https://wtcmexico.mx/wp-content/uploads/2022/01/centro-comercial-home-c.jpg">
+                            <img src="https://acerobsv.com/blog/img/post/wtc.jpg">
+                            <img src="https://cdn.forbes.com.mx/2022/06/WTC-03-819x1024.jpg">  
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.433665552845!2d-99.17458789999999!3d19.3936599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff718f4416e1%3A0x6e35698f0852629c!2sWorld%20Trade%20Center%20Ciudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1684633367151!5m2!1ses!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>10:00am - 17:00pm LaV </p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 10:00-17:00 Lunes-Viernes</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metrobus</h5>
-                                <p>Linea 1 - Nápoles</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 3-Coyóacan</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -1929,12 +2035,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificación Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Dirección</h5>
-                                <a href="https://goo.gl/maps/PFeB3e93peh7Wz916" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -1960,28 +2062,37 @@
                 </div>
             </div>
         </div>
+
+        <!--monumental plaza de toros-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l4_bj">
             <div class="popup" id="popup_l4_bj">
                 <a  href="#" id="cerrar_l4_bj" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://imagenes.elpais.com/resizer/YyBPX1isdtA5tdB5Aan9P0eTZbc=/1200x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/3P7P4R3QLVEEZGB466SWZLTWCA.jpg">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/EntrancePlazaTorosDF.JPG">
-                        <img src="https://i.pinimg.com/originals/6e/d6/26/6ed6264df7045500bdc8775d10db4d85.jpg">
-                        <img src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2015/01/26/1331701722832_2/la-monumental-plaza-de-toros-m%C3%A9xico.jpg">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUQc1KMFlBXnlOA5egQuSqY1IVo09da592Q&usqp=CAU">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://imagenes.elpais.com/resizer/YyBPX1isdtA5tdB5Aan9P0eTZbc=/1200x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/3P7P4R3QLVEEZGB466SWZLTWCA.jpg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/EntrancePlazaTorosDF.JPG">
+                            <img src="https://i.pinimg.com/originals/6e/d6/26/6ed6264df7045500bdc8775d10db4d85.jpg">
+                            <img src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2015/01/26/1331701722832_2/la-monumental-plaza-de-toros-m%C3%A9xico.jpg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUQc1KMFlBXnlOA5egQuSqY1IVo09da592Q&usqp=CAU">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.6814913245453!2d-99.1800913!3d19.382939300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff82bcf0f847%3A0x5ffc468a14f08ea1!2sMonumental%20Plaza%20de%20Toros%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1684633953574!5m2!1ses!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-                                <p>Eventos Programados</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> Eventos programados</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metrobus</h5>
-                                <p>Linea 1 - Ciudad de los Deportes</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 1-Ciudad de los deportes</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -1992,12 +2103,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificación Zona</h5>
-                                <p class="color_zona_amarilla">Zona Amarilla. <br>A veces se pueden poner violentos los eventos</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Dirección</h5>
-                                <a href="https://goo.gl/maps/AdES11vXzFcvjXT69" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #dbd400;"></i><span class="color_zona_amarilla textlogitos">Zona amarilla</span>
+                                <p class="color_zona_amarilla">La zona es segura, pero los eventos pueden mostrar violencia</p>
                             </div>
                         </div>
                     </div>
@@ -2023,28 +2130,37 @@
                 </div>
             </div>
         </div>
+
+
+
         <div class="overlay overflow-auto mapa" id="overlay_l5_bj">
             <div class="popup" id="popup_l5_bj">
                 <a  href="#" id="cerrar_l5_bj" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://www.record.com.mx/sites/default/files/styles/amp-discovery-1200x/public/articulos/2021/10/06/diseno_sin_titulo_20.jpg?itok=Ji_2Nh9A">
-                        <img src="https://cdn.maximoavance.com/2018/10/44458596_2108700655816592_6254328056425480192_n.jpg">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8TuMxG8zsbSTbKUAmA-p8pqsCuCWqmi1rw&usqp=CAU">
-                        <img src="https://www.dondeir.com/wp-content/uploads/2016/11/CiudaddelosDeportes.jpg">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sobrevuelos_CDMX_HJ2A6001_%2840386252041%29.jpg/1200px-Sobrevuelos_CDMX_HJ2A6001_%2840386252041%29.jpg">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://www.record.com.mx/sites/default/files/styles/amp-discovery-1200x/public/articulos/2021/10/06/diseno_sin_titulo_20.jpg?itok=Ji_2Nh9A">
+                            <img src="https://cdn.maximoavance.com/2018/10/44458596_2108700655816592_6254328056425480192_n.jpg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8TuMxG8zsbSTbKUAmA-p8pqsCuCWqmi1rw&usqp=CAU">
+                            <img src="https://www.dondeir.com/wp-content/uploads/2016/11/CiudaddelosDeportes.jpg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sobrevuelos_CDMX_HJ2A6001_%2840386252041%29.jpg/1200px-Sobrevuelos_CDMX_HJ2A6001_%2840386252041%29.jpg">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.661553351792!2d-99.1776198!3d19.383802000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff9d679bf5bb%3A0xe9bc25d25e31a524!2sEstadio%20Ciudad%20de%20los%20Deportes!5e0!3m2!1ses!2smx!4v1684634788452!5m2!1ses!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-                                <p>Eventos Programados</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> Eventos programados</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metrobus</h5>
-                                <p>Linea 1 - Ciudad de los Deportes</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 1-Ciudad de los deportes</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -2055,12 +2171,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificación Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Dirección</h5>
-                                <a href="https://goo.gl/maps/Lbhdf89jyhS296YQ8" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -2086,6 +2198,9 @@
                 </div>
             </div>
         </div>
+
+        <!--aqui empieza Xochimilco-->
+
         <div class="overlay overflow-auto mapa" id="overlay_xo">
             <div class="popup" id="popup_xo">
                 <a  href="#" id="cerrar_alca_xo" class="cerrar_alca" >X</a>
@@ -2150,28 +2265,37 @@
                 </section>
             </div>
         </div>
+
+        <!--Isla de las muñecas-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l1_xo">
             <div class="popup" id="popup_l1_xo">
                 <a  href="#" id="cerrar_l1_xo" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/07/isla-munecas-xochimilco.jpg">
-                        <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/04/23112508/isla-muniecas-2.jpg">
-                        <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/04/23112459/isla-muniecas-1.jpg">
-                        <img src="https://www.eluniversal.com.mx/resizer/EJSXhW3rlmYEFSoic1dvKBmQ-7E=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/KM5WYYBEUBH5HF63N4I72MLIEA.jpg">
-                        <img src="https://mxcity.org/wp-content/uploads/2015/02/mu%C3%B1ecas.jpg">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/07/isla-munecas-xochimilco.jpg">
+                            <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/04/23112508/isla-muniecas-2.jpg">
+                            <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/04/23112459/isla-muniecas-1.jpg">
+                            <img src="https://www.eluniversal.com.mx/resizer/EJSXhW3rlmYEFSoic1dvKBmQ-7E=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/KM5WYYBEUBH5HF63N4I72MLIEA.jpg">
+                            <img src="https://mxcity.org/wp-content/uploads/2015/02/mu%C3%B1ecas.jpg">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.9078331958638!2d-99.09689244999998!3d19.29038075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce03d465d90e11%3A0xd3b68638909d159b!2sLa%20Isla%20de%20la%20Munecas!5e0!3m2!1ses-419!2smx!4v1684637286449!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-                                <p>8:00am - 12:00pm</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 08:00-24:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metrobus</h5>
-                                <p>Linea 5 - Las Bombas</p>
+                                <h5>Metrobús cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 5 - Las Bombas</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -2182,12 +2306,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificación Zona</h5>
-                                <p class="color_zona_amarilla">Zona Amarilla. <br>Cuidado</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Dirección</h5>
-                                <a href="https://goo.gl/maps/uWMxgLj1Xn1omTiy9" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #dbd400;"></i><span class="color_zona_amarilla textlogitos">Zona amarilla</span>
+                                <p class="color_zona_amarilla">Los alrededores son peligrosos se recomienda no ir muy lejos</p>
                             </div>
                         </div>
                     </div>
@@ -2213,28 +2333,37 @@
                 </div>
             </div>
         </div>
+
+        <!--Las trajineras-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l2_xo">
             <div class="popup" id="popup_l2_xo">
                 <a  href="#" id="cerrar_l2_xo" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2021/04/trajineras-xochimilco-historia-luis-peagui.jpeg" alt="">
-                        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/AM52TLX5B5FFJBB6ENZMSASL64.jpg" alt="">
-                        <img src="https://www.eluniversal.com.mx/resizer/zTOO5j7gvmvOUvH91LxVbXCZTqE=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/BOHVI47ZSNALHOHSISPSNVDUKI.jpg" alt="">
-                        <img src="https://mvsnoticias.com/u/fotografias/m/2022/10/14/f960x540-501364_575439_0.jpeg" alt="">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiRJd34IgU5m8zk_Q1eihH9Jr76Z94QZhcFA&usqp=CAU" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2021/04/trajineras-xochimilco-historia-luis-peagui.jpeg" alt="">
+                            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/AM52TLX5B5FFJBB6ENZMSASL64.jpg" alt="">
+                            <img src="https://www.eluniversal.com.mx/resizer/zTOO5j7gvmvOUvH91LxVbXCZTqE=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/BOHVI47ZSNALHOHSISPSNVDUKI.jpg" alt="">
+                            <img src="https://mvsnoticias.com/u/fotografias/m/2022/10/14/f960x540-501364_575439_0.jpeg" alt="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiRJd34IgU5m8zk_Q1eihH9Jr76Z94QZhcFA&usqp=CAU" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.8962659309623!2d-99.10227189999999!3d19.286876799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01bda5c43d1b%3A0x36e98ef0097cb2d4!2sTrajineras%20Xochimilco%20-%20Embarcadero%20Cuemanco!5e0!3m2!1ses-419!2smx!4v1684638683943!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-                                <p>8:00am - 21:00pm LaD </p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 08:00-21:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metrobus</h5>
-                                <p>Linea 5 - Cañaverales</p>
+                                <h5>Metrobús cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 5 - Cañaverales</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -2245,12 +2374,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificación Zona</h5>
-                                <p class="color_zona_amarilla">Zona Amarilla. <br>Cuidado</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Dirección</h5>
-                                <a href="https://goo.gl/maps/wcY2uu1AWKzbvwZ47" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #dbd400;"></i><span class="color_zona_amarilla textlogitos">Zona amarilla</span>
+                                <p class="color_zona_amarilla">Los alrededores son peligrosos se recomienda no ir muy lejos</p>
                             </div>
                         </div>
                     </div>
@@ -2276,44 +2401,49 @@
                 </div>
             </div>
         </div>
+
+        <!--Mercado de plantas Xochi-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l3_xo">
             <div class="popup" id="popup_l3_xo">
                 <a  href="#" id="cerrar_l3_xo" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2014/10/Cuemanco-Plant-and-Flower-Market.jpg">
-                        <img src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2019/11/discover-3847-mercado-de-flores-y-plantas-cuemanco.jpg">
-                        <img src="https://mxcity.mx/wp-content/uploads/2019/08/mercado-flores-cuemanco-7.jpg">
-                        <img src="https://media.timeout.com/images/104089197/750/562/image.jpg">
-                        <img src="https://mexicotravelchannel.com.mx/wp-content/uploads/2023/04/imagen-destacada-wordpress-54.png">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2014/10/Cuemanco-Plant-and-Flower-Market.jpg">
+                            <img src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2019/11/discover-3847-mercado-de-flores-y-plantas-cuemanco.jpg">
+                            <img src="https://mxcity.mx/wp-content/uploads/2019/08/mercado-flores-cuemanco-7.jpg">
+                            <img src="https://media.timeout.com/images/104089197/750/562/image.jpg">
+                            <img src="https://mexicotravelchannel.com.mx/wp-content/uploads/2023/04/imagen-destacada-wordpress-54.png">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.6529994328766!2d-99.0983306!3d19.297450599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce022bb274ea3b%3A0xa4df5d1052f81a12!2sMercado%20de%20Plantas%20y%20Flores%20de%20Cuemanco!5e0!3m2!1ses-419!2smx!4v1684639034924!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-                                <p>9:00am - 20:00pm LaD </p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 09:00-20:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metrobus</h5>
-                                <p>Linea 5 - Cañaverales</p>
+                                <h5>Metrobús cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 5 - Cañaverales</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
                                 <h5>Descripción</h5>
-                                <p>Se inauguró en 1993 como parte de un proyecto de rescate ecológico y desde entonces, se ha ganado su lugar como el mercado de flores más grande de Latinoamérica. En este lugar podrás encontrar la belleza de plantas florales como el alcatraz, el alelí de colores, los girasoles, naranjos, pinos, bromeas, así como las propiedades medicinales de la ruda y la árnica.</p>
+                                <p>Se inauguró en 1993 como parte de un proyecto de rescate ecológico y desde entonces, se ha ganado su lugar como el mercado de flores más grande de Latinoamérica. En este lugar podrás encontrar la belleza de plantas florales como el alcatraz, el alelí de colores, los girasoles, nar<anjos, pinos, bromeas, así como las propiedades medicinales de la ruda y la árnica.</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificación Zona</h5>
-                                <p class="color_zona_amarilla">Zona Amarilla. <br>Cuidado.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Dirección</h5>
-                                <a href="https://goo.gl/maps/aRdBeTSBSxzKKLGZ6" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #dbd400;"></i><span class="color_zona_amarilla textlogitos">Zona amarilla</span>
+                                <p class="color_zona_amarilla">Los alrededores son peligrosos se recomienda no ir muy lejos</p>
                             </div>
                         </div>
                     </div>
@@ -2339,28 +2469,37 @@
                 </div>
             </div>
         </div>
+
+        <!--parque ecologico de Xochimilco-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l4_xo">
             <div class="popup" id="popup_l4_xo">
                 <a  href="#" id="cerrar_l4_xo" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://offloadmedia.feverup.com/cdmxsecreta.com/wp-content/uploads/2021/07/23043753/Parque-Ecolo%CC%81gico-de-Xochimilco-1024x683.jpg">
-                        <img src="https://cdn-3.expansion.mx/dims4/default/54fbdd6/2147483647/strip/true/crop/1024x731+0+0/resize/1200x857!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fcb%2F7f%2Fafd461d5412e963c0f7aa064d1bc%2Fwhatsapp-image-2021-07-18-at-13.57.08%20%281%29.jpeg">
-                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2021/07/parque-ecologico-xochimilco-fotos-1024x768-1.jpg">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/GDU_XOCHIMILCO_Jerry_Harpur_4.tif/lossy-page1-1200px-GDU_XOCHIMILCO_Jerry_Harpur_4.tif.jpg">
-                        <img src="https://inmobiliare.com/himalaya/wp-content/uploads/2021/07/Parque-ecologico-xochimilco-alt.jpg">  
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://offloadmedia.feverup.com/cdmxsecreta.com/wp-content/uploads/2021/07/23043753/Parque-Ecolo%CC%81gico-de-Xochimilco-1024x683.jpg">
+                            <img src="https://cdn-3.expansion.mx/dims4/default/54fbdd6/2147483647/strip/true/crop/1024x731+0+0/resize/1200x857!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fcb%2F7f%2Fafd461d5412e963c0f7aa064d1bc%2Fwhatsapp-image-2021-07-18-at-13.57.08%20%281%29.jpeg">
+                            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2021/07/parque-ecologico-xochimilco-fotos-1024x768-1.jpg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/GDU_XOCHIMILCO_Jerry_Harpur_4.tif/lossy-page1-1200px-GDU_XOCHIMILCO_Jerry_Harpur_4.tif.jpg">
+                            <img src="https://inmobiliare.com/himalaya/wp-content/uploads/2021/07/Parque-ecologico-xochimilco-alt.jpg">  
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.655728719108!2d-99.09460899999999!3d19.297332000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce022cf5363057%3A0xe92130a7d4ea5033!2sParque%20Ecol%C3%B3gico%20de%20Xochimilco!5e0!3m2!1ses-419!2smx!4v1684639366321!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-                                <p>6:00am - 18:00pm MaD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 06:00-18:00 Martes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metrobus</h5>
-                                <p>Linea 5 - Cañaverales</p>
+                                <h5>Metrobús cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 5 - Cañaverales</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -2371,12 +2510,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificación Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Dirección</h5>
-                                <a href="https://goo.gl/maps/VmTj4L6VPt2k88Yu7" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -2402,28 +2537,37 @@
                 </div>
             </div>
         </div>
+
+        <!--arqueologico de xochimilco-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l5_xo">
             <div class="popup" id="popup_l5_xo">
                 <a  href="#" id="cerrar_l5_xo" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://mxcity.mx/wp-content/uploads/2016/02/museo-arqueologico-de-xochimilco.jpg">
-                        <img src="https://sic.cultura.gob.mx/imagenes_cache/museo_917_g_71546.png">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Inside_view_of_Museo_Arqueol%C3%B3gico_de_Xochimilco%2C_Ciudad_de_Mexico%2C_Mexico_City_02.JPG/1024px-Inside_view_of_Museo_Arqueol%C3%B3gico_de_Xochimilco%2C_Ciudad_de_Mexico%2C_Mexico_City_02.JPG">
-                        <img src="https://images.myguide-cdn.com/mexicocity/companies/museo-arqueologico-de-xochimilco/large/museo-arqueologico-de-xochimilco-209268.jpg">
-                        <img src="https://www.quehacerenxochimilco.com/wp-content/uploads/2022/11/Museo-arqueologico-de-Xochimilco.webp">  
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://mxcity.mx/wp-content/uploads/2016/02/museo-arqueologico-de-xochimilco.jpg">
+                            <img src="https://sic.cultura.gob.mx/imagenes_cache/museo_917_g_71546.png">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Inside_view_of_Museo_Arqueol%C3%B3gico_de_Xochimilco%2C_Ciudad_de_Mexico%2C_Mexico_City_02.JPG/1024px-Inside_view_of_Museo_Arqueol%C3%B3gico_de_Xochimilco%2C_Ciudad_de_Mexico%2C_Mexico_City_02.JPG">
+                            <img src="https://images.myguide-cdn.com/mexicocity/companies/museo-arqueologico-de-xochimilco/large/museo-arqueologico-de-xochimilco-209268.jpg">
+                            <img src="https://www.quehacerenxochimilco.com/wp-content/uploads/2022/11/Museo-arqueologico-de-Xochimilco.webp">  
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.655728719108!2d-99.09460899999999!3d19.297332000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce022cf5363057%3A0xe92130a7d4ea5033!2sParque%20Ecol%C3%B3gico%20de%20Xochimilco!5e0!3m2!1ses-419!2smx!4v1684639366321!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-                                <p>10:00am - 17:00pm MaD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 10:00-17:00 Martes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metrobus</h5>
-                                <p>Linea 5 - Circuito Cuemanco</p>
+                                <h5>Metrobús cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 5 - Cañaverales</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -2434,12 +2578,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificación Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Dirección</h5>
-                                <a href="https://goo.gl/maps/bzauMeeHkwfiouxD6" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -2465,6 +2605,9 @@
                 </div>
             </div>
         </div>
+
+        <!--aqui empieza azaca-->
+
         <div class="overlay overflow-auto mapa" id="overlay_azca">
             <div class="popup" id="popup_azca">
                 <a  href="#" id="cerrar_alca_azca" class="cerrar_alca" >X</a>
@@ -2532,43 +2675,44 @@
         <div class="overlay overflow-auto mapa" id="overlay_l1_azca">
             <div class="popup" id="popup_l1_azca">
                 <a  href="#" id="cerrar_l1_azca" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://cdn-3.expansion.mx/2b/2bc82c27ab89fff91c8f01c514f816fc/tezozmoc20180817124745.jpg" alt="">
-                        <img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2021/03/parque-tezozomoc_ok1_amg-scaled.jpg" alt="">
-                        <img src="https://ntcd.mx/uploads/2018/04/17/delegaciones-parque-tezozomoc--una-alternativa-para-disfrutar-en-familia201817423.jpg" alt="">
-                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2021/03/95AA511A-522A-443B-A054-3E5EF3CDD177-900x506.jpeg" alt="">
-                        <img src="https://media.timeout.com/images/103724856/750/422/image.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://cdn-3.expansion.mx/2b/2bc82c27ab89fff91c8f01c514f816fc/tezozmoc20180817124745.jpg" alt="">
+                            <img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2021/03/parque-tezozomoc_ok1_amg-scaled.jpg" alt="">
+                            <img src="https://ntcd.mx/uploads/2018/04/17/delegaciones-parque-tezozomoc--una-alternativa-para-disfrutar-en-familia201817423.jpg" alt="">
+                            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2021/03/95AA511A-522A-443B-A054-3E5EF3CDD177-900x506.jpeg" alt="">
+                            <img src="https://media.timeout.com/images/103724856/750/422/image.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.9714394389002!2d-99.21332892556032!3d19.499864538530804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2029571addfd5%3A0xe7c319f6271591e6!2sParque%20Tezoz%C3%B3moc!5e0!3m2!1ses-419!2smx!4v1684640767531!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>06:00-18:00 Lu-Do</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 06:00-18:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 6 - Metro Tezómoc</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 6 - Metro Tezómoc</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>El Parque Tezozómoc, nombrado así en honor a un gobernador mexica nacido en 1427,
                                     edificado sobre terrenos que pertenecieron a la misma hacienda del Rosario.</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Ambiente tranquilo</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/Jq9E2jmuvPYKB1Y29" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -2594,29 +2738,37 @@
                 </div>
             </div>
         </div>
+
+        <!--Casa de cultura--> 
+
         <div class="overlay overflow-auto mapa" id="overlay_l2_azca">
             <div class="popup" id="popup_l2_azca">
                 <a  href="#" id="cerrar_l2_azca" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://live.staticflickr.com/65535/51309751026_e402e9a7eb_b.jpg" alt="">
-                        <img src="https://pbs.twimg.com/media/DaXfSv1VQAAx3qb.jpg" alt="">
-                        <img src="https://ntcd.mx/uploads/2018/03/16/delegaciones-mantenimiento-a-casa-de-cultura-de-azcapotzalco201816345.jpg" alt="">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/MX_TV_CASA_DE_LA_CULTURA_AZCAPOTZALCO_-_15.jpg" alt="">
-                        <img src="https://jorgalbrtotranseunte.files.wordpress.com/2011/02/dsc00418.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://live.staticflickr.com/65535/51309751026_e402e9a7eb_b.jpg" alt="">
+                            <img src="https://pbs.twimg.com/media/DaXfSv1VQAAx3qb.jpg" alt="">
+                            <img src="https://ntcd.mx/uploads/2018/03/16/delegaciones-mantenimiento-a-casa-de-cultura-de-azcapotzalco201816345.jpg" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/MX_TV_CASA_DE_LA_CULTURA_AZCAPOTZALCO_-_15.jpg" alt="">
+                            <img src="https://jorgalbrtotranseunte.files.wordpress.com/2011/02/dsc00418.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30091.6919702986!2d-99.2164919!3d19.478771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f87e59db6af9%3A0xb845b90c9af00b18!2sCasa%20de%20la%20Cultura%20Azcapotzalco!5e0!3m2!1ses-419!2smx!4v1684641218160!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>10:00-20:00 Lu-Do</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 10:00-20:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 7 - Metro Camarones</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 7 - Metro Camarones</span>                        
                             </div>
                         </div>
                         <div class="line2">
@@ -2627,12 +2779,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/h2PGTPcAgFHvvVHD8" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -2658,45 +2806,49 @@
                 </div>
             </div>
         </div>
+
+        <!--arena CDMX-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l3_azca">
             <div class="popup" id="popup_l3_azca">
                 <a  href="#" id="cerrar_l3_azca" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://cdn-3.expansion.mx/dims4/default/9138186/2147483647/strip/true/crop/659x346+0+58/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0e%2F0e5c7166ac50a1a153913719845783d6%2Farenaciudaddemxico20151021135232.jpg" alt="">
-                        <img src="https://i0.wp.com/criteriohidalgo.com/wp-content/uploads/2021/06/Arena-Mexico.jpg?fit=936%2C566&ssl=1" alt="">
-                        <img src="https://media.timeout.com/images/103763062/image.jpg" alt="">
-                        <img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2021/03/arena-cdmx-nba-700x460.jpg" alt="">
-                        <img src="https://nans19.files.wordpress.com/2009/03/arena6.png" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://cdn-3.expansion.mx/dims4/default/9138186/2147483647/strip/true/crop/659x346+0+58/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0e%2F0e5c7166ac50a1a153913719845783d6%2Farenaciudaddemxico20151021135232.jpg" alt="">
+                            <img src="https://i0.wp.com/criteriohidalgo.com/wp-content/uploads/2021/06/Arena-Mexico.jpg?fit=936%2C566&ssl=1" alt="">
+                            <img src="https://media.timeout.com/images/103763062/image.jpg" alt="">
+                            <img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2021/03/arena-cdmx-nba-700x460.jpg" alt="">
+                            <img src="https://nans19.files.wordpress.com/2009/03/arena6.png" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30091.6919702986!2d-99.2164919!3d19.478771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f87e59db6af9%3A0xb845b90c9af00b18!2sCasa%20de%20la%20Cultura%20Azcapotzalco!5e0!3m2!1ses-419!2smx!4v1684641218160!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>Horarios variables</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> Eventos programados</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 6 - Metro Ferrería</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 6 - Metro Ferrería</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>La Arena Ciudad de México es un recinto de espectáculos tales como conciertos, eventos deportivos, eventos privados y culturales, convenciones, etc.</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/mtkctoGBJoVguVsE9" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -2722,45 +2874,47 @@
                 </div>
             </div>
         </div>
+
         <div class="overlay overflow-auto mapa" id="overlay_l4_azca">
             <div class="popup" id="popup_l4_azca">
                 <a  href="#" id="cerrar_l4_azca" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://cdn2.excelsior.com.mx/media/styles/imagen_portada_grande/public/pictures/2015/01/14/1130257.jpg" alt="">
-                        <img src="https://img.chilango.com/2014/03/educacion-ambiental.jpg" alt="">
-                        <img src="https://mxcity.org/wp-content/uploads/2018/11/6-1.jpg" alt="">
-                        <img src="https://fastly.4sqi.net/img/general/600x600/2433262_bZ4H8ltTS0ZNDoPVN-Sin1no6StDB6iWz7qVtW5dJxk.jpg" alt="">
-                        <img src="https://mxcity.mx/wp-content/uploads/2020/02/recorrido-azcapotzalco-3-1024x576.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://cdn2.excelsior.com.mx/media/styles/imagen_portada_grande/public/pictures/2015/01/14/1130257.jpg" alt="">
+                            <img src="https://img.chilango.com/2014/03/educacion-ambiental.jpg" alt="">
+                            <img src="https://mxcity.org/wp-content/uploads/2018/11/6-1.jpg" alt="">
+                            <img src="https://fastly.4sqi.net/img/general/600x600/2433262_bZ4H8ltTS0ZNDoPVN-Sin1no6StDB6iWz7qVtW5dJxk.jpg" alt="">
+                            <img src="https://mxcity.mx/wp-content/uploads/2020/02/recorrido-azcapotzalco-3-1024x576.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.243593700585!2d-99.182204!3d19.488152900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f96afaf59f55%3A0xb9d7e9f175147562!2sCentro%20Verde%20Azcapotzalco!5e0!3m2!1ses-419!2smx!4v1684642018866!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>09:00-17:00 Lu-Vi</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 09:00-17:00 Lunes-Viernes</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 6 - Metro Azcapotzalco</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 6 - Metro Azcapotzalco</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>El Centro Verde Azcapotzalco es el fascinante espacio que brinda conocimientos para fomentar el quehacer ciudadano en la preservación del medioambiente.</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/u1ku4wfBaLgZFgbk6" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -2786,45 +2940,49 @@
                 </div>
             </div>
         </div>
+
+        <!--Alameda Norte-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l5_azca">
             <div class="popup" id="popup_l5_azca">
                 <a  href="#" id="cerrar_l5_azca" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://amqueretaro.com/wp-content/uploads/2020/05/Construyen-parque-tem%C3%A1tico-militar-dentro-de-la-Alameda-Norte.jpg" alt="">
-                        <img src="https://photos.wikimapia.org/p/00/01/73/42/49_big.jpg" alt="">
-                        <img src="https://www.capitalqueretaro.com.mx/wp-content/uploads/2018/01/Alameda.jpg" alt="">
-                        <img src="https://pr1.nicelocal.com.mx/VueN3F-bzoFrzDxRq988Ow/587x440,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2bIrCwG1uzeqSOgj7HFHC25vCSoAA74Gu1JfclnFlqydercllCQMSMbm41hdaNZy9A" alt="">
-                        <img src="https://3.bp.blogspot.com/-hkLh4iLysWw/VLR-BvEWL9I/AAAAAAAAAPQ/JFjApkmTDiY/s1600/Alameda%2BNorte%2B12ene2015%2B01.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://amqueretaro.com/wp-content/uploads/2020/05/Construyen-parque-tem%C3%A1tico-militar-dentro-de-la-Alameda-Norte.jpg" alt="">
+                            <img src="https://photos.wikimapia.org/p/00/01/73/42/49_big.jpg" alt="">
+                            <img src="https://www.capitalqueretaro.com.mx/wp-content/uploads/2018/01/Alameda.jpg" alt="">
+                            <img src="https://pr1.nicelocal.com.mx/VueN3F-bzoFrzDxRq988Ow/587x440,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2bIrCwG1uzeqSOgj7HFHC25vCSoAA74Gu1JfclnFlqydercllCQMSMbm41hdaNZy9A" alt="">
+                            <img src="https://3.bp.blogspot.com/-hkLh4iLysWw/VLR-BvEWL9I/AAAAAAAAAPQ/JFjApkmTDiY/s1600/Alameda%2BNorte%2B12ene2015%2B01.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.9711721254616!2d-99.18109962556035!3d19.499876038530385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f86d638fe889%3A0x4e48c6082d7389d9!2sAlameda%20Norte!5e0!3m2!1ses-419!2smx!4v1684642383888!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>06:00-18:00 Lu-Do</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 06:00-18:00 Lunes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 6 - Metro Azcapotzalco</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 6 - Metro Azcapotzalco</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>Alameda Norte es un parque recreativo que ofrece amplios espacios para la realizacion de actividades.</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/Jy5nBgxCGwgK8kbH8" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -2850,6 +3008,8 @@
                 </div>
             </div>
         </div>
+
+        <!--Aqui empieza Izta-->
 
         <div class="overlay overflow-auto mapa" id="overlay_izta">
             <div class="popup" id="popup_izta">
@@ -2915,109 +3075,117 @@
                 </section>
             </div>
         </div>
+
+        <!--Estadio Alfredo--> 
+
         <div class="overlay overflow-auto mapa" id="overlay_l1_izta">
             <div class="popup" id="popup_l1_izta">
                 <a  href="#" id="cerrar_l1_izta" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://cdn.septimaentrada.com/uploads/media/2021/05/11/estadio-alfredo-harp-helu-recibir.jpg" alt="">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Estadio_Alfredo_Harp_Hel%C3%BA_%282019%29.jpg" alt="">
-                        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/NFXEGLLFYBDOXNHIJ3CBU3CXK4.jpg" alt="">
-                        <img src="https://images.adsttc.com/media/images/5d15/a93a/284d/d168/6000/0094/medium_jpg/FGP_ATELIER_-_DIABLOS_-_4.jpg?1561700579" alt="">
-                        <img src="https://cdn.septimaentrada.com/uploads/media/2021/07/05/el-estadio-alfredo-harp-el.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://cdn.septimaentrada.com/uploads/media/2021/05/11/estadio-alfredo-harp-helu-recibir.jpg" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Estadio_Alfredo_Harp_Hel%C3%BA_%282019%29.jpg" alt="">
+                            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/NFXEGLLFYBDOXNHIJ3CBU3CXK4.jpg" alt="">
+                            <img src="https://images.adsttc.com/media/images/5d15/a93a/284d/d168/6000/0094/medium_jpg/FGP_ATELIER_-_DIABLOS_-_4.jpg?1561700579" alt="">
+                            <img src="https://cdn.septimaentrada.com/uploads/media/2021/07/05/el-estadio-alfredo-harp-el.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1876434746337!2d-99.08836002556276!3d19.40429684158567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc3969a7798b%3A0xa3bf727fadebdcc7!2sEstadio%20Alfredo%20Harp%20Hel%C3%BA!5e0!3m2!1ses-419!2smx!4v1684642881200!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>Horarios variables</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> Eventos programados</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 9 - Metro Puebla</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 9 - Puebla</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>El Estadio Alfredo Harp Helú AHH es el estadio de béisbol casa de los Diablos Rojos del México en la Ciudad de México</p>
                             </div>
-                            <div class="line2">
-                                <div class="zona_lugares">
-                                    <h5>Clasificacion Zona</h5>
-                                    <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                                </div>
-                                <div class="direc_lugares">
-                                    <h5>Direccion</h5>
-                                    <a href="https://goo.gl/maps/YzghdUzYweUvJc4aA" alt="" target="_blank">Miralo</a>
-                                </div>
+                        </div>
+                        <div class="line2">
+                            <div class="zona_lugares">
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
-                        <div class="coment_lugares">
-                            <section id="app">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="comment">
-                                                <p v-for="intems in item" v-text="items"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                            <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
+                    </div>
+                    <div class="coment_lugares">
+                        <section id="app">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="comment">
+                                            <p v-for="intems in item" v-text="items"></p>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
-                        </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
+                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--foro sol-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l2_izta">
             <div class="popup" id="popup_l2_izta">
                 <a  href="#" id="cerrar_l2_izta" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://sic.cultura.gob.mx/images/39546" alt="">
-                        <img src="https://televisa.brightspotcdn.com/dims4/default/6226f79/2147483647/strip/true/crop/1200x675+0+63/resize/1200x675!/quality/90/?url=https%3A%2F%2Ftelevisa-brightspot.s3.amazonaws.com%2Fapi%2F02%2F90%2F35f5a776427a81e952429c2f4283%2Fforo-sol-en-la-ciudad-de-mexico.jpg" alt="">
-                        <img src="https://parquesalegres.org/wp-content/uploads/2021/06/Bicentenario-parque.jpeg" alt="">
-                        <img src="https://www.publimetro.com.mx/resizer/2Tbj3y-iIgqPRn_lot1bktBaTYM=/arc-photo-metroworldnews/arc2-prod/public/ONFLL7NM6RERJN654VB3PIFNYY.jpg" alt="">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Formula_1_2016_-i---i-_%2830658546836%29.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://sic.cultura.gob.mx/images/39546" alt="">
+                            <img src="https://televisa.brightspotcdn.com/dims4/default/6226f79/2147483647/strip/true/crop/1200x675+0+63/resize/1200x675!/quality/90/?url=https%3A%2F%2Ftelevisa-brightspot.s3.amazonaws.com%2Fapi%2F02%2F90%2F35f5a776427a81e952429c2f4283%2Fforo-sol-en-la-ciudad-de-mexico.jpg" alt="">
+                            <img src="https://parquesalegres.org/wp-content/uploads/2021/06/Bicentenario-parque.jpeg" alt="">
+                            <img src="https://www.publimetro.com.mx/resizer/2Tbj3y-iIgqPRn_lot1bktBaTYM=/arc-photo-metroworldnews/arc2-prod/public/ONFLL7NM6RERJN654VB3PIFNYY.jpg" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Formula_1_2016_-i---i-_%2830658546836%29.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d120421.40835323342!2d-99.2398167!3d19.4051022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc241cd2cc61%3A0xd994597d3d690170!2sForo%20Sol!5e0!3m2!1ses-419!2smx!4v1684650611611!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>Horario variable</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> Eventos programados</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 9 - Metro Ciudad Deportiva</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 9 - Ciudad Deportiva</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>El Foro Sol es un estadio para eventos masivos de la Ciudad de México. Está localizado dentro de la Ciudad Deportiva Magdalena Mixhuca​</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/whf6dMPw2isLBthT8" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -3043,45 +3211,49 @@
                 </div>
             </div>
         </div>
+
+        <!--Alameda Central-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l3_izta">
             <div class="popup" id="popup_l3_izta">
                 <a  href="#" id="cerrar_l3_izta" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/168000/168289-Alameda-Central.jpg" alt="">
-                        <img src="https://ad010cdnd.archdaily.net/wp-content/uploads/2012/11/1354136491_a8hagdocaaetbfc-530x397.jpg" alt="">
-                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/07/11-AxelAlvarado_AlamedaCentral.jpg" alt="">
-                        <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res40/168000/168285-Alameda-Central.jpg" alt="">
-                        <img src="https://media.timeout.com/images/103790812/image.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/168000/168289-Alameda-Central.jpg" alt="">
+                            <img src="https://ad010cdnd.archdaily.net/wp-content/uploads/2012/11/1354136491_a8hagdocaaetbfc-530x397.jpg" alt="">
+                            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/07/11-AxelAlvarado_AlamedaCentral.jpg" alt="">
+                            <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res40/168000/168285-Alameda-Central.jpg" alt="">
+                            <img src="https://media.timeout.com/images/103790812/image.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.455061858558!2d-99.14611718509323!3d19.435937386882408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92af577b44b%3A0xdb290ed58ba64e40!2sAlameda%20Central!5e0!3m2!1ses-419!2smx!4v1684650964092!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p> Abierto 24H </p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> 24/7</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 2 - Metro Bellas Artes</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 2 - Bellas Artes</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>La Alameda Central es un parque público del Centro Histórico de la Ciudad de México y por su antigüedad, la cual data del año 1592, se clasifica como el jardín público más antiguo de México y de América.​</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/xxApUDgugHqrdQ587" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -3107,45 +3279,49 @@
                 </div>
             </div>
         </div>
+
+        <!--Autodromo Hermanos Rodriguez-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l4_izta">
             <div class="popup" id="popup_l4_izta">
                 <a  href="#" id="cerrar_l4_izta" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://imagenes.elpais.com/resizer/tCCLA76ygmeIzhrvcenLH_dbW7U=/1200x0/filters:focal(1635x1045:1645x1055)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/V7OWAE4OIFFCJHI65UR5XTDBKI.jpg" alt="">
-                        <img src="https://noticias.imer.mx/wp-content/uploads/2021/11/660581c5-c79d-42fb-86e9-097cc04da667.jpg" alt="">
-                        <img src="https://cdn.latinus.us/wp-content/uploads/2021/08/28083016/E6ChxNgVcAMMCiE-e1630157471646-1024x576.jpeg" alt="">
-                        <img src="https://www.sonica.mx/u/fotografias/m/2022/5/3/f1280x720-23209_154884_5050.jpeg" alt="">
-                        <img src="https://img.redbull.com/images/c_crop,w_4432,h_3324,x_1452,y_0,f_auto,q_auto/c_scale,w_1290/redbullcom/2022/10/30/cfucc1wgqak991iekdmm/el-punto-mas-emblematico-del-estadio" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://imagenes.elpais.com/resizer/tCCLA76ygmeIzhrvcenLH_dbW7U=/1200x0/filters:focal(1635x1045:1645x1055)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/V7OWAE4OIFFCJHI65UR5XTDBKI.jpg" alt="">
+                            <img src="https://noticias.imer.mx/wp-content/uploads/2021/11/660581c5-c79d-42fb-86e9-097cc04da667.jpg" alt="">
+                            <img src="https://cdn.latinus.us/wp-content/uploads/2021/08/28083016/E6ChxNgVcAMMCiE-e1630157471646-1024x576.jpeg" alt="">
+                            <img src="https://www.sonica.mx/u/fotografias/m/2022/5/3/f1280x720-23209_154884_5050.jpeg" alt="">
+                            <img src="https://img.redbull.com/images/c_crop,w_4432,h_3324,x_1452,y_0,f_auto,q_auto/c_scale,w_1290/redbullcom/2022/10/30/cfucc1wgqak991iekdmm/el-punto-mas-emblematico-del-estadio" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7526.245214165719!2d-99.0905938!3d19.4071078!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc2157a79377%3A0x33ff6581b240a2dd!2sAut%C3%B3dromo%20Hermanos%20Rodr%C3%ADguez!5e0!3m2!1ses-419!2smx!4v1684651711067!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>Horarios variables</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> Eventos programados</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 7 - Metro Ciudad Deportiva</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 7 - Ciudad Deportiva</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>El Autódromo Hermanos Rodríguez es un autódromo ubicado en el macro complejo deportivo Ciudad Deportiva Magdalena Mixhuca.​</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/WSXzmDZyMwH6kcT57" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -3171,45 +3347,50 @@
                 </div>
             </div>
         </div>
+
+        <!--Palacio de los deportes-->
+
         <div class="overlay overflow-auto mapa" id="overlay_l5_izta">
             <div class="popup" id="popup_l5_izta">
                 <a  href="#" id="cerrar_l5_izta" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://palaciodelosdeportes.mx/wp-content/uploads/2019/08/palaciodelosdeportescocacola.jpg" alt="">
-                        <img src="https://mexicoenlared.tv/wp-content/uploads/2022/09/4-600x336.jpg" alt="">
-                        <img src="https://palaciodelosdeportes.mx/wp-content/uploads/2019/08/Palacio-de-los-Deportes-Banner-Home.jpg" alt="">
-                        <img src="https://www.sonica.mx/u/fotografias/m/2022/8/17/f608x342-26465_56188_0.jpg" alt="">
-                        <img src="https://www.eltiempo.com/uploads/2019/01/31/5c538bdfaef9b.jpeg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://palaciodelosdeportes.mx/wp-content/uploads/2019/08/palaciodelosdeportescocacola.jpg" alt="">
+                            <img src="https://mexicoenlared.tv/wp-content/uploads/2022/09/4-600x336.jpg" alt="">
+                            <img src="https://palaciodelosdeportes.mx/wp-content/uploads/2019/08/Palacio-de-los-Deportes-Banner-Home.jpg" alt="">
+                            <img src="https://www.sonica.mx/u/fotografias/m/2022/8/17/f608x342-26465_56188_0.jpg" alt="">
+                            <img src="https://www.eltiempo.com/uploads/2019/01/31/5c538bdfaef9b.jpeg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7526.245214165719!2d-99.0905938!3d19.4071078!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc2157a79377%3A0x33ff6581b240a2dd!2sAut%C3%B3dromo%20Hermanos%20Rodr%C3%ADguez!5e0!3m2!1ses-419!2smx!4v1684651711067!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
                 </div>
-                <div class="line1">
+                <div class="line1"> 
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>Harario variable</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos"> Eventos programados</span>
                             </div>
                             <div class="metro_lugares">
-                                <h5>Estaciones de Metro</h5>
-                                <p>Linea 2 - Metro Velodromo</p>
+                                <h5>Metros cercanos</h5>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">Linea 2 - Velodromo</span>                        
                             </div>
                         </div>
                         <div class="line2">
                             <div class="desc_lugares">
-                                <h5>Descripcion</h5>
+                                <h5>Descripción</h5>
                                 <p>El Palacio de los Deportes, uno de los estadios más queridos y concurridos de la ciudad, acoge conciertos, ferias y exposiciones, además de los numerosos deportes que le dan nombre.​</p>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui, bueno aqui lo dudo.</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/DrgQeYVbmYuHCGSM6" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y sus alrededores son seguros</p>
                             </div>
                         </div>
                     </div>
@@ -3235,11 +3416,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
         <script src="../javascript/popup.js"></script>
     </body>
 </html>

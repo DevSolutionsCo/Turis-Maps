@@ -245,6 +245,10 @@ font-size: x-large !important;
     color: rgb(28, 121, 59);
     font-weight: bolder;
 }
+.color_zona_amarilla{
+    color: rgb(219, 212, 0);
+    font-weight: bolder;
+}
 
 .direc_lugares{
     padding-top: 0px;
