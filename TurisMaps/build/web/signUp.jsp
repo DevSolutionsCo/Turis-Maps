@@ -11,33 +11,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/signStyles.css">
+    <link rel="stylesheet" href="css/signStyles.css">
     <title>Sign Up</title>
 </head>
 <body>
-    <div  class="signUp-box">
-        <h2>Creacion de la cuenta</h2>
-        <form id="signUp">
+     <div class="signUp-box">
+        <h2 align="center">Creacion de la cuenta</h2>
+        <form id="signUp" action="registro.jsp">
+    <div class="wrap"><div class="kike">
             <div class="user-box">
-                <input type="email" name="correo" class="inputs" id="correo">
+                <input type="text" name="nombre_user" class="inputs" id="nombre_user" value="${param.nombre_user}">
+                <label class="labels">Nombre de Usuario</label>
+            <div class="user-box">
+                <input type="email" name="correo" class="inputs" id="correo" value="${param.correo}">
                 <label class="labels">Correo</label>
-            </div>
+            </div></div>
             <div class="user-box">
-                <input type="text" class="inputs" name="nomb" id="nombre">
+                <input type="text" class="inputs" name="nombre" id="nombre" value="${param.nombre}">
                 <label class="labels">Nombre</label>
             </div>
             <div class="user-box">
-                <input class="inputs" type="text" name="apelli" id="apellidos">
-                <label class="labels">Apellidos</label>
-            </div>
+                <input class="inputs" type="text" name="apellido_pat" id="apellido_pat" value="${param.apellido_pat}">
+                <label class="labels">Apellido paterno</label>
             <div class="user-box">
-                <input class="inputs-date" type="date" name="nac" id="fecha_nac" value="2023-01-01" min="1922-01-01" max="2008-12-31">
+                <input class="inputs" type="text" name="apellido_mat" id="apellido_mat" value="${param.apellido_mat}">
+                <label class="labels">Apellido materno</label>
+            </div></div></div>
+
+    <div class="kike">
+            <div class="user-box">
+                <input class="inputs-date" type="date" name="fecha_nac" id="fecha_nac" value="${param.fecha_nac}" min="1922-01-01" max="2008-12-31">
                 <label class="labels-date">Fecha de Nacimiento</label>
             </div>
             <div class="user-box">
                 <label class="labels-pais">Pais de Procedencia</label>
-                <select class="selects" type="text" name="pais" id="pais">
-                    <option class="selects" selected>Elige tu Pais</option>
+                <select class="selects" type="text" name="lugar_proc" id="lugar_proc" >
+                    <option class="selects" selected="">Elige tu Pais</option>
                     <option class="inputs" value="Afganistán">Afganistán</option>
                     <option class="inputs" value="Albania">Albania</option>
                     <option class="inputs" value="Alemania">Alemania</option>
@@ -236,9 +245,9 @@
             </div>
             <div class="user-box">
                 <label class="labels-gen">Genero</label>
-                <BR>
-                <select type="text" class="selects" name="gene" id="genero">
-                    <option class="selects" selected>Elige tu Genero</option>
+                <br>
+                <select type="text" class="selects" name="genero" id="genero" >
+                    <option class="selects" selected="">Elige tu Genero</option>
                     <option class="inputs" value="Masculino">Masculino</option>
                     <option class="inputs" value="Femenino">Femenino</option>
                     <option class="inputs" value="NB">NB</option>
@@ -246,21 +255,31 @@
                 
             </div>
             <div class="user-box">
-                <input type="password" name="passw" class="inputs" id="contraseña">
+                <input type="password" name="contraseña" class="inputs" id="contraseña" value="${param.contraseña}">
                 <label class="labels">Contraseña</label>
             </div>
-            <p class="warnings" id="warnings"></p>
+                </div>
+        </div>
+            <p class="warnings" id="warnings"><br></p>
+            <script src="secure/javascript/signUp.js"></script>
+            <%
+
+            
+            
+            %>
             <div class="btn-iniciar">
-                <a id="crear" type="submit">
+                
+                <input id="accion" type="hidden" value="Guardar" name="accion">
+                <input id="action" type="submit" value="Crear Cuenta" name="action">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    Crear Cuenta
-                </a>
+                    
+                    
             </div>
         </form>
     </div>
-    <script src="signUp.js"></script>
+                
 </body>
 </html>
