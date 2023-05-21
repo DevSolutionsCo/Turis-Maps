@@ -16,7 +16,7 @@
 
         <script src="https://kit.fontawesome.com/83ffb1b5fc.js" crossorigin="anonymous"></script>
 
-
+        <link href="../../css/comentStyle.css" rel="stylesheet" type="text/css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <title>Turismaps</title>
@@ -271,25 +271,26 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -340,23 +341,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -408,23 +407,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -476,23 +473,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -544,23 +539,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -679,24 +672,22 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
-                    </div>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
+                    </div>                
                 </div>
             </div>
         </div>
@@ -747,23 +738,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -815,23 +804,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -883,23 +870,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -951,23 +936,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1089,23 +1072,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1157,23 +1138,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1225,23 +1204,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1293,23 +1270,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1361,23 +1336,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1499,23 +1472,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1567,23 +1538,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1635,23 +1604,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1702,23 +1669,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1770,23 +1735,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1905,23 +1868,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -1973,23 +1934,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2041,23 +2000,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2109,23 +2066,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2177,23 +2132,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2312,23 +2265,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2380,23 +2331,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2448,23 +2397,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2516,23 +2463,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2584,23 +2529,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2717,23 +2660,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2785,23 +2726,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2853,24 +2792,22 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
-                    </div>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
+                    </div>                
                 </div>
             </div>
         </div>
@@ -2919,23 +2856,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -2987,23 +2922,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -3122,23 +3055,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -3190,23 +3121,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -3258,23 +3187,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -3326,23 +3253,21 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
@@ -3395,27 +3320,26 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                        <section id="app">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="comment">
-                                            <p v-for="intems in item" v-text="items"></p>
-                                        </div>
-                                    </div>
+                        <div class="contenedor"> 
+                            <section class="contenedor-agg-com">
+                                <div class="imagen-usuario">
+                                    <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <textarea type="text" class="input" placeholder="Agrega un comentario" v-model="newItem" @servicios.web="addItem()"></textarea>
-                                        <button v-on:click="addItem()" class="primaryContained float-right" type="Enviar">Añadir Comentarios</button>
-                                    </div>
+                                <div class="input-com" contenteditable="true">
+                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                           placeholder="Nuevo comentario" maxlength="100" />
                                 </div>
-                            </div>
-                        </section>
+                                <div class="btn-agg">
+                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
+                                </div>   
+                            </section>
+                        </div>
+                        <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
                     </div>
                 </div>
             </div>
         </div>
         <script src="../javascript/popup.js"></script>
+        <script src="../javascript/comentarios.js"></script>
     </body>
 </html>
