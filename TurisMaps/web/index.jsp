@@ -65,19 +65,19 @@
                                     <%
                                        int valor = 0;
                                         String signUp = (String) session.getAttribute("signUp");
+
                                         if (signUp != null) {
-                                            if (signUp.equals("crearCuenta")) {
+                                            if ("crearCuenta".equals(signUp)) {
                                                 valor = 1;
-                                            }else 
-                                                if (signUp.equals("inicioSesion")) {
-                                            
+                                            }else
+                                                if("sesionCerrada".equals(signUp)){
+                                                   valor=0;
                                             }
-                                            session.removeAttribute("accionRealizada");
-                                        } else {
+                                        }else{
                                             valor = 0;
                                         }
                                         
-                                        String nombre_user = request.getParameter("nombre_user");
+                                        String nombre_user = (String) session.getAttribute("nombre_user");
                                         String botonPresionado = request.getParameter("botonPresionado");
                                     if (botonPresionado != null && botonPresionado.equals("Iniciar Sesion")) 
                                     {
@@ -86,21 +86,44 @@
                                     <button class="btn btn-outline-dark"  type="button" id="borderboton" data-bs-toggle="dropdown" ><%=nombre_user%></button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="secure/inicio/editarperfil.jsp">Editar Perfil</a></li>
-                                         <li><a class="dropdown-item" href="">Cerrar sesión</a></li>
+                                         <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
+                                         <script>
+                                            function cerrarSesion() {
+                                              var xhr = new XMLHttpRequest();
+                                              xhr.open("GET", "cerrarSesion.jsp?signUp=crearCuenta", true);
+                                              xhr.onreadystatechange = function () {
+                                                if (xhr.readyState === 4 && xhr.status === 200) {
+                                                  window.location.href = "index.jsp";
+                                                }
+                                              };
+                                              xhr.send();
+                                            }
+                                          </script>
+                                         <%
+                                         %>
                                     </ul>   
                                         <%
                                     }else
                                         if (nombre_user != null && valor == 1) {
-
-
-                                   
                                                 %>
                                                 <button class="btn btn-outline-dark" type="button" id="borderboton" data-bs-toggle="dropdown"><%=nombre_user%></button>
                                                 <ul class="dropdown-menu">
                                                     <li><a class="dropdown-item" href="secure/inicio/editarperfil.jsp">Editar Perfil</a></li>
-                                                    <li><a class="dropdown-item" href="?" id="cerrarSesion">Cerrar sesión</a></li>
+                                                    <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
+                                                      <script>
+                                                        function cerrarSesion() {
+                                                          var xhr = new XMLHttpRequest();
+                                                          xhr.open("GET", "cerrarSesion.jsp?signUp=crearCuenta", true);
+                                                          xhr.onreadystatechange = function () {
+                                                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                                              window.location.href = "index.jsp";
+                                                            }
+                                                          };
+                                                          xhr.send();
+                                                        }
+                                                      </script>           
                                                 </ul> 
-        <%
+                                        <%
                                             }
 
                                         

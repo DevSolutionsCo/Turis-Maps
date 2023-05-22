@@ -81,9 +81,20 @@
                 {
                     flag = helpers.addT( );
                   
-
-                session.setAttribute("signUp", "crearCuenta"); 
-                response.sendRedirect("index.jsp?nombre_user="+request.getParameter("nombre_user"));
+                 
+                    if(flag != false){
+                    String nombre_user = request.getParameter("nombre_user");
+                    session.setAttribute("signUp", "crearCuenta"); 
+                    session.setAttribute("nombre_user", nombre_user);
+                    session.setAttribute("valido", "creacionValida");
+                    response.sendRedirect("index.jsp");
+                    }else
+                        {
+                        
+                            session.setAttribute("invalido", "creacionInvalida");
+                            response.sendRedirect("registro.jsp?accion=Nuevo");
+                        } 
+                    
 
                 }
                 if( "Borrar".equals( accion ) )

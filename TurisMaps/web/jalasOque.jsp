@@ -43,7 +43,7 @@
             
             session.setAttribute("nombre_user", nombre_user);
             session.setAttribute("signUp", "crearCuenta"); 
-            response.sendRedirect("index.jsp?nombre_user=" + nombre_user);
+            response.sendRedirect("index.jsp");
         } else {
             
             %>
