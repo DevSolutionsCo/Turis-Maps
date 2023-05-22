@@ -3,70 +3,85 @@
     Created on : May 22, 2023, 12:00:52 AM
     Author     : sebas
 --%>
-<%@page import="org.turis.helper.TuristaHelper"%>
-<%@page import="org.turis.helper.Helpers"%>
-<%@page import="org.turis.dao.Turista"%>
-<=<!-- GANARON LAS CHIVAS -->
+<%@page import="java.sql.DriverManager"%>
+<%@ page import="java.sql.*" %>
+<%-- GANARON LAS CHIVAS --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title> Page</title>
     </head>
     <body>
         <%
-            String accion = request.getParameter("accion");
-            Helpers helpers = null;
-            Turista rol = null;
-            String aux = null;
-            boolean flag = false;
-            String readonly = null;
-                          
+        String id_turista = (String) session.getAttribute("id_turista");
+        
+        String correo_a = (String) session.getAttribute("correo");
+        String passw_a = request.getParameter("passw_a");
+        String nombre_a = request.getParameter("nombre_a");
+        String apellido_pat_a = request.getParameter("apellido_pat_a");
+        String apellido_mat_a = request.getParameter("apellido_mat_a");
+        String lugar_proc_a = request.getParameter("lugar_proc_a");
+        String genero_a = request.getParameter("genero_a");
+    
+    Connection conn = null;
+    PreparedStatement stmt = null;
+    ResultSet rs = null;
+    
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
+        String dbURL = "jdbc:mysql://localhost:3306/TurisMaps";
+        String dbUsername = "root";
+        String dbPassword = "n0m3l0";
+        int row=0;
+        int si = 0;
+        conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
+        
+        String query = "UPDATE TURISTA SET  CONTRASENA=?, NOMBRE=?, APELLIDO_PAT=?, APELLIDO_MAT=?, LUGAR_PROC=?, GENERO=?  WHERE CORREO=?";
+        stmt = conn.prepareStatement(query);
+        stmt.setString(1, passw_a);
+        stmt.setString(2, nombre_a);
+        stmt.setString(3, apellido_pat_a);
+        stmt.setString(4, apellido_mat_a);
+        stmt.setString(5, lugar_proc_a);
+        stmt.setString(6, genero_a);
+        stmt.setString(7, correo_a);
+            row = stmt.executeUpdate();
+            si = 1;
+            session.setAttribute("correo", correo_a);
+            session.setAttribute("nombre", nombre_a);
+            session.setAttribute("apellido_pat", apellido_pat_a);
+            session.setAttribute("apellido_mat", apellido_mat_a);
+            session.setAttribute("lugar_proc", lugar_proc_a);
+            session.setAttribute("genero", genero_a);
+            session.setAttribute("contrasena", passw_a);
+            session.setAttribute("id_turista", id_turista);
+            session.setAttribute("signUp", "crearCuenta"); 
+            response.sendRedirect("index.jsp");
             
-        %>
-                <jsp:include page="includes/editarperfil.jsp" >
-                    <jsp:param name="nomb" value="<%=rol.getCorreo()%>" />
-                    <jsp:param name="apelli_pat" value="<%=rol.getApellido_pat()%>" />
-                    <jsp:param name="apelli_mat" value="<%=rol.getApellido_mat()%>" />
-                    <jsp:param name="gene" value="<%=rol.getGenero()%>" />
-                    <jsp:param name="passw" value="<%=rol.getContraseña()%>" />            
-                    <jsp:param name="accion" value="<%=aux%>" />
-                </jsp:include>
-                
-        <%
-            flag = helpers.addT( );
-            if( "Actualizar".equals( accion ) )
-            {
-                helpers = new TuristaHelper( ).addRequest( request );
+            session.setAttribute("signUp", "crearCuenta"); 
+            response.sendRedirect("index.jsp");
+            
+    } catch (Exception e) {
+        e.printStackTrace();
+    } finally {
+        if (rs != null) {
+            rs.close();
+        }
+        if (stmt != null) {
+            stmt.close();
+        }
+        if (conn != null) {
+            conn.close();
+        }
+    }
+%>
 
-                if( "Actualizar".equals( accion ) )
-                {
-                    flag = helpers.updateT( );
-                    
-                    if(flag != false){
-                    String nombre_user = request.getParameter("nombre_user");
-                    session.setAttribute("nombre_user", nombre_user);
-                    response.sendRedirect("index.jsp");
-                    }
-                }
-                if( flag )
-                {
-        %>
-        <%
-                }                
-            }
-            if( accion == null || "list".equals(accion ))
-            {
-        %>
-        <jsp:include page="index.jsp" />
-        <%
-            }
-        %>
     </body>
 </html>
 
-<!--
+<%--
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWWWWWMMMMMMWWWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWWWMMMMMMMMMMMMMMWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWWMMMMMMMMMMMMMMMMMMMMWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -169,4 +184,4 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWWWWW
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWWWWWWWWWWWWWMMMMMMMMMMMMWWWWWNNWWWWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
 
--->
+--%>

@@ -9,25 +9,39 @@
         <title>Sign Up</title>
     </head>
     <body>
+        <%
+            String nombre_user = (String) session.getAttribute("nombre_user");
+            String correo = (String) session.getAttribute("correo");
+            String nombre = (String) session.getAttribute("nombre");
+            String apellido_mat = (String) session.getAttribute("apellido_mat");
+            String apellido_pat = (String) session.getAttribute("apellido_pat");
+            String lugar_proc = (String) session.getAttribute("lugar_proc");
+            String genero = (String) session.getAttribute("genero");
+            String contrasena = (String) session.getAttribute("contrasena");
+            String id_turista = (String) session.getAttribute("id_turista");
+        
+        %>
+        
+        
     <div  class="signUp-box">
         <h2>Editar Perfil</h2>
-        <form id="signUp">
+        <form action="actualizame.jsp">
             <div class="user-box">
-                <input type="text" class="inputs" name="nomb" id="nombre">
+                <input type="text" class="inputs" name="nombre_a" id="nombre" value="<%=nombre%>">
                 <label class="labels">Nombre</label>
             </div>
             <div class="user-box">
-                <input class="inputs" type="text" name="apelli_pat" id="apellidos">
+                <input class="inputs" type="text" name="apellido_pat_a" id="apellidos" value="<%=apellido_pat%>">
                 <label class="labels">Apellido Paterno</label>
             </div>
                         <div class="user-box">
-                <input class="inputs" type="text" name="apelli_mat" id="apellidos">
+                <input class="inputs" type="text" name="apellido_mat_a" id="apellidos"  value="<%=apellido_mat%>">
                 <label class="labels">Apellido Materno</label>
             </div>
             <div class="user-box">
                 <label class="labels-pais">Pais de Procedencia</label>
-                <select class="selects" type="text" name="pais" id="pais">
-                    <option class="selects" selected>Elige tu Pais</option>
+                <select class="selects" type="text" name="lugar_proc_a" id="pais">
+                    <option class="selects" selected><%=lugar_proc%></option>
                     <option class="inputs" value="Afganistán">Afganistán</option>
                     <option class="inputs" value="Albania">Albania</option>
                     <option class="inputs" value="Alemania">Alemania</option>
@@ -227,8 +241,8 @@
             <div class="user-box">
                 <label class="labels-gen">Genero</label>
                 <BR>
-                <select type="text" class="selects" name="gene" id="genero">
-                    <option class="selects" selected>Elige tu Genero</option>
+                <select type="text" class="selects" name="genero_a" id="genero">
+                    <option class="selects" selected><%=genero%></option>
                     <option class="inputs" value="Masculino">Masculino</option>
                     <option class="inputs" value="Femenino">Femenino</option>
                     <option class="inputs" value="NB">NB</option>
@@ -236,7 +250,7 @@
                 
             </div>
             <div class="user-box">
-                <input type="password" name="passw" class="inputs" id="contraseña">
+                <input type="password" name="passw_a" class="inputs" id="contraseña" value="<%=contrasena%>">
                 <label class="labels">Contraseña</label>
             </div>
                         <div class="user-box">
@@ -245,8 +259,8 @@
             </div>
             <p class="warnings" id="warnings"></p>
             <div class="btn-iniciar">
-                    <input type="hidden" name="accion" value="Actualizar" id ="accion">
-                    <input type="submit" name="accion" value="Confirmar Cambios" id="accion">
+                    <input type="hidden" name="accion" value="Guardar" id ="accion">
+                    <input type="submit" name="action" value="Confirmar Cambios" id="accion">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -256,6 +270,5 @@
             </div>
         </form>
     </div>
-    <script src="signUp.js"></script>
     </body>
 </html>

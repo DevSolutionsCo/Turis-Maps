@@ -12,12 +12,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/signStyles.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+   <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
     <title>Sign In</title>
 </head>
 <body>
     <div  class="signIn-box">
         <h2>Inicio de Sesion</h2>
 
+        <%
+            String siOnel = (String) session.getAttribute("noSesion");
+            if (siOnel != null) {
+                    if ("noSesion".equals(siOnel)) {
+                            %>
+                            <script>
+                                    Swal.fire({
+                                    icon: 'error',
+                                    title: 'Iinicio de sesion invalido',
+                                    text: 'Contraseña o correo incorrectos'
+                                  });
+                            </script>
+                                      
+                            <%
+                        }
+            }
+        %>
 
         <form action="jalasOque.jsp" method="post">
             <div class="user-box">
