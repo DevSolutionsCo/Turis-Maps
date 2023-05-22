@@ -1,14 +1,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/signStyles.css">
-        <title>Sign Up</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/signStyles.css">
+    <title>Sign Up</title>
+</head>
+<body>
     <div  class="signUp-box">
         <h2>Editar Perfil</h2>
         <form id="signUp">
@@ -17,12 +17,8 @@
                 <label class="labels">Nombre</label>
             </div>
             <div class="user-box">
-                <input class="inputs" type="text" name="apelli_pat" id="apellidos">
-                <label class="labels">Apellido Paterno</label>
-            </div>
-                        <div class="user-box">
-                <input class="inputs" type="text" name="apelli_mat" id="apellidos">
-                <label class="labels">Apellido Materno</label>
+                <input class="inputs" type="text" name="apelli" id="apellidos">
+                <label class="labels">Apellidos</label>
             </div>
             <div class="user-box">
                 <label class="labels-pais">Pais de Procedencia</label>
@@ -245,17 +241,16 @@
             </div>
             <p class="warnings" id="warnings"></p>
             <div class="btn-iniciar">
-                    <input type="hidden" name="accion" value="Actualizar" id ="accion">
-                    <input type="submit" name="accion" value="Confirmar Cambios" id="accion">
+                <a id="crear" type="submit">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    
+                    Confirmar cambios
                 </a>
             </div>
         </form>
     </div>
     <script src="signUp.js"></script>
-    </body>
+</body>
 </html>

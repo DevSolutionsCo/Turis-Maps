@@ -12,15 +12,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/signStyles.css">
-    <title>Sign Up</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+   <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+  <title>Sign Up</title>
 </head>
 <body>
      <div class="signUp-box">
         <h2 align="center">Creacion de la cuenta</h2>
+        
+        
         <form id="signUp" action="registro.jsp">
+                   <%
+        String invalido = (String) session.getAttribute("invalido");
+        String valido = (String) session.getAttribute("valido");
+
+        if(invalido != null){
+        if ("creacionInvalida".equals(invalido)){
+        %>        
+        <script>
+            alert("Debes rellenar todos los campos");
+        </script>
+        <%
+            }
+        }
+        %>
     <div class="wrap"><div class="kike">
             <div class="user-box">
-                <input type="text" name="nombre_user" class="inputs" id="nombre_user" value="${param.nombre_user}">
+                <input type="text" name="nombre_user" class="inputs" id="nombre_user" value="${param.nombre_user}" >
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+
                 <label class="labels">Nombre de Usuario</label>
             <div class="user-box">
                 <input type="email" name="correo" class="inputs" id="correo" value="${param.correo}">
@@ -261,23 +284,98 @@
                 </div>
         </div>
             <p class="warnings" id="warnings"><br></p>
-            <script src="secure/javascript/signUp.js"></script>
-            <%
 
-            
-            
-            %>
             <div class="btn-iniciar">
                 
                 <input id="accion" type="hidden" value="Guardar" name="accion">
-                <input id="action" type="submit" value="Crear Cuenta" name="action">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    
-                    
+                 <input id="action" type="submit" value="Crear Cuenta" name="action"> 
             </div>
+                          <script>
+                    
+                    const nombre_user = document.getElementById('nombre_user');
+                    const crear = document.getElementById("signUp");
+                    const correo = document.getElementById("correo");
+                    const contraseña = document.getElementById("contraseña");
+                    const apellido_pat = document.getElementById("apellido_pat");
+                    const apellido_mat = document.getElementById("apellido_mat");
+                    const pais = document.getElementById("lugar_proc");
+                    const genero = document.getElementById("genero");
+                    const nombre = document.getElementById("nombre");
+
+                    
+                    crear.addEventListener('submit', e=>{
+                    let regexEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,4})+$/;
+                    let paisNull= "Elige tu Pais";
+                    let generoNull = "Elige tu Genero";
+                    
+                    
+                    const valorNombre_user = nombre_user.value;
+                        
+                    if(valorNombre_user.length > 40 || valorNombre_user.length < 3){
+                        e.preventDefault(); 
+                            Swal.fire({
+                            icon: 'error',
+                            title: 'Nombre de usuario invalido',
+                            text: 'Los nombres deben tener de 3-40 caracteres'
+                          });
+                        }else
+                            if(!regexEmail.test(correo.value) || correo.value > 30){
+                            e.preventDefault();
+                            Swal.fire({
+                            icon: 'error',
+                            title: 'Correo invalido',
+                            text: 'Ingresa un email valido'
+                          });
+                        }else
+                            if(contraseña.value.length > 20 || contraseña.value.length < 8){
+                                e.preventDefault();
+                                Swal.fire({
+                                icon: 'error',
+                                title: 'Contraseña invalida',
+                                text: 'La contraseña debe tener de 8-20 caracteres'
+                              });
+                            }else
+                                if(apellido_pat.value.length > 80 || apellido_pat.value.length < 3 || apellido_mat.value.length > 80 || apellido_mat.value.length < 3)  {
+                                    e.preventDefault();
+                                    Swal.fire({
+                                    icon: 'error',
+                                    title: 'Apellidos invalidos',
+                                    text: 'Los apellidos deben tener de 3-80 caracteres'
+                                  });
+                                }else
+                                    if(pais.value === paisNull)  {
+                                        e.preventDefault();
+                                        Swal.fire({
+                                        icon: 'error',
+                                        title: 'Pais invalido',
+                                        text: 'Debes elegir un pais'
+                                      });
+                                    }else
+                                        if(genero.value === generoNull)  {
+                                            e.preventDefault();
+                                            Swal.fire({
+                                            icon: 'error',
+                                            title: 'Genero invalido',
+                                            text: 'Debes elegir un genero'
+                                          });
+                                        }else
+                                            if(nombre.value.length > 40 || nombre.value.length < 3){
+                                                e.preventDefault();
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Nombre invalido',
+                                                text: 'Los nombres deben tener de 3-40 caracteres'
+                                              });
+                                            }
+                        
+                            
+                        
+                    }); 
+                            
+                        
+                    
+                
+                </script>
         </form>
     </div>
                 

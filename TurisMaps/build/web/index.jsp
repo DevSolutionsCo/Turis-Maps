@@ -19,7 +19,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"   crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/Style_Index.css">
-
+ 
         <link rel="stylesheet" href="css/mapaStyles.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -63,49 +63,79 @@
                             <li class="nav-item" id="liNav">
                                 <div class="input-group mb-3" id ="botonsesion">
                                     <%
-                                        int valor = 0;
+                                       int valor = 0;
                                         String signUp = (String) session.getAttribute("signUp");
-                                        if (signUp != null) {
-                                            if (signUp.equals("crearCuenta")) {
-                                                valor = 1;
-                                            } else if (signUp.equals("inicioSesion")) {
 
+                                        if (signUp != null) {
+                                            if ("crearCuenta".equals(signUp)) {
+                                                valor = 1;
+                                            }else
+                                                if("sesionCerrada".equals(signUp)){
+                                                   valor=0;
                                             }
-                                            session.removeAttribute("accionRealizada");
-                                        } else {
+                                        }else{
                                             valor = 0;
                                         }
-
-                                        String nombre_user = request.getParameter("nombre_user");
+                                        
+                                        String nombre_user = (String) session.getAttribute("nombre_user");
                                         String botonPresionado = request.getParameter("botonPresionado");
-                                        if (botonPresionado != null && botonPresionado.equals("Iniciar Sesion")) {
+                                    if (botonPresionado != null && botonPresionado.equals("Iniciar Sesion")) 
+                                    {
 
-                                    %>
+                                        %>
                                     <button class="btn btn-outline-dark"  type="button" id="borderboton" data-bs-toggle="dropdown" ><%=nombre_user%></button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="editarperfil.jsp">Editar Perfil</a></li>
-                                        <li><a class="dropdown-item" href="">Cerrar sesión</a></li>
+                                         <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
+                                         <script>
+                                            function cerrarSesion() {
+                                              var xhr = new XMLHttpRequest();
+                                              xhr.open("GET", "cerrarSesion.jsp?signUp=crearCuenta", true);
+                                              xhr.onreadystatechange = function () {
+                                                if (xhr.readyState === 4 && xhr.status === 200) {
+                                                  window.location.href = "index.jsp";
+                                                }
+                                              };
+                                              xhr.send();
+                                            }
+                                          </script>
+                                         <%
+                                         %>
                                     </ul>   
-                                    <%
-                                    } else if (nombre_user != null && valor == 1) {
+                                        <%
+                                    }else
+                                        if (nombre_user != null && valor == 1) {
+                                                %>
+                                                <button class="btn btn-outline-dark" type="button" id="borderboton" data-bs-toggle="dropdown"><%=nombre_user%></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="editarperfil.jsp">Editar Perfil</a></li>
+                                                    <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
+                                                      <script>
+                                                        function cerrarSesion() {
+                                                          var xhr = new XMLHttpRequest();
+                                                          xhr.open("GET", "cerrarSesion.jsp?signUp=crearCuenta", true);
+                                                          xhr.onreadystatechange = function () {
+                                                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                                              window.location.href = "index.jsp";
+                                                            }
+                                                          };
+                                                          xhr.send();
+                                                        }
+                                                      </script>           
+                                                </ul> 
+                                        <%
+                                            }
 
-
-                                    %>
-                                    <button class="btn btn-outline-dark" type="button" id="borderboton" data-bs-toggle="dropdown"><%=nombre_user%></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="editarperfil.jsp">Editar Perfil</a></li>
-                                        <li><a class="dropdown-item" href="?" id="cerrarSesion">Cerrar sesión</a></li>
-                                    </ul> 
-                                    <%
-                                    } else {
-                                    %>
+                                        
+                                        else {
+                                        %>
                                     <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="borderboton">Inicio de sesión</button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="signIn.jsp">Iniciar Sesión</a></li>
                                         <li><a class="dropdown-item" href="registro.jsp?accion=Nuevo">Crear cuenta</a></li>
                                     </ul>   
-                                    <%
-                                        }
+                                        <%
+                                    }
 
                                     %>                                    
                                 </div>

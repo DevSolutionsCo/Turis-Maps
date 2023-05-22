@@ -9,25 +9,31 @@ const nombre_user = document.getElementById("nombre_user");
 const apellido_pat = document.getElementById("apellido_pat");
 const apellido_mat = document.getElementById("apellido_mat");
 const fecha_nac = document.getElementById("fecha_nac");
-const pais = document.getElementById("pais");
+const pais = document.getElementById("lugar_proc");
 const genero = document.getElementById("genero");
 const contraseña = document.getElementById("contraseña");
 const parrafo = document.getElementById("warnings");
 const crear = document.getElementById("crear");
 
+
+
+let warnings = ""
+let entrar = false;
+nombre_user.addEventListener('changue', validarNombre_user);
+function validarNombre_user() {
+
+    const valorNombre_user = nombre_user.value;
+
+    if(valorNombre_user.length > 40 || valorNombre_user.length < 3){
+        alert("Los nombres deben tener de 3-40 caracteres");
+        entrar = true;
+    }
+}
+
+
+
 crear.addEventListener('click', e=>{
     e.preventDefault();
-    var edad
-    function calcularEdad(fecha_nac) {
-        var hoy = new Date();
-        var cumpleanos = new Date(fecha_nac);
-        var edad = hoy.getFullYear() - cumpleanos.getFullYear();
-        var m = hoy.getMonth() - cumpleanos.getMonth();
-        if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
-            edad--;
-        }
-        return edad;
-    }
     let generoNull = "Elige tu Genero";
     let paisNull= "Elige tu Pais";
     let warnings ="";
@@ -68,8 +74,6 @@ crear.addEventListener('click', e=>{
     }
     if(entrar){
         parrafo.innerHTML = warnings;
-    }else{
-        window.location="../../index.jsp";
     }
         
 })

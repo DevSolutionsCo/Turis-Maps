@@ -94,12 +94,15 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable {
     @Override
     public Turista getTByKey() {
         String correo = null;
+        TuristaService turistaService = null;
+        Turista turista = null;
+
         correo = getParameter("correo");
         if (correo == null || correo.length() <= 0) {
             return null;
         }
         turistaService = new TuristaService();
-        return  turistaService.getTuristaByCorreo(correo);
+        return  turistaService.getTuristaByTurista(correo);
     }
 
 }

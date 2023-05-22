@@ -113,7 +113,7 @@ public class TuristaService extends Conexion<Turista>{
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "update TURISTA SET CORREO=?, NOMBRE=?, APELLIDO_PAT=?, APELLIDO_MAT=?, FECHA_NAC=?, LUGAR_PROC=?, GENERO=?, CONTRASENA=?, NOMBRE_USER=? WHERE CORREO = ?";
+        String sql = "update TURISTA SET ID_TURISTA=?, CORREO=?, NOMBRE=?, APELLIDO_PAT=?, APELLIDO_MAT=?, FECHA_NAC=?, LUGAR_PROC=?, GENERO=?, CONTRASENA=?, NOMBRE_USER=? WHERE TURISTA = ?";
         int row = 0;
         try 
         {
@@ -127,15 +127,16 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return false;
             }
-            preparedStatement.setString(1, turista.getCorreo());
-            preparedStatement.setString(2, turista.getNombre());
-            preparedStatement.setString(3, turista.getApellido_pat());
-            preparedStatement.setString(4, turista.getApellido_mat());
-            preparedStatement.setDate(5, dateUtil2DateSql(turista.getFecha_nac()));
-            preparedStatement.setString(6, turista.getLugar_proc());
-            preparedStatement.setString(7, turista.getGenero());
-            preparedStatement.setString(8, turista.getContraseña());
-            preparedStatement.setString(9, turista.getNombre_user());
+            preparedStatement.setInt(1, turista.getId_turista());
+            preparedStatement.setString(2, turista.getCorreo());
+            preparedStatement.setString(3, turista.getNombre());
+            preparedStatement.setString(4, turista.getApellido_pat());
+            preparedStatement.setString(5, turista.getApellido_mat());
+            preparedStatement.setDate(6, dateUtil2DateSql(turista.getFecha_nac()));
+            preparedStatement.setString(7, turista.getLugar_proc());
+            preparedStatement.setString(8, turista.getGenero());
+            preparedStatement.setString(9, turista.getContraseña());
+            preparedStatement.setString(10, turista.getNombre_user());
             row = preparedStatement.executeUpdate();
             closeConnection(connection);
             return row == 1;
@@ -178,52 +179,33 @@ public class TuristaService extends Conexion<Turista>{
     }
     
 
-    public Turista getTuristaByCorreo( String correo) 
-    {
-        Turista aux = null;
+    public Turista getTuristaByTurista(String correo) {
+
         Connection connection = null;
-        PreparedStatement preparedStatement = null;
+        PreparedStatement statement = null;
         ResultSet resultSet = null;
-        try 
-        {
+        Turista turista = null;
+
+        try {
             connection = getConnection();
-            if (connection == null) 
-            {
-                return null;
+
+            String sql = "SELECT * FROM TURISTA WHERE CORREO = ?";
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, correo);
+            resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                turista = new Turista();
+                turista.setNombre_user(resultSet.getString("nombre_user"));
             }
-            preparedStatement = connection.prepareStatement("SELECT * FROM TURISTA WHERE CORREO = ?" );
-            if (preparedStatement == null) 
-            {
-                return null;
-            }
-            preparedStatement.setString(1, correo );
-            resultSet = preparedStatement.executeQuery();
-            if (resultSet == null) 
-            {
-                return null;
-            }
-            aux = new Turista ( );
-            while (resultSet.next()) 
-            {
-                aux.setNombre_user(resultSet.getString(1 ) );
-                aux.setCorreo(resultSet.getString(2 ) );
-                aux.setNombre(resultSet.getString(3 ) );
-                aux.setApellido_pat(resultSet.getString( 4 ) );
-                aux.setApellido_mat(resultSet.getString(5 ) );
-                aux.setFecha_nac(resultSet.getDate(6 ) );
-                aux.setLugar_proc(resultSet.getString(7 ) );
-                aux.setGenero(resultSet.getString(8 ) );
-                aux.setContraseña(resultSet.getString(9 ) );
-            }   
-            resultSet.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
             closeConnection(connection);
-            return aux;
-        } 
-        catch (SQLException ex) 
-        {
-            ex.printStackTrace();
         }
-        return null;
+
+        return turista;
     }
+
     
 }

@@ -53,7 +53,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `turismaps`.`comentarios`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `turismaps`.`comentarios` (
-  `id_comentario` INT NOT NULL AUTO_INCREMENT,
+  `id_comentario` INT NOT NULL,
   `comentario` VARCHAR(100) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
   `calificacion` INT NULL DEFAULT NULL,
   `fecha` DATE NULL DEFAULT NULL,

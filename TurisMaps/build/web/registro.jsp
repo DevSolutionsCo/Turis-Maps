@@ -26,8 +26,10 @@
             boolean flag = false;
             String readonly =    null;
             
-            if( "Nuevo".equals( request.getParameter("accion") ))
+            if( "Nuevo".equals( request.getParameter("accion") ) || "Editar".equals( request.getParameter("accion") ) )
             {
+                if( "Nuevo".equals( accion ) )
+                {
                     turista = new Turista();
                  
                     turista.setNombre_user("");
@@ -41,7 +43,16 @@
                     turista.setContraseña("");
                     aux = "Guardar";
                     readonly = "";
+                }
+                if( "Editar".equals( accion ) )
+                {
+                    helpers = new TuristaHelper( ).addRequest( request );
+                    turista = (Turista)helpers.getTByKey( );
+                    aux = "Actualizar";
+                    readonly = "readonly='true'";
+                }
                 
+            
         %>
         <jsp:include page="signUp.jsp" >
                     <jsp:param name="id_turista" value="<%=turista.getId_turista()%>" />
@@ -59,17 +70,52 @@
                 </jsp:include>
         <%
             }
-            if( "Guardar".equals( accion ))
+ 
+
+            if( "Guardar".equals( accion ) || "Borrar".equals( accion ) || "Actualizar".equals( accion ) )
             {
+
+
                 helpers = new TuristaHelper( ).addRequest( request );
-                flag = helpers.addT( );
-                session.setAttribute("signUp", "crearCuenta"); 
-                response.sendRedirect("index.jsp?nombre_user="+request.getParameter("nombre_user"));              
+                if( "Guardar".equals( accion ) )
+                {
+                    flag = helpers.addT( );
+                  
+                 
+                    if(flag != false){
+                    String nombre_user = request.getParameter("nombre_user");
+                    session.setAttribute("signUp", "crearCuenta"); 
+                    session.setAttribute("nombre_user", nombre_user);
+                    session.setAttribute("valido", "creacionValida");
+                    response.sendRedirect("index.jsp");
+                    }else
+                        {
+                        
+                            session.setAttribute("invalido", "creacionInvalida");
+                            response.sendRedirect("registro.jsp?accion=Nuevo");
+                        } 
+                    
+
+                }
+                if( "Borrar".equals( accion ) )
+                {
+                    flag = helpers.deleteT( );
+                }
+                if( "Actualizar".equals( accion ) )
+                {
+                    flag = helpers.updateT( );
+                }
+                if( flag )
+                {
+        %>
+        
+        <%
+                }                
             }
-            if( accion == null)
+            if( accion == null || "list".equals(accion ))
             {
         %>
-            <jsp:forward page="index.jsp" />
+        <jsp:forward page="index.jsp" />
         <%
             }
         %>

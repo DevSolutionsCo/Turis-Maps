@@ -33,10 +33,7 @@ public class Turista implements Serializable{
     }
 
 
-    public Turista (Integer id_turista) 
-    {
-        this.id_turista = id_turista;
-    }
+
 
     public Turista() {
     }
