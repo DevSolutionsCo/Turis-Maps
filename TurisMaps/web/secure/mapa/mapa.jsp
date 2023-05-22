@@ -13,6 +13,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../css/mapaStyles.css">
+
+        <script src="https://kit.fontawesome.com/83ffb1b5fc.js" crossorigin="anonymous"></script>
+
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <title>Turismaps</title>
@@ -221,26 +225,31 @@
         <div class="overlay overflow-auto mapa mapa" id="overlay_l1_coyo">
             <div class="popup" id="popup_l1_coyo">
                 <a  href="#" id="cerrar_l1_coyo" class="cerrar_alca" >X</a>
-                <div class="container_galeria">
-                    <section class="galeria_lugares">
-                        <img src="https://rinconesdemexico.com/wp-content/uploads/museo-de-frida-kahlo.jpg" alt="">
-                        <img src="https://www.museofridakahlo.org.mx/wp/wp-content/themes/mfk/images/entrance__visit.jpg" alt="">
-                        <img src="https://www.bbmundo.com/wp-content/uploads/2020/05/recorrido-virtual-del-museo-de-frida-kahlo.jpg" alt="">
-                        <img src="https://topadventure.com/__export/1603397122744/sites/laverdad/img/2020/10/22/casa_museo_frida_kahlo.jpg_182777833.jpg" alt="">
-                        <img src="https://www.museofridakahlo.org.mx/wp/wp-content/themes/mfk/images/entrance__activities.jpg" alt="">
-                    </section>
+                <div class="galeria_mapa">
+                    <div class="container_galeria">
+                        <section class="galeria_lugares">
+                            <img src="https://rinconesdemexico.com/wp-content/uploads/museo-de-frida-kahlo.jpg" alt="">
+                            <img src="https://www.museofridakahlo.org.mx/wp/wp-content/themes/mfk/images/entrance__visit.jpg" alt="">
+                            <img src="https://www.bbmundo.com/wp-content/uploads/2020/05/recorrido-virtual-del-museo-de-frida-kahlo.jpg" alt="">
+                            <img src="https://topadventure.com/__export/1603397122744/sites/laverdad/img/2020/10/22/casa_museo_frida_kahlo.jpg_182777833.jpg" alt="">
+                            <img src="https://www.museofridakahlo.org.mx/wp/wp-content/themes/mfk/images/entrance__activities.jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="mapita">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15057.290283266313!2d-99.1624636!3d19.3551806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc400ba3f3b%3A0x6201a4f7f7ccf4a1!2sMuseo%20Frida%20Kahlo!5e0!3m2!1ses-419!2smx!4v1684557764062!5m2!1ses-419!2smx" width="320" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="line1">
                     <div class="datos_lugares">
                         <div class="line2">
                             <div class="hora_lugares">
                                 <h5>Hora de Servicio</h5>
-
-                                <p>10:00-18:00 MaD</p>
+                                <i class="fa-solid fa-clock"></i><span class="textlogitos">10:00-18:00 Martes-Domingo</span>
                             </div>
                             <div class="metro_lugares">
                                 <h5>Estaciones de Metro</h5>
-                                <p>Linea 3 - Metro Coyoacan</p>
+                                <i class="fa-solid fa-train-subway"></i><span class="textlogitos">10:00-18:00 Martes-Domingo</span>
                             </div>
                         </div>
                         <div class="line2">
@@ -251,12 +260,8 @@
                         </div>
                         <div class="line2">
                             <div class="zona_lugares">
-                                <h5>Clasificacion Zona</h5>
-                                <p class="color_zona_verde">Zona Verde. <br>Puedes andar feliz aqui</p>
-                            </div>
-                            <div class="direc_lugares">
-                                <h5>Direccion</h5>
-                                <a href="https://goo.gl/maps/ZKxyLmYu9YmLeVBq7" alt="" target="_blank">Miralo</a>
+                                <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #1c793b;"></i><span class="color_zona_verde textlogitos">Zona verde</span>
+                                <p class="color_zona_verde">El lugar y los alrededores son seguros.</p>
                             </div>
                         </div>
                     </div>

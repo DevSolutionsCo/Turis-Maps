@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Date;
 
 /**
  *
@@ -85,5 +86,13 @@ public abstract class Conexion<T> implements Serializable
             ex.printStackTrace();
         }
     }
-
+public Date dateSql2DateUtil( java.sql.Date date )
+    {
+        return new Date( date.getTime( ) );
+    }
+    
+    public java.sql.Date dateUtil2DateSql( Date date )
+    {
+        return new java.sql.Date( date.getTime( ) );
+    }
 }

@@ -4,6 +4,10 @@
     Author     : ruizl
 --%>
 
+<%@page import="org.turis.service.TuristaService"%>
+<%@page import="java.util.List"%>
+<%@page import="org.turis.helper.TuristaHelper"%>
+<%@page import="org.turis.dao.Turista"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
@@ -15,7 +19,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"   crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/Style_Index.css">
- 
+
         <link rel="stylesheet" href="css/mapaStyles.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -46,7 +50,7 @@
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                             <button class="btn btn-dark btn-dark-outline-success" type="submit">Buscar</button>
                         </form>
-                        <ul class="navbar-nav d-flex " id="navlista">
+                        <ul class="navbar-nav d-flex ms-auto " id="navlista">
                             <li class="nav-item" id="liNav">
                                 <a class="nav-link active" aria-current="page" href="#"> <span class="navegacionspan"> Inicio </span> </a>
                             </li>
@@ -59,24 +63,50 @@
                             <li class="nav-item" id="liNav">
                                 <div class="input-group mb-3" id ="botonsesion">
                                     <%
-                                    String botonPresionado = request.getParameter("botonPresionado");
-                                    if (botonPresionado != null && botonPresionado.equals("Iniciar Sesion")) {
-                                        %>
-                                    <button class="btn btn-outline-dark  type="button" id="borderboton" data-bs-toggle="dropdown" >Sebastian</button>
+                                        int valor = 0;
+                                        String signUp = (String) session.getAttribute("signUp");
+                                        if (signUp != null) {
+                                            if (signUp.equals("crearCuenta")) {
+                                                valor = 1;
+                                            } else if (signUp.equals("inicioSesion")) {
+
+                                            }
+                                            session.removeAttribute("accionRealizada");
+                                        } else {
+                                            valor = 0;
+                                        }
+
+                                        String nombre_user = request.getParameter("nombre_user");
+                                        String botonPresionado = request.getParameter("botonPresionado");
+                                        if (botonPresionado != null && botonPresionado.equals("Iniciar Sesion")) {
+
+                                    %>
+                                    <button class="btn btn-outline-dark"  type="button" id="borderboton" data-bs-toggle="dropdown" ><%=nombre_user%></button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="">Ver perfil</a></li>
-                                        <li><a class="dropdown-item" href="">Editar perfil</a></li>
+                                        <li><a class="dropdown-item" href="editarperfil.jsp">Editar Perfil</a></li>
+                                        <li><a class="dropdown-item" href="">Cerrar sesión</a></li>
                                     </ul>   
-                                        <%
+                                    <%
+                                    } else if (nombre_user != null && valor == 1) {
+
+
+                                    %>
+                                    <button class="btn btn-outline-dark" type="button" id="borderboton" data-bs-toggle="dropdown"><%=nombre_user%></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="editarperfil.jsp">Editar Perfil</a></li>
+                                        <li><a class="dropdown-item" href="?" id="cerrarSesion">Cerrar sesión</a></li>
+                                    </ul> 
+                                    <%
                                     } else {
-                                        %>
+                                    %>
                                     <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="borderboton">Inicio de sesión</button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="signIn.jsp">Iniciar Sesión</a></li>
-                                        <li><a class="dropdown-item" href="secure/inicio/signUp.jsp">Crear cuenta</a></li>
+                                        <li><a class="dropdown-item" href="registro.jsp?accion=Nuevo">Crear cuenta</a></li>
                                     </ul>   
-                                        <%
-                                    }
+                                    <%
+                                        }
+
                                     %>                                    
                                 </div>
 

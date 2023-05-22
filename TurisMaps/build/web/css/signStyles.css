@@ -8,6 +8,16 @@
     border-radius: 40px;
 
 }
+.wrap {
+    flex-wrap: initial;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.kike {
+    padding: 0px 10px;
+}
 .botones:hover:not(.active){
     background-color: #6558db;
     transition-duration: 0.5s;
@@ -29,7 +39,7 @@ body {
     margin:0;
     padding:0;
     font-family: monospace;
-    background-image: url(img/fondologin.webp);
+    background-image: url(../img/fondologin.webp);
 }
   
 .signIn-box {
@@ -380,5 +390,7 @@ option{
     transition: .5s;
     letter-spacing: 4px
 }
+
+
 
 
