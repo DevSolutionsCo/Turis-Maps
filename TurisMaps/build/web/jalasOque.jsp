@@ -33,6 +33,7 @@
         
         String query = "SELECT * FROM TURISTA WHERE CORREO = ? AND CONTRASENA = ?";
         stmt = conn.prepareStatement(query);
+        
         stmt.setString(1, correo_signIN);
         stmt.setString(2, passw);
         
@@ -40,19 +41,30 @@
         
         if (rs.next()) {
             String nombre_user = rs.getString("nombre_user");
+            String correo = rs.getString("correo");
+            String nombre = rs.getString("nombre");
+            String apellido_pat = rs.getString("apellido_pat");
+            String apellido_mat = rs.getString("apellido_mat");
+            String  lugar_proc = rs.getString("lugar_proc");
+            String  genero = rs.getString("genero");
+            String  contrasena = rs.getString("contrasena");
+            String  id_turista = rs.getString("id_turista");            
             
             session.setAttribute("nombre_user", nombre_user);
+            session.setAttribute("correo", correo);
+            session.setAttribute("nombre", nombre);
+            session.setAttribute("apellido_pat", apellido_pat);
+            session.setAttribute("apellido_mat", apellido_mat);
+            session.setAttribute("lugar_proc", lugar_proc);
+            session.setAttribute("genero", genero);
+            session.setAttribute("contrasena", contrasena);
+            session.setAttribute("id_turista", id_turista);
             session.setAttribute("signUp", "crearCuenta"); 
             response.sendRedirect("index.jsp");
         } else {
-            
-            %>
-            <script>
-                alert("Correo no registrado o contraseña incorrecta")
-            </script>
-            <%
-        
+            session.setAttribute("noSesion", "noSesion");
             response.sendRedirect("signIn.jsp");
+            
         }
     } catch (Exception e) {
         e.printStackTrace();

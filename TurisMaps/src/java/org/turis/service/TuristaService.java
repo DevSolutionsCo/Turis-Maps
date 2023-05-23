@@ -113,7 +113,7 @@ public class TuristaService extends Conexion<Turista>{
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "update TURISTA SET ID_TURISTA=?, CORREO=?, NOMBRE=?, APELLIDO_PAT=?, APELLIDO_MAT=?, FECHA_NAC=?, LUGAR_PROC=?, GENERO=?, CONTRASEÑA=?, NOMBRE_USER=? WHERE TURISTA = ?";
+        String sql = "update TURISTA SET CORREO=?, NOMBRE=?, APELLIDO_PAT=?, APELLIDO_MAT=?, FECHA_NAC=?, LUGAR_PROC=?, GENERO=?, CONTRASENA=?, NOMBRE_USER=? WHERE TURISTA = ?";
         int row = 0;
         try 
         {
@@ -127,16 +127,15 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return false;
             }
-            preparedStatement.setInt(1, turista.getId_turista());
-            preparedStatement.setString(2, turista.getCorreo());
-            preparedStatement.setString(3, turista.getNombre());
-            preparedStatement.setString(4, turista.getApellido_pat());
-            preparedStatement.setString(5, turista.getApellido_mat());
-            preparedStatement.setDate(6, dateUtil2DateSql(turista.getFecha_nac()));
-            preparedStatement.setString(7, turista.getLugar_proc());
-            preparedStatement.setString(8, turista.getGenero());
-            preparedStatement.setString(9, turista.getContraseña());
-            preparedStatement.setString(10, turista.getNombre_user());
+            preparedStatement.setString(1, turista.getCorreo());
+            preparedStatement.setString(2, turista.getNombre());
+            preparedStatement.setString(3, turista.getApellido_pat());
+            preparedStatement.setString(4, turista.getApellido_mat());
+            preparedStatement.setDate(5, dateUtil2DateSql(turista.getFecha_nac()));
+            preparedStatement.setString(6, turista.getLugar_proc());
+            preparedStatement.setString(7, turista.getGenero());
+            preparedStatement.setString(8, turista.getContraseña());
+            preparedStatement.setString(9, turista.getNombre_user());
             row = preparedStatement.executeUpdate();
             closeConnection(connection);
             return row == 1;

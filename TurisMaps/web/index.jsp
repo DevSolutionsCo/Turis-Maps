@@ -85,7 +85,7 @@
                                         %>
                                     <button class="btn btn-outline-dark"  type="button" id="borderboton" data-bs-toggle="dropdown" ><%=nombre_user%></button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="secure/inicio/editarperfil.jsp">Editar Perfil</a></li>
+                                        <li><a class="dropdown-item" href="editarperfil.jsp">Editar Perfil</a></li>
                                          <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
                                          <script>
                                             function cerrarSesion() {
@@ -108,7 +108,7 @@
                                                 %>
                                                 <button class="btn btn-outline-dark" type="button" id="borderboton" data-bs-toggle="dropdown"><%=nombre_user%></button>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="secure/inicio/editarperfil.jsp">Editar Perfil</a></li>
+                                                    <li><a class="dropdown-item" href="editarperfil.jsp">Editar Perfil</a></li>
                                                     <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
                                                       <script>
                                                         function cerrarSesion() {

@@ -15,6 +15,15 @@
         <h1>Hello World!</h1>
                     <%
               session.setAttribute("signUp", "sesionCerrada");
+              session.removeAttribute("nombre");
+              session.removeAttribute("nombre_user");
+              session.removeAttribute("apellido_pat");
+              session.removeAttribute("apellido_mat");
+              session.removeAttribute("lugar_proc");
+              session.removeAttribute("genero");
+              session.removeAttribute("contrasena");
+              session.removeAttribute("correo");
+              session.removeAttribute("id_turista");    
             %>
 
     </body>
