@@ -5,27 +5,28 @@
 package org.turis.service;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import org.turis.dao.Comentarios;
+import org.turis.dao.Lugar;
 import org.turis.dao.Turista;
 
 /**
  *
  * @author ruizl
  */
-public class TuristaService extends Conexion<Turista>{
-     public List<Turista> getTuristaList() 
+public class ComentariosService extends Conexion<Comentarios>{
+     public List<Comentarios> getComentariosList() 
     {
-        List<Turista> turistaList = null;
+        List<Comentarios> comentariosList = null;
         Connection connection = null;
         Statement statement = null;
         ResultSet resultSet = null;
-        Turista turista = null;
+        Comentarios comentarios = null;
 
         try 
         {
@@ -38,30 +39,26 @@ public class TuristaService extends Conexion<Turista>{
             if (statement == null) {
                 return null;
             }
-            resultSet = statement.executeQuery("SELECT * FROM TURISTA");
+            resultSet = statement.executeQuery("SELECT * FROM COMENTARIOS");
             if (resultSet == null) 
             {
                 return null;
             }
-            turistaList = new ArrayList<>();
+            comentariosList = new ArrayList<>();
             while (resultSet.next()) 
             {
-                turista = new Turista();
+                comentarios = new Comentarios();
                 
-                turista.setCorreo(resultSet.getString(1));
-                turista.setNombre(resultSet.getString(2));
-                turista.setApellido_pat(resultSet.getString(3));
-                turista.setApellido_mat(resultSet.getString(4));
-                turista.setFecha_nac(resultSet.getDate(5));
-                turista.setLugar_proc(resultSet.getString(6));
-                turista.setGenero(resultSet.getString(7));
-                turista.setContraseña(resultSet.getString(8));
-                turista.setNombre_user(resultSet.getString(9));
-                turistaList.add(turista);
+                comentarios.setComentario(resultSet.getString(1));
+                comentarios.setCalificacion(resultSet.getInt(2));
+                comentarios.setFecha(resultSet.getDate(3));
+                comentarios.setId_turista(new Turista(resultSet.getInt(4)));
+                comentarios.setId_lugar(new Lugar(resultSet.getInt(5)));
+                comentariosList.add(comentarios);
             }
             resultSet.close();
             closeConnection(connection);
-            return turistaList;
+            return comentariosList;
         } 
         catch (SQLException ex) 
         {
@@ -70,11 +67,11 @@ public class TuristaService extends Conexion<Turista>{
         return null;
     }
     
-    public boolean addTurista( Turista turista )
+    public boolean addComentarios( Comentarios comentarios )
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "INSERT INTO TURISTA( CORREO, NOMBRE, APELLIDO_PAT, APELLIDO_MAT, FECHA_NAC, LUGAR_PROC, GENERO, CONTRASENA, NOMBRE_USER) VALUES(?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO COMENTARIOS( COMENTARIO, CALIFICACION, FECHA, ID_TURISTA, ID_LUGAR,) VALUES(?,?,?,?,?)";
         int row = 0;
         try 
         {
@@ -88,15 +85,11 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return false;
             }
-            preparedStatement.setString(1, turista.getCorreo());
-            preparedStatement.setString(2, turista.getNombre());
-            preparedStatement.setString(3, turista.getApellido_pat());
-            preparedStatement.setString(4, turista.getApellido_mat());
-            preparedStatement.setDate(5, dateUtil2DateSql(turista.getFecha_nac()));
-            preparedStatement.setString(6, turista.getLugar_proc());
-            preparedStatement.setString(7, turista.getGenero());
-            preparedStatement.setString(8, turista.getContraseña());
-            preparedStatement.setString(9, turista.getNombre_user());
+            preparedStatement.setString(1, comentarios.getComentario());
+            preparedStatement.setInt(2, comentarios.getCalificacion());
+            preparedStatement.setDate(3, dateUtil2DateSql(comentarios.getFecha()));
+            preparedStatement.setInt(4, comentarios.getId_turista().getId_turista());
+            preparedStatement.setInt(5, comentarios.getId_lugar().getId_lugar());
             row = preparedStatement.executeUpdate();
             closeConnection(connection);
             return row == 1;
@@ -109,11 +102,11 @@ public class TuristaService extends Conexion<Turista>{
         
     }
     
-    public boolean updateTurista( Turista turista )
+    public boolean updateComentarios( Comentarios comentarios )
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "update TURISTA SET CORREO=?, NOMBRE=?, APELLIDO_PAT=?, APELLIDO_MAT=?, FECHA_NAC=?, LUGAR_PROC=?, GENERO=?, CONTRASENA=?, NOMBRE_USER=? WHERE CORREO = ?";
+        String sql = "update COMENTARIOS SET COMENTARIO=?, CALIFICACION=?, FECHA=?, ID_TURISTA=?, ID_LUGAR=? WHERE COMENTARIO = ?";
         int row = 0;
         try 
         {
@@ -127,15 +120,11 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return false;
             }
-            preparedStatement.setString(1, turista.getCorreo());
-            preparedStatement.setString(2, turista.getNombre());
-            preparedStatement.setString(3, turista.getApellido_pat());
-            preparedStatement.setString(4, turista.getApellido_mat());
-            preparedStatement.setDate(5, dateUtil2DateSql(turista.getFecha_nac()));
-            preparedStatement.setString(6, turista.getLugar_proc());
-            preparedStatement.setString(7, turista.getGenero());
-            preparedStatement.setString(8, turista.getContraseña());
-            preparedStatement.setString(9, turista.getNombre_user());
+            preparedStatement.setString(1, comentarios.getComentario());
+            preparedStatement.setInt(2, comentarios.getCalificacion());
+            preparedStatement.setDate(3, dateUtil2DateSql(comentarios.getFecha()));
+            preparedStatement.setInt(4, comentarios.getId_turista().getId_turista());
+            preparedStatement.setInt(5, comentarios.getId_lugar().hashCode());
             row = preparedStatement.executeUpdate();
             closeConnection(connection);
             return row == 1;
@@ -147,11 +136,11 @@ public class TuristaService extends Conexion<Turista>{
         return false;
     }
     
-    public boolean deleteTurista( Turista turista )
+    public boolean deleteComentarios(Comentarios  comentarios )
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "DELETE FROM TURISTA WHERE TURISTA = ?";
+        String sql = "DELETE FROM COMENTARIOS WHERE COMENTARIO = ?";
         int row = 0;
         try 
         {
@@ -165,7 +154,7 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return false;
             }
-            preparedStatement.setInt(1, turista.getId_turista());
+            preparedStatement.setString(1, comentarios.getComentario());
             row = preparedStatement.executeUpdate();
             closeConnection(connection);
             return row == 1;
@@ -178,9 +167,9 @@ public class TuristaService extends Conexion<Turista>{
     }
     
 
-    public Turista getTuristaByCorreo( String correo) 
+    public Comentarios getComentariosByComentario( String comentario) 
     {
-        Turista aux = null;
+        Comentarios aux = null;
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
@@ -191,29 +180,25 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return null;
             }
-            preparedStatement = connection.prepareStatement("SELECT * FROM TURISTA WHERE CORREO = ?" );
+            preparedStatement = connection.prepareStatement("SELECT * FROM COMENTARIOS WHERE COMENTARIO = ?" );
             if (preparedStatement == null) 
             {
                 return null;
             }
-            preparedStatement.setString(1, correo );
+            preparedStatement.setString(1, comentario );
             resultSet = preparedStatement.executeQuery();
             if (resultSet == null) 
             {
                 return null;
             }
-            aux = new Turista ( );
+            aux = new Comentarios ( );
             while (resultSet.next()) 
             {
-                aux.setNombre_user(resultSet.getString(1 ) );
-                aux.setCorreo(resultSet.getString(2 ) );
-                aux.setNombre(resultSet.getString(3 ) );
-                aux.setApellido_pat(resultSet.getString( 4 ) );
-                aux.setApellido_mat(resultSet.getString(5 ) );
-                aux.setFecha_nac(resultSet.getDate(6 ) );
-                aux.setLugar_proc(resultSet.getString(7 ) );
-                aux.setGenero(resultSet.getString(8 ) );
-                aux.setContraseña(resultSet.getString(9 ) );
+                aux.setComentario(resultSet.getString(1 ) );
+                aux.setCalificacion(resultSet.getInt(2 ) );
+                aux.setFecha(resultSet.getDate(3 ) );
+                aux.setId_turista(new Turista(resultSet.getInt( 4 )) );
+                aux.setId_lugar(new Lugar(resultSet.getInt(5 )) );
             }   
             resultSet.close();
             closeConnection(connection);

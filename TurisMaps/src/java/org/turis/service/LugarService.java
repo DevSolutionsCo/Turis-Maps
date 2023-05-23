@@ -5,27 +5,26 @@
 package org.turis.service;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import org.turis.dao.Turista;
+import org.turis.dao.Lugar;
 
 /**
  *
  * @author ruizl
  */
-public class TuristaService extends Conexion<Turista>{
-     public List<Turista> getTuristaList() 
+public class LugarService extends Conexion<Lugar>{
+    public List<Lugar> getLugarList() 
     {
-        List<Turista> turistaList = null;
+        List<Lugar> lugarList = null;
         Connection connection = null;
         Statement statement = null;
         ResultSet resultSet = null;
-        Turista turista = null;
+        Lugar lugar = null;
 
         try 
         {
@@ -38,30 +37,23 @@ public class TuristaService extends Conexion<Turista>{
             if (statement == null) {
                 return null;
             }
-            resultSet = statement.executeQuery("SELECT * FROM TURISTA");
+            resultSet = statement.executeQuery("SELECT * FROM LUGAR");
             if (resultSet == null) 
             {
                 return null;
             }
-            turistaList = new ArrayList<>();
+            lugarList = new ArrayList<>();
             while (resultSet.next()) 
             {
-                turista = new Turista();
+                lugar = new Lugar();
                 
-                turista.setCorreo(resultSet.getString(1));
-                turista.setNombre(resultSet.getString(2));
-                turista.setApellido_pat(resultSet.getString(3));
-                turista.setApellido_mat(resultSet.getString(4));
-                turista.setFecha_nac(resultSet.getDate(5));
-                turista.setLugar_proc(resultSet.getString(6));
-                turista.setGenero(resultSet.getString(7));
-                turista.setContraseña(resultSet.getString(8));
-                turista.setNombre_user(resultSet.getString(9));
-                turistaList.add(turista);
+                lugar.setId_lugar(resultSet.getInt(1));
+                lugar.setLugar(resultSet.getString(2));
+                lugarList.add(lugar);
             }
             resultSet.close();
             closeConnection(connection);
-            return turistaList;
+            return lugarList;
         } 
         catch (SQLException ex) 
         {
@@ -70,11 +62,11 @@ public class TuristaService extends Conexion<Turista>{
         return null;
     }
     
-    public boolean addTurista( Turista turista )
+    public boolean addLugar( Lugar lugar )
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "INSERT INTO TURISTA( CORREO, NOMBRE, APELLIDO_PAT, APELLIDO_MAT, FECHA_NAC, LUGAR_PROC, GENERO, CONTRASENA, NOMBRE_USER) VALUES(?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO LUGAR( ID_LUGAR, LUGAR) VALUES(?,?)";
         int row = 0;
         try 
         {
@@ -88,15 +80,8 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return false;
             }
-            preparedStatement.setString(1, turista.getCorreo());
-            preparedStatement.setString(2, turista.getNombre());
-            preparedStatement.setString(3, turista.getApellido_pat());
-            preparedStatement.setString(4, turista.getApellido_mat());
-            preparedStatement.setDate(5, dateUtil2DateSql(turista.getFecha_nac()));
-            preparedStatement.setString(6, turista.getLugar_proc());
-            preparedStatement.setString(7, turista.getGenero());
-            preparedStatement.setString(8, turista.getContraseña());
-            preparedStatement.setString(9, turista.getNombre_user());
+            preparedStatement.setInt(1, lugar.getId_lugar());
+            preparedStatement.setString(2, lugar.getLugar());
             row = preparedStatement.executeUpdate();
             closeConnection(connection);
             return row == 1;
@@ -109,11 +94,11 @@ public class TuristaService extends Conexion<Turista>{
         
     }
     
-    public boolean updateTurista( Turista turista )
+    public boolean updateLugar( Lugar lugar )
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "update TURISTA SET CORREO=?, NOMBRE=?, APELLIDO_PAT=?, APELLIDO_MAT=?, FECHA_NAC=?, LUGAR_PROC=?, GENERO=?, CONTRASENA=?, NOMBRE_USER=? WHERE CORREO = ?";
+        String sql = "update LUGAR SET ID_LUGAR=?, LUGAR=? WHERE ID_LUGAR = ?";
         int row = 0;
         try 
         {
@@ -127,15 +112,8 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return false;
             }
-            preparedStatement.setString(1, turista.getCorreo());
-            preparedStatement.setString(2, turista.getNombre());
-            preparedStatement.setString(3, turista.getApellido_pat());
-            preparedStatement.setString(4, turista.getApellido_mat());
-            preparedStatement.setDate(5, dateUtil2DateSql(turista.getFecha_nac()));
-            preparedStatement.setString(6, turista.getLugar_proc());
-            preparedStatement.setString(7, turista.getGenero());
-            preparedStatement.setString(8, turista.getContraseña());
-            preparedStatement.setString(9, turista.getNombre_user());
+            preparedStatement.setInt(1, lugar.getId_lugar());
+            preparedStatement.setString(2, lugar.getLugar());
             row = preparedStatement.executeUpdate();
             closeConnection(connection);
             return row == 1;
@@ -147,11 +125,11 @@ public class TuristaService extends Conexion<Turista>{
         return false;
     }
     
-    public boolean deleteTurista( Turista turista )
+    public boolean deleteLugar( Lugar lugar )
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "DELETE FROM TURISTA WHERE TURISTA = ?";
+        String sql = "DELETE FROM LUGAR WHERE ID_LUGAR = ?";
         int row = 0;
         try 
         {
@@ -165,7 +143,7 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return false;
             }
-            preparedStatement.setInt(1, turista.getId_turista());
+            preparedStatement.setInt(1, lugar.getId_lugar());
             row = preparedStatement.executeUpdate();
             closeConnection(connection);
             return row == 1;
@@ -178,9 +156,9 @@ public class TuristaService extends Conexion<Turista>{
     }
     
 
-    public Turista getTuristaByCorreo( String correo) 
+    public Lugar getLugarByLugar( String lugar) 
     {
-        Turista aux = null;
+        Lugar aux = null;
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
@@ -191,29 +169,22 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return null;
             }
-            preparedStatement = connection.prepareStatement("SELECT * FROM TURISTA WHERE CORREO = ?" );
+            preparedStatement = connection.prepareStatement("SELECT * FROM LUGAR WHERE LUGAR = ?" );
             if (preparedStatement == null) 
             {
                 return null;
             }
-            preparedStatement.setString(1, correo );
+            preparedStatement.setString(1, lugar );
             resultSet = preparedStatement.executeQuery();
             if (resultSet == null) 
             {
                 return null;
             }
-            aux = new Turista ( );
+            aux = new Lugar ( );
             while (resultSet.next()) 
             {
-                aux.setNombre_user(resultSet.getString(1 ) );
-                aux.setCorreo(resultSet.getString(2 ) );
-                aux.setNombre(resultSet.getString(3 ) );
-                aux.setApellido_pat(resultSet.getString( 4 ) );
-                aux.setApellido_mat(resultSet.getString(5 ) );
-                aux.setFecha_nac(resultSet.getDate(6 ) );
-                aux.setLugar_proc(resultSet.getString(7 ) );
-                aux.setGenero(resultSet.getString(8 ) );
-                aux.setContraseña(resultSet.getString(9 ) );
+                aux.setId_lugar(resultSet.getInt(1 ) );
+                aux.setLugar(resultSet.getString(2 ) );
             }   
             resultSet.close();
             closeConnection(connection);
@@ -225,5 +196,4 @@ public class TuristaService extends Conexion<Turista>{
         }
         return null;
     }
-    
 }

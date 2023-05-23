@@ -3,7 +3,7 @@ create database TurisMaps;
 use TurisMaps;
 
 create table TURISTA(
-id_turista int primary key not null,
+id_turista int not null auto_increment primary key,
 correo nvarchar(30),
 nombre nvarchar(40),
 apellido_pat nvarchar(40),
@@ -23,7 +23,7 @@ nombre_lugar nvarchar(40)
 
 
 create table COMENTARIOS(
-id_comentario int primary key not null,
+id_comentario int primary key auto_increment,
 comentario nvarchar(100),
 calificacion int(1),
 fecha date,

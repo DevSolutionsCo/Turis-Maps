@@ -3,16 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/alumno/Downloads/Turis-Maps-main/TurisMaps/web/css/signStyles.css</file>
-            <file>file:/C:/Users/alumno/Downloads/Turis-Maps-main/TurisMaps/src/java/org/turis/service/TuristaService.java</file>
-            <file>file:/C:/Users/alumno/Downloads/Turis-Maps-main/TurisMaps/src/java/org/turis/dao/Turista.java</file>
-            <file>file:/C:/Users/alumno/Downloads/Turis-Maps-main/TurisMaps/web/secure/inicio/signUp.jsp</file>
-            <file>file:/C:/Users/alumno/Downloads/Turis-Maps-main/TurisMaps/web/secure/javascript/popup.js</file>
-            <file>file:/C:/Users/alumno/Downloads/Turis-Maps-main/TurisMaps/src/java/org/turis/service/Conexion.java</file>
-            <file>file:/C:/Users/alumno/Downloads/Turis-Maps-main/TurisMaps/src/java/org/turis/helper/TuristaHelper.java</file>
-            <file>file:/C:/Users/alumno/Downloads/Turis-Maps-main/TurisMaps/src/java/org/turis/helper/Helpers.java</file>
-            <file>file:/C:/Users/alumno/Downloads/Turis-Maps-main/TurisMaps/web/index.jsp</file>
-            <file>file:/C:/Users/alumno/Downloads/Turis-Maps-main/TurisMaps/web/secure/javascript/signUp.js</file>
+            <file>file:/C:/Users/sebas/OneDrive/Escritorio/Turis-Maps/TurisMaps/web/secure/comentarios/mapa.jsp</file>
+            <file>file:/C:/Users/sebas/OneDrive/Escritorio/Turis-Maps/TurisMaps/web/secure/comentarios/sec_comentarios.jsp</file>
+            <file>file:/C:/Users/sebas/OneDrive/Escritorio/Turis-Maps/TurisMaps/web/registro.jsp</file>
+            <file>file:/C:/Users/sebas/OneDrive/Escritorio/Turis-Maps/TurisMaps/web/jalasOque.jsp</file>
+            <file>file:/C:/Users/sebas/OneDrive/Escritorio/Turis-Maps/TurisMaps/web/secure/comentarios/Comentame.jsp</file>
+            <file>file:/C:/Users/sebas/OneDrive/Escritorio/Turis-Maps/TurisMaps/web/editarperfil.jsp</file>
         </group>
     </open-files>
 </project-private>

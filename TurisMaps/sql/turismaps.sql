@@ -33,7 +33,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `turismaps`.`turista`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `turismaps`.`turista` (
-  `id_turista` INT NOT NULL,
+  `id_turista` INT NOT NULL AUTO_INCREMENT,
   `correo` VARCHAR(30) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
   `nombre` VARCHAR(40) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
   `apellido_pat` VARCHAR(40) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `turismaps`.`turista` (
   `fecha_nac` DATE NULL DEFAULT NULL,
   `lugar_proc` VARCHAR(30) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
   `genero` VARCHAR(10) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
-  `contraseña` VARCHAR(20) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
+  `contrasena` VARCHAR(20) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
   `nombre_user` VARCHAR(45) CHARACTER SET 'utf8mb3' NULL DEFAULT NULL,
   PRIMARY KEY (`id_turista`))
 ENGINE = InnoDB

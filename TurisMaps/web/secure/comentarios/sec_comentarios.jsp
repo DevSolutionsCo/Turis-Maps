@@ -13,10 +13,15 @@
         <title>Comentarios</title>
     </head>
     <body>
+        
+        <%
+            String comentario = (String) session.getAttribute("comentario");
+        
+        %>
         <div id="comentarios" class="contenedor-2">
             <div class="contenido-comentario">
-                <div class="nombreuser">Panchito 321</div> 
-                <div class="texto-comentario"> Buen lugar!</div>
+                <div class="nombreuser">Panchitoss 321</div> 
+                <div class="texto-comentario"><%=comentario%></div>
             </div>
             <div class="contenido-comentario">
                 <div class="nombreuser">Panchito 321</div> 

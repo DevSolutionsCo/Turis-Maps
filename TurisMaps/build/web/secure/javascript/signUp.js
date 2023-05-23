@@ -5,27 +5,35 @@
 
 const correo = document.getElementById("correo");
 const nombre = document.getElementById("nombre");
-const apellidos = document.getElementById("apellidos");
+const nombre_user = document.getElementById("nombre_user");
+const apellido_pat = document.getElementById("apellido_pat");
+const apellido_mat = document.getElementById("apellido_mat");
 const fecha_nac = document.getElementById("fecha_nac");
-const pais = document.getElementById("pais");
+const pais = document.getElementById("lugar_proc");
 const genero = document.getElementById("genero");
 const contraseña = document.getElementById("contraseña");
 const parrafo = document.getElementById("warnings");
 const crear = document.getElementById("crear");
 
+
+
+let warnings = ""
+let entrar = false;
+nombre_user.addEventListener('changue', validarNombre_user);
+function validarNombre_user() {
+
+    const valorNombre_user = nombre_user.value;
+
+    if(valorNombre_user.length > 40 || valorNombre_user.length < 3){
+        alert("Los nombres deben tener de 3-40 caracteres");
+        entrar = true;
+    }
+}
+
+
+
 crear.addEventListener('click', e=>{
     e.preventDefault();
-    var edad
-    function calcularEdad(fecha_nac) {
-        var hoy = new Date();
-        var cumpleanos = new Date(fecha_nac);
-        var edad = hoy.getFullYear() - cumpleanos.getFullYear();
-        var m = hoy.getMonth() - cumpleanos.getMonth();
-        if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
-            edad--;
-        }
-        return edad;
-    }
     let generoNull = "Elige tu Genero";
     let paisNull= "Elige tu Pais";
     let warnings ="";
@@ -44,7 +52,7 @@ crear.addEventListener('click', e=>{
         warnings = "La contraseña debe tener de 8-20 caracteres<br>";
         entrar = true;
     }
-    if(apellidos.value.length > 80 || apellidos.value.length < 5)  {
+    if(apellido_pat.value.length > 80 || apellido_pat.value.length < 5 || apellido_mat.value.length > 80 || apellido_mat.value.length < 5)  {
         warnings = "Los apellidos deben tener de 5-80 caracteres<br>";
         entrar = true;
     }
@@ -60,10 +68,12 @@ crear.addEventListener('click', e=>{
         warnings = "La fecha de nacimiento no es valida<br>";
         entrar = true;
     }
+    if(nombre_user.value.length > 40 || nombre_user.value.length < 3){
+        warnings = "El nombre de usuario debe tener de 3-40 caracteres <br>";
+        entrar = true;
+    }
     if(entrar){
         parrafo.innerHTML = warnings;
-    }else{
-        window.location="../../index.jsp";
     }
         
 })

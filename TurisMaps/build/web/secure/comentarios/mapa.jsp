@@ -278,13 +278,16 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="Comentame.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <input id="nuevoComentario" class="nuevoComentario" type="text" 
+                                               placeholder="Nuevo comentario" maxlength="100" name = "comentario" />
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="action" type="submit" value="Guardar"> 
+                                    </div>
+                                </form>
                             </section>
                         </div>
                         <iframe src="../comentarios/sec_comentarios.jsp" title="comentarios"></iframe>
