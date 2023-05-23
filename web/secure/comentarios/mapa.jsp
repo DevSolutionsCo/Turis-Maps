@@ -321,6 +321,7 @@
                                     <div class="input-com" contenteditable="true">
                                         <label for="comentario">Comentario:</label>
                                         <textarea id="comentario" name="comentario" required></textarea>
+                                        
                                         <label for="calificacion">Calificación:</label>
                                         <input type="number" id="calificacion" name="calificacion" required>
                                     </div>
@@ -3383,7 +3384,7 @@
                 </div>
             </div>
         </div>
-        <script src="../javascript/popup.js"></script>
+        <script src="popup.js"></script>
         <script src="../javascript/comentarios.js"></script>
     </body>
 </html>
