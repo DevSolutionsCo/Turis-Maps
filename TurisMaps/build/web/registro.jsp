@@ -84,8 +84,24 @@
                  
                     if(flag != false){
                     String nombre_user = request.getParameter("nombre_user");
+                    String correo = request.getParameter("correo");
+                    String nombre = request.getParameter("nombre");
+                    String apellido_pat = request.getParameter("apellido_pat");
+                    String apellido_mat = request.getParameter("apellido_mat");
+                    String lugar_proc = request.getParameter("lugar_proc");
+                    String genero = request.getParameter("genero");
+                    String contrasena = request.getParameter("contrasena");
+
+
                     session.setAttribute("signUp", "crearCuenta"); 
                     session.setAttribute("nombre_user", nombre_user);
+                    session.setAttribute("correo", correo);
+                    session.setAttribute("nombre", nombre);
+                    session.setAttribute("apellido_pat", apellido_pat);
+                    session.setAttribute("apellido_mat", apellido_mat);
+                    session.setAttribute("lugar_proc", lugar_proc);
+                    session.setAttribute("genero", genero);
+                    session.setAttribute("contrasena", contrasena);
                     session.setAttribute("valido", "creacionValida");
                     response.sendRedirect("index.jsp");
                     }else
