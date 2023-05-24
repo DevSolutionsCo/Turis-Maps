@@ -19,7 +19,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"   crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/Style_Index.css">
- 
+
         <link rel="stylesheet" href="css/mapaStyles.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -63,79 +63,73 @@
                             <li class="nav-item" id="liNav">
                                 <div class="input-group mb-3" id ="botonsesion">
                                     <%
-                                       int valor = 0;
+                                        int valor = 0;
                                         String signUp = (String) session.getAttribute("signUp");
 
                                         if (signUp != null) {
                                             if ("crearCuenta".equals(signUp)) {
                                                 valor = 1;
-                                            }else
-                                                if("sesionCerrada".equals(signUp)){
-                                                   valor=0;
+                                            } else if ("sesionCerrada".equals(signUp)) {
+                                                valor = 0;
                                             }
-                                        }else{
+                                        } else {
                                             valor = 0;
                                         }
-                                        
+
                                         String nombre_user = (String) session.getAttribute("nombre_user");
                                         String botonPresionado = request.getParameter("botonPresionado");
-                                    if (botonPresionado != null && botonPresionado.equals("Iniciar Sesion")) 
-                                    {
+                                        if (botonPresionado != null && botonPresionado.equals("Iniciar Sesion")) {
 
-                                        %>
+                                    %>
                                     <button class="btn btn-outline-dark"  type="button" id="borderboton" data-bs-toggle="dropdown" ><%=nombre_user%></button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="editarperfil.jsp">Editar Perfil</a></li>
-                                         <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
-                                         <script>
+                                        <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
+                                        <script>
                                             function cerrarSesion() {
-                                              var xhr = new XMLHttpRequest();
-                                              xhr.open("GET", "cerrarSesion.jsp?signUp=crearCuenta", true);
-                                              xhr.onreadystatechange = function () {
-                                                if (xhr.readyState === 4 && xhr.status === 200) {
-                                                  window.location.href = "index.jsp";
-                                                }
-                                              };
-                                              xhr.send();
+                                                var xhr = new XMLHttpRequest();
+                                                xhr.open("GET", "cerrarSesion.jsp?signUp=crearCuenta", true);
+                                                xhr.onreadystatechange = function () {
+                                                    if (xhr.readyState === 4 && xhr.status === 200) {
+                                                        window.location.href = "index.jsp";
+                                                    }
+                                                };
+                                                xhr.send();
                                             }
-                                          </script>
-                                         <%
-                                         %>
-                                    </ul>   
+                                        </script>
                                         <%
-                                    }else
-                                        if (nombre_user != null && valor == 1) {
-                                                %>
-                                                <button class="btn btn-outline-dark" type="button" id="borderboton" data-bs-toggle="dropdown"><%=nombre_user%></button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="editarperfil.jsp">Editar Perfil</a></li>
-                                                    <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
-                                                      <script>
-                                                        function cerrarSesion() {
-                                                          var xhr = new XMLHttpRequest();
-                                                          xhr.open("GET", "cerrarSesion.jsp?signUp=crearCuenta", true);
-                                                          xhr.onreadystatechange = function () {
-                                                            if (xhr.readyState === 4 && xhr.status === 200) {
-                                                              window.location.href = "index.jsp";
-                                                            }
-                                                          };
-                                                          xhr.send();
-                                                        }
-                                                      </script>           
-                                                </ul> 
-                                        <%
-                                            }
-
-                                        
-                                        else {
                                         %>
+                                    </ul>   
+                                    <%
+                                    } else if (nombre_user != null && valor == 1) {
+                                    %>
+                                    <button class="btn btn-outline-dark" type="button" id="borderboton" data-bs-toggle="dropdown"><%=nombre_user%></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="editarperfil.jsp">Editar Perfil</a></li>
+                                        <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
+                                        <script>
+                                            function cerrarSesion() {
+                                                var xhr = new XMLHttpRequest();
+                                                xhr.open("GET", "cerrarSesion.jsp?signUp=crearCuenta", true);
+                                                xhr.onreadystatechange = function () {
+                                                    if (xhr.readyState === 4 && xhr.status === 200) {
+                                                        window.location.href = "index.jsp";
+                                                    }
+                                                };
+                                                xhr.send();
+                                            }
+                                        </script>           
+                                    </ul> 
+                                    <%
+                                    } else {
+                                    %>
                                     <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="borderboton">Inicio de sesión</button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="signIn.jsp">Iniciar Sesión</a></li>
                                         <li><a class="dropdown-item" href="registro.jsp?accion=Nuevo">Crear cuenta</a></li>
                                     </ul>   
-                                        <%
-                                    }
+                                    <%
+                                        }
 
                                     %>                                    
                                 </div>
@@ -167,8 +161,10 @@
                     </span>
                     <div class="card-body">
                         <h5 class="card-title">Sobre nosotros</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eius adipisci officia quos labore unde, delectus corporis officiis nostrum quas est ipsam eligendi ad accusantium odit, tempore esse. Incidunt, corporis?
-                            Similique quia odit doloremque dolores nobis, in soluta excepturi aliquam debitis impedit labore necessitatibus expedita alias molestiae dolor accusamus minima animi fugiat, fugit, perferendis quaerat aut! Error voluptatum aliquid dolorum.</p>
+                        <p class="card-text" style="text-align: justify"> DevSolutions es una empresa creada con el objetivo de realizar soluciones simples y eficientes para resolver 
+                            distintas problemáticas, conformada por 4 estudiantes del Politécnico, los cuales se encuentran en un aprendizaje continuo para que cada día mejore 
+                            la calidad de nuestro trabajo, siempre manteniedno presentes los valores de la empresa en cada uno de los integrantes</p>
+                            
                     </div>
                 </div>
 
@@ -178,9 +174,11 @@
                         travel_explore
                     </span>
                     <div class="card-body">
-                        <h5 class="card-title">Explora la CDMX</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda minus non, aperiam ipsa natus quisquam cum autem quas et nobis molestiae asperiores, eaque culpa itaque nostrum officia veniam sunt fugit?
-                            Odio quam explicabo sequi, ipsam delectus ad, esse voluptates qui soluta dicta repudiandae accusantium ab quibusdam veniam eos consequatur? Totam nisi veritatis nesciunt at excepturi soluta distinctio voluptatem recusandae suscipit!</p>
+                        <h5 class="card-title" >Explora la CDMX</h5>
+                        <p class="card-text" style="text-align: justify">La Ciudad de México es una de las principales atracciones de turismo en México, debido 
+                        a que se concentra en gran cantidad lo que representa al país, teniendo desde restaurantes con platillos nacionales
+                        hasta un patrimonio de la humanidad. Es por esto que es aqui te mostramos lugares imperdibles durante tu estancia en 
+                        la capital.</p>
                     </div>
                 </div>
 
@@ -190,9 +188,9 @@
                         volunteer_activism
                     </span>
                     <div class="card-body">
-                        <h5 class="card-title">¡Califícanos!</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corrupti mollitia sapiente tempora recusandae tempore, iusto quaerat, perspiciatis, magnam numquam libero ad optio consectetur maxime ea at labore deserunt eveniet?
-                            Dolor, magnam. Deleniti, ullaem rerum. Earum fugit quod illum eligendi. Nisi optio eos consequuntur facilis, alias dolore adipisci iure et reiciendis tempore nesciunt excepturi laborum assumenda quo quaerat deserunt dolorum.</p>
+                        <h5 class="card-title" >¡Califícanos!</h5>
+                        <p class="card-text" style="font-size: 18px">  ¡Si la aplicación fue de tu agrado no olvides dejar un comentario y disfruta de tu estadia conociendo  
+                            la Ciudad de México!</p>
                     </div>
                 </div>
 
