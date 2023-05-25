@@ -370,7 +370,21 @@
                                             }
                                         %>
                                         
-                                        
+                                        <script>
+                                            const error_l1 = document.getElementById("error_l1");
+                                            
+                                            error_l1.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                         
                                     </div>
                                 </form>
@@ -455,10 +469,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l2" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l2 = document.getElementById("error_l2");
+                                            
+                                            error_l2.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -540,10 +569,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l3" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l3 = document.getElementById("error_l3");
+                                            
+                                            error_l3.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -625,10 +669,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l4" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                        <script>
+                                            const error_l4 = document.getElementById("error_l4");
+                                            
+                                            error_l4.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -710,10 +770,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l5" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l5 = document.getElementById("error_l5");
+                                            
+                                            error_l5.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -862,10 +937,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l6" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                        <script>
+                                            const error_l6 = document.getElementById("error_l6");
+                                            
+                                            error_l6.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -947,10 +1038,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l7" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                        <script>
+                                            const error_l7 = document.getElementById("error_l7");
+                                            
+                                            error_l7.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -1032,10 +1139,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l8" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l8 = document.getElementById("error_l8");
+                                            
+                                            error_l8.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -1117,10 +1239,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l9" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l9 = document.getElementById("error_l9);
+                                            
+                                            error_l9.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -1202,10 +1339,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l10" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l10 = document.getElementById("error_l10");
+                                            
+                                            error_l10.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -1357,10 +1509,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l11" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l11 = document.getElementById("error_l11");
+                                            
+                                            error_l11.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -1442,10 +1609,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l12" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l12 = document.getElementById("error_l12");
+                                            
+                                            error_l12.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -1527,10 +1709,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l13" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l13 = document.getElementById("error_l13");
+                                            
+                                            error_l13.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -1612,10 +1809,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l14" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l14 = document.getElementById("error_l14");
+                                            
+                                            error_l14.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -1697,10 +1909,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l15" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                        <script>
+                                            const error_l15 = document.getElementById("error_l15");
+                                            
+                                            error_l15.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -1852,10 +2080,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l16" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l16 = document.getElementById("error_l16");
+                                            
+                                            error_l16.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -1937,10 +2180,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l17" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l17 = document.getElementById("error_l17");
+                                            
+                                            error_l17.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -2022,10 +2280,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l18" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l18 = document.getElementById("error_l18");
+                                            
+                                            error_l18.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -2106,10 +2379,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l19" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l19 = document.getElementById("error_l19");
+                                            
+                                            error_l19.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -2191,10 +2479,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l20" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        <script>
+                                            const error_l20 = document.getElementById("error_l20");
+                                            
+                                            error_l20.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -2343,10 +2646,27 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l21" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l21 = document.getElementById("error_l21");
+                                            
+                                            error_l21.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
+                                        
                                     </div>
                                 </form>  
                             </section>
@@ -2428,10 +2748,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l22" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l22 = document.getElementById("error_l22");
+                                            
+                                            error_l22.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -2513,10 +2849,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l23" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l23 = document.getElementById("error_l23");
+                                            
+                                            error_l23.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -2598,10 +2950,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l24" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l24 = document.getElementById("error_l24");
+                                            
+                                            error_l24.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -2683,10 +3051,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l25" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l25 = document.getElementById("error_l25");
+                                            
+                                            error_l25.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -2835,10 +3219,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l26" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l26 = document.getElementById("error_l26");
+                                            
+                                            error_l26.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -2920,10 +3320,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l27" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l27 = document.getElementById("error_l27");
+                                            
+                                            error_l27.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>  
                             </section>
@@ -3005,10 +3421,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l28" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                          <script>
+                                            const error_l28= document.getElementById("error_l28");
+                                            
+                                            error_l28.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -3090,10 +3521,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l29" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l29 = document.getElementById("error_l29");
+                                            
+                                            error_l29.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -3175,10 +3622,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l30" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l30 = document.getElementById("error_l30");
+                                            
+                                            error_l30.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -3328,10 +3791,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l31" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l31 = document.getElementById("error_l31");
+                                            
+                                            error_l31.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -3413,10 +3892,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l32" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l32 = document.getElementById("error_l32);
+                                            
+                                            error_l32.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -3498,10 +3993,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l33" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l33 = document.getElementById("error_l33");
+                                            
+                                            error_l33.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -3582,10 +4093,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l34" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l34 = document.getElementById("error_l34");
+                                            
+                                            error_l34.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -3667,10 +4194,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l35" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l35 = document.getElementById("error_l35");
+                                            
+                                            error_l35.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -3819,10 +4362,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l36" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                          <script>
+                                            const error_l36 = document.getElementById("error_l36");
+                                            
+                                            error_l36.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -3904,10 +4462,26 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l37" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                        
+                                          <script>
+                                            const error_l37 = document.getElementById("error_l37);
+                                            
+                                            error_l37.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -3989,10 +4563,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l38" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                          <script>
+                                            const error_l38 = document.getElementById("error_l38");
+                                            
+                                            error_l38.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -4074,10 +4663,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l39" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                          <script>
+                                            const error_l39 = document.getElementById("error_l39");
+                                            
+                                            error_l39.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form> 
                             </section>
@@ -4160,10 +4764,25 @@
                                         <%
                                             }else{
                                         %>
-                                        <a id="error_l1" type="submit">Agregar comentario</a>
+                                        <a id="error_l40" type="submit">Agregar comentario</a>
                                         <%
                                             }
                                         %>
+                                          <script>
+                                            const error_l40 = document.getElementById("error_l40");
+                                            
+                                            error_l40.addEventListener('mousedown',function () {
+                                            
+                                            
+                                                Swal.fire({
+                                                icon: 'error',
+                                                title: 'Inicia Sesión',
+                                                text: 'Debes iniciar sesion para comentar'
+                                              });
+                                            
+                                        });
+                                            
+                                        </script>
                                     </div>
                                 </form>
                             </section>
@@ -4177,20 +4796,6 @@
         <script src="../javascript/popup.js"></script>
         <script src="../javascript/comentarios.js"></script>
         
-        <script>
-                                            var error_l1 = document.getElementById("error_l1");
-                                            
-                                            error_l1.addEventListener('mousedown',function () {
-                                            
-                                            
-                                                Swal.fire({
-                                                icon: 'error',
-                                                title: 'Inicia Sesión',
-                                                text: 'Debes iniciar sesion para comentar'
-                                              });
-                                            
-                                        });
-                                            
-                                        </script>
+      
     </body>
 </html>
