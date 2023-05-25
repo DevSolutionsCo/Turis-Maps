@@ -174,28 +174,28 @@
                                     <a href="" id="btn_l1_coyo" class="id_l1_coyo">
                                         <img src="../../img/frida.jpg" alt="" class="img_l1">
                                     </a>
-                                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                                        <script>
-                                        $(document).ready(function() {
-                                          $('.id_l1_coyo').click(function(event) {
-                                            event.preventDefault(); // Evita la redirección por defecto
+                                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $('.id_l1_coyo').click(function (event) {
+                                                event.preventDefault(); // Evita la redirección por defecto
 
-                                            // Aquí realizas la llamada AJAX para cambiar los parámetros
-                                            $.ajax({
-                                              url: '../comentarios/sec_comentario.jsp',
-                                              type: 'GET',
-                                              data: { id_l1: '1'},
-                                              success: function(response) {
-                                                // Aquí puedes manejar la respuesta si es necesario
-                                                console.log('Parámetros cambiados con éxito');
-                                              },
-                                              error: function() {
-                                                console.log('Error al cambiar los parámetros');
-                                              }
+                                                // Aquí realizas la llamada AJAX para cambiar los parámetros
+                                                $.ajax({
+                                                    url: '../comentarios/sec_comentario.jsp',
+                                                    type: 'GET',
+                                                    data: {id_l1: '1'},
+                                                    success: function (response) {
+                                                        // Aquí puedes manejar la respuesta si es necesario
+                                                        console.log('Parámetros cambiados con éxito');
+                                                    },
+                                                    error: function () {
+                                                        console.log('Error al cambiar los parámetros');
+                                                    }
+                                                });
                                             });
-                                          });
                                         });
-                                        </script>
+                                    </script>
                                 </div>
                                 <div class="nomb_l1">
                                     <h5>Museo Frida Khalo</h5>
@@ -318,7 +318,7 @@
                                 idTuristaa = rs.getInt("id_turista");
                                 session.setAttribute("idTuristaa", idTuristaa);
                             }
-                            
+
                         } catch (Exception e) {
                             e.printStackTrace();
                         } finally {
@@ -409,7 +409,7 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                                                <div class="contenedor"> 
+                        <div class="contenedor"> 
                             <section class="contenedor-agg-com">
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
@@ -482,7 +482,7 @@
                         </div>
                     </div>
                     <div class="coment_lugares">
-                                                <div class="contenedor"> 
+                        <div class="contenedor"> 
                             <section class="contenedor-agg-com">
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
@@ -2711,6 +2711,9 @@
                 </section>
             </div>
         </div>
+        
+        <!--AQUI EMPIEZA 1/2-->
+        
         <div class="overlay overflow-auto mapa" id="overlay_l1_azca">
             <div class="popup" id="popup_l1_azca">
                 <a  href="#" id="cerrar_l1_azca" class="cerrar_alca" >X</a>
@@ -2761,13 +2764,20 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="guardar_comentario.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea id="comentario" name="comentario" required></textarea>
+
+                                        <label for="calificacion">Calificación:</label>
+                                        <input type="number" id="calificacion" name="calificacion" required>
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="id_lugar_1" type="hidden" value="31" name="id_lugar">
+                                        <input type="submit" value="Guardar comentario">
+                                    </div>
+                                </form>
                             </section>
                         </div>
                         <iframe src="../comentarios/sec_comentarios.jsp?id_lugar=31" title="comentarios"></iframe>
@@ -2827,13 +2837,20 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="guardar_comentario.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea id="comentario" name="comentario" required></textarea>
+
+                                        <label for="calificacion">Calificación:</label>
+                                        <input type="number" id="calificacion" name="calificacion" required>
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="id_lugar_1" type="hidden" value="32" name="id_lugar">
+                                        <input type="submit" value="Guardar comentario">
+                                    </div>
+                                </form>
                             </section>
                         </div>
                         <iframe src="../comentarios/sec_comentarios.jsp?id_lugar=32" title="comentarios"></iframe>
@@ -2893,13 +2910,20 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="guardar_comentario.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea id="comentario" name="comentario" required></textarea>
+
+                                        <label for="calificacion">Calificación:</label>
+                                        <input type="number" id="calificacion" name="calificacion" required>
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="id_lugar_1" type="hidden" value="33" name="id_lugar">
+                                        <input type="submit" value="Guardar comentario">
+                                    </div>
+                                </form>
                             </section>
                         </div>
                         <iframe src="../comentarios/sec_comentarios.jsp?id_lugar=33" title="comentarios"></iframe>
@@ -2957,13 +2981,20 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="guardar_comentario.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea id="comentario" name="comentario" required></textarea>
+
+                                        <label for="calificacion">Calificación:</label>
+                                        <input type="number" id="calificacion" name="calificacion" required>
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="id_lugar_1" type="hidden" value="34" name="id_lugar">
+                                        <input type="submit" value="Guardar comentario">
+                                    </div>
+                                </form>
                             </section>
                         </div>
                         <iframe src="../comentarios/sec_comentarios.jsp?id_lugar=34" title="comentarios"></iframe>
@@ -3023,13 +3054,20 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="guardar_comentario.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea id="comentario" name="comentario" required></textarea>
+
+                                        <label for="calificacion">Calificación:</label>
+                                        <input type="number" id="calificacion" name="calificacion" required>
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="id_lugar_1" type="hidden" value="35" name="id_lugar">
+                                        <input type="submit" value="Guardar comentario">
+                                    </div>
+                                </form>
                             </section>
                         </div>
                         <iframe src="../comentarios/sec_comentarios.jsp?id_lugar=35" title="comentarios"></iframe>
@@ -3037,8 +3075,11 @@
                 </div>
             </div>
         </div>
-
-        <!--Aqui empieza Izta-->
+        
+        
+        <!--AQUI ACABA 2/2-->
+        
+        
 
         <div class="overlay overflow-auto mapa" id="overlay_izta">
             <div class="popup" id="popup_izta">
@@ -3105,6 +3146,8 @@
             </div>
         </div>
 
+        
+        
         <!--Estadio Alfredo--> 
 
         <div class="overlay overflow-auto mapa" id="overlay_l1_izta">
@@ -3156,13 +3199,20 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="guardar_comentario.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea id="comentario" name="comentario" required></textarea>
+
+                                        <label for="calificacion">Calificación:</label>
+                                        <input type="number" id="calificacion" name="calificacion" required>
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="id_lugar_1" type="hidden" value="36" name="id_lugar">
+                                        <input type="submit" value="Guardar comentario">
+                                    </div>
+                                </form>
                             </section>
                         </div>
                         <iframe src="../comentarios/sec_comentarios.jsp?id_lugar=36" title="comentarios"></iframe>
@@ -3222,15 +3272,22 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="guardar_comentario.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea id="comentario" name="comentario" required></textarea>
+
+                                        <label for="calificacion">Calificación:</label>
+                                        <input type="number" id="calificacion" name="calificacion" required>
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="id_lugar_1" type="hidden" value="37" name="id_lugar">
+                                        <input type="submit" value="Guardar comentario">
+                                    </div>
+                                </form>
                             </section>
-                        </div>
+                        </div>                        
                         <iframe src="../comentarios/sec_comentarios.jsp?id_lugar=37" title="comentarios"></iframe>
                     </div>
                 </div>
@@ -3288,13 +3345,20 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="guardar_comentario.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea id="comentario" name="comentario" required></textarea>
+
+                                        <label for="calificacion">Calificación:</label>
+                                        <input type="number" id="calificacion" name="calificacion" required>
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="id_lugar_1" type="hidden" value="38" name="id_lugar">
+                                        <input type="submit" value="Guardar comentario">
+                                    </div>
+                                </form>
                             </section>
                         </div>
                         <iframe src="../comentarios/sec_comentarios.jsp?id_lugar=38" title="comentarios"></iframe>
@@ -3354,15 +3418,22 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="guardar_comentario.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea id="comentario" name="comentario" required></textarea>
+
+                                        <label for="calificacion">Calificación:</label>
+                                        <input type="number" id="calificacion" name="calificacion" required>
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="id_lugar_1" type="hidden" value="39" name="id_lugar">
+                                        <input type="submit" value="Guardar comentario">
+                                    </div>
+                                </form>
                             </section>
-                        </div>
+                        </div>                        
                         <iframe src="../comentarios/sec_comentarios.jsp?id_lugar=39" title="comentarios"></iframe>
                     </div>
                 </div>
@@ -3421,13 +3492,20 @@
                                 <div class="imagen-usuario">
                                     <img class="img-usuario"src="../../img/astronauta.svg">
                                 </div>
-                                <div class="input-com" contenteditable="true">
-                                    <input id="nuevoComentario" class="nuevoComentario" type="text" 
-                                           placeholder="Nuevo comentario" maxlength="100" />
-                                </div>
-                                <div class="btn-agg">
-                                    <button id="#" class="subir-coment" onclick="nComentario()">Comentar</button>
-                                </div>   
+                                <form method="post" action="guardar_comentario.jsp">
+                                    <div class="input-com" contenteditable="true">
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea id="comentario" name="comentario" required></textarea>
+
+                                        <label for="calificacion">Calificación:</label>
+                                        <input type="number" id="calificacion" name="calificacion" required>
+                                    </div>
+
+                                    <div class="btn-agg">
+                                        <input id="id_lugar_1" type="hidden" value="40" name="id_lugar">
+                                        <input type="submit" value="Guardar comentario">
+                                    </div>
+                                </form>
                             </section>
                         </div>
                         <iframe src="../comentarios/sec_comentarios.jsp?id_lugar=40" title="comentarios"></iframe>
@@ -3435,6 +3513,10 @@
                 </div>
             </div>
         </div>
+        
+                <!--AQUI ACABA 2/2-->
+
+        
         <script src="../javascript/popup.js"></script>
         <script src="../javascript/comentarios.js"></script>
     </body>
