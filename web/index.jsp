@@ -167,8 +167,9 @@
                     </span>
                     <div class="card-body">
                         <h5 class="card-title">Sobre nosotros</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eius adipisci officia quos labore unde, delectus corporis officiis nostrum quas est ipsam eligendi ad accusantium odit, tempore esse. Incidunt, corporis?
-                            Similique quia odit doloremque dolores nobis, in soluta excepturi aliquam debitis impedit labore necessitatibus expedita alias molestiae dolor accusamus minima animi fugiat, fugit, perferendis quaerat aut! Error voluptatum aliquid dolorum.</p>
+                        <p class="card-text">DevSolutions es una empresa creada con el objetivo de realizar soluciones simples y eficientes para resolver 
+                            distintas problemáticas, conformada por 4 estudiantes del Politécnico, los cuales se encuentran en un aprendizaje continuo para que cada día mejore 
+                            la calidad de nuestro trabajo, siempre manteniedno presentes los valores de la empresa en cada uno de los integrantes</p>
                     </div>
                 </div>
 
@@ -179,9 +180,10 @@
                     </span>
                     <div class="card-body">
                         <h5 class="card-title">Explora la CDMX</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda minus non, aperiam ipsa natus quisquam cum autem quas et nobis molestiae asperiores, eaque culpa itaque nostrum officia veniam sunt fugit?
-                            Odio quam explicabo sequi, ipsam delectus ad, esse voluptates qui soluta dicta repudiandae accusantium ab quibusdam veniam eos consequatur? Totam nisi veritatis nesciunt at excepturi soluta distinctio voluptatem recusandae suscipit!</p>
-                    </div>
+                        <p class="card-text">La Ciudad de México es una de las principales atracciones de turismo en México, debido 
+                        a que se concentra en gran cantidad lo que representa al país, teniendo desde restaurantes con platillos nacionales
+                        hasta un patrimonio de la humanidad. Es por esto que es aqui te mostramos lugares imperdibles durante tu estancia en 
+                        la capital.</div>
                 </div>
 
 
@@ -191,9 +193,8 @@
                     </span>
                     <div class="card-body">
                         <h5 class="card-title">¡Califícanos!</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corrupti mollitia sapiente tempora recusandae tempore, iusto quaerat, perspiciatis, magnam numquam libero ad optio consectetur maxime ea at labore deserunt eveniet?
-                            Dolor, magnam. Deleniti, ullaem rerum. Earum fugit quod illum eligendi. Nisi optio eos consequuntur facilis, alias dolore adipisci iure et reiciendis tempore nesciunt excepturi laborum assumenda quo quaerat deserunt dolorum.</p>
-                    </div>
+                        <p class="card-text">¡Si la aplicación fue de tu agrado no olvides dejar un comentario y disfruta de tu estadia conociendo  
+                            la Ciudad de México!</div>
                 </div>
 
 
@@ -214,8 +215,7 @@
                             <img src="img/BellasArtes.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Bellas Artes</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem sunt porro architecto dolorum nesciunt veritatis nostrum consequuntur eos sit reiciendis nisi rerum delectus dolore nihil deleniti, cupiditate impedit alias!</p>
-                            </div>
+                                <p class="card-text">El icónico Palacio de Bellas Artes de la CDMX combina el esplendor arquitectónico del Art Nouveau y el Art Decó. Su hermosa cúpula de cristal y su interior grandioso albergan una exposición de arte excepcional. Además, es un escenario destacado para espectáculos culturales, teatro, danza y música de renombre mundial, convirtiéndose en un símbolo de la vibrante escena artística de la Ciudad de México.</div>
                         </div>
                     </div>
 
@@ -225,8 +225,7 @@
                             <img src="img/Angel.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Angel de la independencia</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione exercitationem ipsam mollitia, soluta deserunt quo omnis voluptatem. Molestias amet tempora blanditiis, sed vitae facere! Iusto, minus! Architecto iste illo doloremque.</p>
-                            </div>
+                                <p class="card-text">El majestuoso Ángel de la Independencia en la CDMX es un símbolo imponente de la libertad y la independencia de México. Esta estatua dorada de Victoria alada se encuentra en el Paseo de la Reforma y es un hito emblemático. Rodeado de amplias avenidas y hermosos jardines, el Ángel de la Independencia representa el espíritu y el orgullo de la nación mexicana.</div>
                         </div>
                     </div>
 
@@ -236,8 +235,7 @@
                             <img src="img/Castillo-Chapultepec-fb-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Castillo de Chapultepec</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus eaque quidem deleniti, quisquam at asperiores voluptas repellendus dignissimos eos quia debitis enim eveniet quo dolores molestiae, eligendi voluptate aut.</p>
-                            </div>
+                                <p class="card-text">El imponente Castillo de Chapultepec en la CDMX es una joya histórica ubicada en el Bosque de Chapultepec. Esta antigua fortaleza real y residencia presidencial ofrece una arquitectura espectacular y vistas panorámicas de la ciudad. Rodeado de hermosos jardines, el castillo alberga el Museo Nacional de Historia, donde los visitantes pueden adentrarse en la rica historia de México. Con su encanto y esplendor, el Castillo de Chapultepec es un destino imperdible para los amantes de la historia y la cultura.</div>
                         </div>
                     </div>
 
@@ -247,8 +245,7 @@
                             <img src="img/revo.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Monumento de la Revolución Mexicana</h5>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit obcaecati deserunt et itaque aliquid nesciunt minima officia. Autem aliquid in eos quia maxime nobis pariatur tempora, fuga nihil! Illum, adipisci.</p>
-                            </div>
+                                <p class="card-text">El Monumento a la Revolución en la CDMX es un impresionante ícono conmemorativo que rinde homenaje a la Revolución Mexicana. Esta estructura de granito y mármol se destaca en el horizonte de la ciudad. En su interior, alberga un museo que narra los acontecimientos históricos que llevaron a la revolución. Además, ofrece una vista panorámica desde su mirador en la cima. El Monumento a la Revolución es un lugar emblemático que evoca el espíritu revolucionario y es un punto de referencia imperdible para los visitantes en busca de historia y cultura en la capital mexicana.</div>
                         </div>
                     </div>
                 </div>
