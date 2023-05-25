@@ -6,6 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/signStyles.css">
+           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+   <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+                                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+
         <title>Sign Up</title>
     </head>
     <body>
@@ -25,17 +32,18 @@
         
     <div  class="signUp-box">
         <h2>Editar Perfil</h2>
-        <form action="actualizame.jsp">
+        <form id="edit" action="actualizame.jsp">
             <div class="user-box">
-                <input type="text" class="inputs" name="nombre_a" id="nombre" value="<%=nombre%>">
+                <input type="text" class="inputs" name="nombre_a" id="nombre_1" value="<%=nombre%>">
                 <label class="labels">Nombre</label>
+
             </div>
             <div class="user-box">
-                <input class="inputs" type="text" name="apellido_pat_a" id="apellidos" value="<%=apellido_pat%>">
+                <input class="inputs" type="text" name="apellido_pat_a" id="apellido_pat" value="<%=apellido_pat%>">
                 <label class="labels">Apellido Paterno</label>
             </div>
                         <div class="user-box">
-                <input class="inputs" type="text" name="apellido_mat_a" id="apellidos"  value="<%=apellido_mat%>">
+                <input class="inputs" type="text" name="apellido_mat_a" id="apellido_mat"  value="<%=apellido_mat%>">
                 <label class="labels">Apellido Materno</label>
             </div>
             <div class="user-box">
@@ -250,11 +258,11 @@
                 
             </div>
             <div class="user-box">
-                <input type="password" name="passw_a" class="inputs" id="contraseña" value="<%=contrasena%>">
+                <input type="password" name="passw_a" class="inputs" id="contraseña_1" value="<%=contrasena%>">
                 <label class="labels">Contraseña</label>
             </div>
                         <div class="user-box">
-                <input type="password" name="passw" class="inputs" id="contraseña">
+                <input type="password" name="passw" class="inputs" id="contraseña_2">
                 <label class="labels">Confirmar contraseña</label>
             </div>
             <p class="warnings" id="warnings"></p>
@@ -266,8 +274,81 @@
                     <span></span>
                     <span></span>
                     
-                </a>
             </div>
+             <script>
+                    
+                    const edit = document.getElementById("edit");
+                    const contraseña_1 = document.getElementById("contraseña_1");
+                    const contraseña_2 = document.getElementById("contraseña_2");
+
+                    const apellido_pat_1 = document.getElementById("apellido_pat");
+                    const apellido_mat_1 = document.getElementById("apellido_mat");
+                    const pais_1 = document.getElementById("lugar_proc");
+                    const genero_1 = document.getElementById("genero");
+                    const nombre_1 = document.getElementById("nombre_1");
+
+                    
+                    edit.addEventListener('submit', a=>{
+                    let paisNull= "Elige tu Pais";
+                    let generoNull = "Elige tu Genero";
+                    
+                    
+                      
+                      if(contraseña_1.value != contraseña_2.value){
+                           a.preventDefault();
+                                  Swal.fire({
+                                  icon: 'error',
+                                  title: 'Confirmación de contraseña invalido',
+                                  text: 'Las contraseñas deben coincidir'
+                                });
+                      }
+        if(nombre_1.value.length > 40 || nombre_1.value.length < 3){
+                                  a.preventDefault();
+                                  Swal.fire({
+                                  icon: 'error',
+                                  title: 'Nombre invalido',
+                                  text: 'Los nombres deben tener de 3-40 caracteres'
+                                });
+                              }else
+                                                
+                            if(contraseña_1.value.length > 20 || contraseña_1.value.length < 8){
+                                a.preventDefault();
+                                Swal.fire({
+                                icon: 'error',
+                                title: 'Contraseña invalida',
+                                text: 'La contraseña debe tener de 8-20 caracteres'
+                              });
+                            }else
+                                if(apellido_pat_1.value.length > 80 || apellido_pat_1.value.length < 3 || apellido_mat_1.value.length > 80 || apellido_mat_1.value.length < 3)  {
+                                    a.preventDefault();
+                                    Swal.fire({
+                                    icon: 'error',
+                                    title: 'Apellidos invalidos',
+                                    text: 'Los apellidos deben tener de 3-80 caracteres'
+                                  });
+                                }else
+                                    if(pais_1.value === paisNull)  {
+                                        a.preventDefault();
+                                        Swal.fire({
+                                        icon: 'error',
+                                        title: 'Pais invalido',
+                                        text: 'Debes elegir un pais'
+                                      });
+                                    }else
+                                        if(genero_1.value === generoNull)  {
+                                            a.preventDefault();
+                                            Swal.fire({
+                                            icon: 'error',
+                                            title: 'Genero invalido',
+                                            text: 'Debes elegir un genero'
+                                          });
+                                        }
+                                            
+                        
+                            
+                        
+                    }); 
+                </script>
         </form>
     </div>
     </body>

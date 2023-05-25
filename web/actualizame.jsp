@@ -1,7 +1,7 @@
 <%-- 
     Document   : actualizame
     Created on : May 22, 2023, 12:00:52 AM
-    Author     : sebas
+    Author     : sebas & jaav
 --%>
 <%@page import="java.sql.DriverManager"%>
 <%@ page import="java.sql.*" %>

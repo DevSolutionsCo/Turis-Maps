@@ -1,7 +1,7 @@
 <%-- 
     Document   : signIn
     Created on : 14 may 2023, 1:53:38
-    Author     : USUARIO
+    Author     : jaav
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -23,16 +23,18 @@
 <body>
     <div  class="signIn-box">
         <h2>Inicio de Sesion</h2>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 
         <%
             String siOnel = (String) session.getAttribute("noSesion");
+            
             if (siOnel != null) {
                     if ("noSesion".equals(siOnel)) {
                             %>
                             <script>
                                     Swal.fire({
                                     icon: 'error',
-                                    title: 'Iinicio de sesion invalido',
+                                    title: 'Inicio de sesion invalido',
                                     text: 'Contraseña o correo incorrectos'
                                   });
                             </script>

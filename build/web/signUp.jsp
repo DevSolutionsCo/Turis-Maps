@@ -1,7 +1,7 @@
 <%-- 
     Document   : signUp
     Created on : 14 may 2023, 1:54:56
-    Author     : USUARIO
+    Author     : jaav
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -23,26 +23,47 @@
      <div class="signUp-box">
         <h2 align="center">Creacion de la cuenta</h2>
         
-        
+                        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+
         <form id="signUp" action="registro.jsp">
                    <%
-        String invalido = (String) session.getAttribute("invalido");
-        String valido = (String) session.getAttribute("valido");
+        String correoUsado = (String) session.getAttribute("correoUsado");
+        String nombreUsado = (String) session.getAttribute("nombreUsado");
 
-        if(invalido != null){
-        if ("creacionInvalida".equals(invalido)){
+        if(correoUsado != null){
+            if ("correoUsado".equals(correoUsado)){
         %>        
         <script>
-            alert("Debes rellenar todos los campos");
+            Swal.fire({
+            icon: 'error',
+            title: 'Correo ya registrado',
+            text: 'El correo ha sido registrado en TurisMaps, inicia sesión.'
+          });    
         </script>
+        
         <%
             }
         }
+        if(nombreUsado != null){
+            if ("nombreUsado".equals(nombreUsado)){
+        %>        
+        <script>
+            Swal.fire({
+            icon: 'error',
+            title: 'Nombre de usuario ya usado',
+            text: 'El nombre de usario ha sido ocupado en TurisMaps, elige otro.'
+          });    
+        </script>
+        
+        <%
+
+            }
+        }
+        
         %>
     <div class="wrap"><div class="kike">
             <div class="user-box">
                 <input type="text" name="nombre_user" class="inputs" id="nombre_user" value="${param.nombre_user}" >
-                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 
                 <label class="labels">Nombre de Usuario</label>
             <div class="user-box">

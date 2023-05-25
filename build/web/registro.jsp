@@ -1,9 +1,10 @@
 <%-- 
     Document   : registro
     Created on : 19 may 2023, 12:51:17
-    Author     : alumno
+    Author     : jaav
 --%>
 
+<%@ page import="java.sql.*" %>
 <%@page import="java.util.Calendar"%>
 <%@page import="org.turis.helper.TuristaHelper"%>
 <%@page import="java.util.Date"%>
@@ -19,6 +20,9 @@
     </head>
     <body>
        <%
+            session.removeAttribute("nombreUsado");
+            session.removeAttribute("correoUsado");
+
             String accion = request.getParameter("accion");
             Helpers helpers = null;
             Turista turista = null;
@@ -71,7 +75,47 @@
         <%
             }
  
+                Connection conn = null;
 
+                        Class.forName("com.mysql.jdbc.Driver");
+                        String dbURL = "jdbc:mysql://localhost:3306/TurisMaps";
+                        String dbUsername = "root";
+                        String dbPassword = "n0m3l0";
+                         conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
+
+                String correo_pro = request.getParameter("correo");
+                String nombre_user_pro = request.getParameter("nombre_user");
+
+                String consulta1 = "SELECT COUNT(*) FROM TURISTA WHERE CORREO = ?";
+                String consulta2 = "SELECT COUNT(*) FROM TURISTA WHERE NOMBRE_USER = ?";
+
+
+                PreparedStatement pstmt1 = conn.prepareStatement(consulta1);
+                pstmt1.setString(1, correo_pro);
+                PreparedStatement pstmt2 = conn.prepareStatement(consulta2);
+                pstmt2.setString(1, nombre_user_pro);
+
+                // Ejecutar la consulta
+                ResultSet rs1 = pstmt1.executeQuery();
+                ResultSet rs2 = pstmt2.executeQuery();
+
+                rs1.next();
+                int count1 = rs1.getInt(1);
+                rs2.next();
+                int count2 = rs2.getInt(1);
+
+                if (count1 > 0) {
+                    session.setAttribute("correoUsado", "correoUsado");
+                    response.sendRedirect("signUp.jsp");
+                }else
+                    if(count2>0){
+                        session.setAttribute("nombreUsado", "nombreUsado");
+                        response.sendRedirect("signUp.jsp");
+                    }else
+
+
+                   
+              
             if( "Guardar".equals( accion ) || "Borrar".equals( accion ) || "Actualizar".equals( accion ) )
             {
 

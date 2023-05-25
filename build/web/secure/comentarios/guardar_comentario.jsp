@@ -1,7 +1,7 @@
 <%-- 
     Document   : guardar_comentario
     Created on : May 22, 2023, 11:48:56 PM
-    Author     : sebas
+    Author     : sebas & jaav
 --%>
 
 <%@page import="java.sql.ResultSet"%>
@@ -22,7 +22,13 @@
             int calificacion = Integer.parseInt(request.getParameter("calificacion"));
             LocalDate fecha = LocalDate.now();
             int idTuristaObj = (int) session.getAttribute("idTuristaa");
-            int idLugar = 1;
+            
+            
+            
+            //String id_lugar_rec = (String) session.getAttribute("id_lugar");
+            //int idLugar = Integer.parseInt(id_lugar_rec);
+            int idLugar = Integer.parseInt(request.getParameter("id_lugar"));
+            session.setAttribute("id_lugar", idLugar);
             ResultSet rs = null;
 
             // Establece la conexión a la base de datos

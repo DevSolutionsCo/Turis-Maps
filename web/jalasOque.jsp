@@ -60,6 +60,8 @@
             session.setAttribute("contrasena", contrasena);
             session.setAttribute("id_turista", id_turista);
             session.setAttribute("signUp", "crearCuenta"); 
+            session.setAttribute("noSesion", "siSesion");
+
             response.sendRedirect("index.jsp");
         } else {
             session.setAttribute("noSesion", "noSesion");

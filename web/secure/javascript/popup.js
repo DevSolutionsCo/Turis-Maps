@@ -227,27 +227,6 @@ btn_l1_coyo.addEventListener('mousedown', function () {
     overlay_l1_coyo.classList.add('active');
     popup_l1_coyo.classList.add('active');
     
-    const url = "mapa.jsp?id_lugar=1";
-
-// Realizar la petición AJAX
-fetch(url)
-  .then(response => {
-    if (response.ok) {
-      return response.text(); // Obtener el contenido de la página como texto
-    } else {
-      throw new Error("Error en la petición");
-    }
-  })
-  .then(data => {
-    // Procesar la respuesta de la petición
-    console.log(data);
-    // Realizar acciones con el contenido de la página aquí
-  })
-  .catch(error => {
-    // Manejar errores de la petición
-    console.error(error);
-  });
-    
 });
 
 cerrar_l1_coyo.addEventListener('click', function () {

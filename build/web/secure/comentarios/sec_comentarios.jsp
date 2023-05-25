@@ -1,7 +1,7 @@
 <%-- 
     Document   : sec_comentarios
     Created on : 21 may 2023, 2:05:17
-    Author     : CrX26
+    Author     : CrX26 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -13,7 +13,16 @@
         <link href="../../css/comentStyle.css" rel="stylesheet" type="text/css"/>
         <title>Comentarios</title>
     </head>
+    
+    
     <body>
+        
+        <%
+            
+            String id_lugar_rec = request.getParameter("id_lugar");
+            
+            System.out.println(session.getAttribute("id_lugar"));
+        %>
 
 
         <%
@@ -23,7 +32,7 @@
             ResultSet rs = null;
                 String nombre_user = null;
                 String comentario = null;
-                                String id_lugar_rec = request.getParameter("id_lugar");
+                int id_lugar = Integer.parseInt(id_lugar_rec);
 
             try {
                 Class.forName("com.mysql.jdbc.Driver");
@@ -33,7 +42,6 @@
 
                 conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
 
-                int id_lugar = Integer.parseInt(id_lugar_rec);
                 String query = "SELECT TURISTA.NOMBRE_USER, COMENTARIOS.COMENTARIO FROM COMENTARIOS INNER JOIN TURISTA ON TURISTA.ID_TURISTA=COMENTARIOS.ID_TURISTA WHERE ID_LUGAR = ?";
                 stmt = conn.prepareStatement(query);
                 stmt.setInt(1, id_lugar);
@@ -62,7 +70,7 @@
 
         <div id="comentarios" class="contenedor-2">
             <div class="contenido-comentario">
-                <div class="nombreuser"><%=id_lugar_rec%></div> 
+                <div class="nombreuser"><%=nombre_user%></div> 
                 <div class="texto-comentario"><%=comentario%></div>
             </div>
             <div class="contenido-comentario">
@@ -88,5 +96,4 @@
         </div>
     </body>
     <script src="../javascript/comentarios.js" ></script>
-    <script src="../javascript/popup.js.js" ></script>
 </html>
