@@ -47,7 +47,7 @@ insert into LUGAR (id_lugar, nombre_lugar) values
 (23, "World Trade Center"),
 (24, "monumental plaza de toros"),
 (25, "Estadio Ciudad de los Deportes"),
-(26, "Isla de las muñecas"),
+(26, "Isla de las munecas"),
 (27, "Las trajineras"),
 (28, "Mercado de plantas Xochi"),
 (29, "parque ecologico de Xochimilco"),

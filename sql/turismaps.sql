@@ -14,7 +14,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema turismaps
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `turismaps` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+CREATE SCHEMA IF NOT EXISTS `turismaps` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci ;
 USE `turismaps` ;
 
 -- -----------------------------------------------------
@@ -26,8 +26,49 @@ CREATE TABLE IF NOT EXISTS `turismaps`.`lugar` (
   PRIMARY KEY (`id_lugar`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+COLLATE = utf8mb4_general_ci;
 
+insert into LUGAR (id_lugar, nombre_lugar) values
+(1, "Museo Frida Coyoacan"),
+(2, "Mercado Coyoacan"),
+(3, "Viveros Coyoacan"),
+(4, "Jardin Centenario Coyoacan"),
+(5, "museo de culturas populares"),
+(6, "castillo de chapultepec"),
+(7, "parque bicentenario"),
+(8, "auditorio nacional"),
+(9, "museo de antropologia"),
+(10, "batiz"),
+(11, "plaza 3 culturas"),
+(12, "plaza de la constitucion"),
+(13, "monumento a la revolucion"),
+(14, "Bellas artes"),
+(15, "angel de la independencia"),
+(16, "Parque la mexicana"),
+(17, "pasaje del shiro"),
+(18, "club de golf"),
+(19, "Exconvento"),
+(20, "Valle de las monjas"),
+(21, "Parque hundido"),
+(22, "cineteca nacional"),
+(23, "World Trade Center"),
+(24, "monumental plaza de toros"),
+(25, "Estadio Ciudad de los Deportes"),
+(26, "Isla de las munecas"),
+(27, "Las trajineras"),
+(28, "Mercado de plantas Xochi"),
+(29, "parque ecologico de Xochimilco"),
+(30, "Museo arqueologico de xochimilco"),
+(31, "Parque Tezozomoc"),
+(32, "Casa de cultura"),
+(33, "arena CDMX"),
+(34, "Centro Verde Azcapotzalco"),
+(35, "Alameda Norte"),
+(36, "Estadio Alfredo"),
+(37, "foro sol"),
+(38, "Alameda Central"),
+(39, "Autodromo Hermanos Rodriguez"),
+(40, "Palacio de los deportes");
 
 -- -----------------------------------------------------
 -- Table `turismaps`.`turista`
@@ -46,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `turismaps`.`turista` (
   PRIMARY KEY (`id_turista`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+COLLATE = utf8mb4_general_ci;
 
 
 -- -----------------------------------------------------
@@ -74,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `turismaps`.`comentarios` (
     ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+COLLATE = utf8mb4_general_ci;
 
 
 -- -----------------------------------------------------
@@ -97,7 +138,7 @@ CREATE TABLE IF NOT EXISTS `turismaps`.`lugar_comentarios` (
     ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+COLLATE = utf8mb4_general_ci;
 
 
 -- -----------------------------------------------------
@@ -120,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `turismaps`.`turista_comentarios` (
     ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+COLLATE = utf8mb4_general_ci;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
