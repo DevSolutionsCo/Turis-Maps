@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `turismaps`.`lugar` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
-insert into LUGAR (id_lugar, nombre_lugar) values
+insert into lugar (id_lugar, nombre_lugar) values
 (1, "Museo Frida Coyoacan"),
 (2, "Mercado Coyoacan"),
 (3, "Viveros Coyoacan"),
