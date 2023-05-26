@@ -100,8 +100,8 @@ CREATE TABLE IF NOT EXISTS `turismaps`.`comentarios` (
   `id_turista` INT NULL DEFAULT NULL,
   `id_lugar` INT NULL DEFAULT NULL,
   PRIMARY KEY (`id_comentario`),
-  INDEX `id_lugar` (`id_lugar` ASC) VISIBLE,
-  INDEX `id_turista` (`id_turista` ASC) VISIBLE,
+  INDEX `id_lugar` (`id_lugar` ASC),
+  INDEX `id_turista` (`id_turista` ASC),
   CONSTRAINT `comentarios_ibfk_1`
     FOREIGN KEY (`id_lugar`)
     REFERENCES `turismaps`.`lugar` (`id_lugar`)
@@ -122,8 +122,8 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `turismaps`.`lugar_comentarios` (
   `id_comentario` INT NULL DEFAULT NULL,
   `id_lugar` INT NULL DEFAULT NULL,
-  INDEX `id_comentario` (`id_comentario` ASC) VISIBLE,
-  INDEX `id_lugar` (`id_lugar` ASC) VISIBLE,
+  INDEX `id_comentario` (`id_comentario` ASC),
+  INDEX `id_lugar` (`id_lugar` ASC),
   CONSTRAINT `lugar_comentarios_ibfk_1`
     FOREIGN KEY (`id_comentario`)
     REFERENCES `turismaps`.`comentarios` (`id_comentario`)
@@ -144,8 +144,8 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `turismaps`.`turista_comentarios` (
   `id_comentario` INT NULL DEFAULT NULL,
   `id_turista` INT NULL DEFAULT NULL,
-  INDEX `id_comentario` (`id_comentario` ASC) VISIBLE,
-  INDEX `id_turista` (`id_turista` ASC) VISIBLE,
+  INDEX `id_comentario` (`id_comentario` ASC),
+  INDEX `id_turista` (`id_turista` ASC),
   CONSTRAINT `turista_comentarios_ibfk_1`
     FOREIGN KEY (`id_comentario`)
     REFERENCES `turismaps`.`comentarios` (`id_comentario`)
