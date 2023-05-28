@@ -1,6 +1,6 @@
-drop database if exists TurisMaps;
-create database TurisMaps;
-use TurisMaps;
+drop database if exists turismaps;
+create database turismaps;
+use turismaps;
 
 create table TURISTA(
 id_turista int not null auto_increment primary key,

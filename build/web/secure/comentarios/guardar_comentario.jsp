@@ -21,12 +21,13 @@
             String comentario = request.getParameter("comentario");
             int calificacion = Integer.parseInt(request.getParameter("calificacion"));
             LocalDate fecha = LocalDate.now();
-            int idTuristaObj = (int) session.getAttribute("idTuristaa");
+            int idTuristaObj = 0;
+            
+            if(session.getAttribute("idTuristaa")!=null){
+                idTuristaObj = (int) session.getAttribute("idTuristaa");
+            }
             
             
-            
-            //String id_lugar_rec = (String) session.getAttribute("id_lugar");
-            //int idLugar = Integer.parseInt(id_lugar_rec);
             int idLugar = Integer.parseInt(request.getParameter("id_lugar"));
             session.setAttribute("id_lugar", idLugar);
             ResultSet rs = null;
@@ -36,7 +37,7 @@
             PreparedStatement pstmt = null;
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-                String url = "jdbc:mysql://localhost:3306/TurisMaps";
+                String url = "jdbc:mysql://localhost:3306/turismaps";
                 String username = "root";
                 String password = "1234";
                 conn = DriverManager.getConnection(url, username, password);

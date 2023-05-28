@@ -24,6 +24,7 @@
               session.removeAttribute("contrasena");
               session.removeAttribute("correo");
               session.removeAttribute("id_turista");    
+              session.removeAttribute("idTuristaa");
             %>
 
     </body>

@@ -3,25 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/editarperfil.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/src/java/org/turis/service/ComentariosService.java</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/index.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/index1.html</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/secure/comentarios/sec_comentarios.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/cerrarSesion.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/secure/comentarios/guardar_comentario.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/secure/comentarios/valio.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/src/java/org/turis/service/TuristaService.java</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/actualizame.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/src/java/org/turis/service/Conexion.java</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/signIn.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/src/java/org/turis/service/TuristaComentarioService.java</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/registro.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/secure/comentarios/mapa.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/src/java/org/turis/service/LugarService.java</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/src/java/org/turis/service/LugarComentariosService.java</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/jalasOque.jsp</file>
-            <file>file:/C:/Users/sebas/OneDrive/Escritorio/respaldo/Turis-Maps/web/signUp.jsp</file>
+            <file>file:/C:/Users/USUARIO/Downloads/Turis-Maps-main/web/jalasOque.jsp</file>
+            <file>file:/C:/Users/USUARIO/Downloads/Turis-Maps-main/web/registro.jsp</file>
+            <file>file:/C:/Users/USUARIO/Downloads/Turis-Maps-main/web/actualizame.jsp</file>
+            <file>file:/C:/Users/USUARIO/Downloads/Turis-Maps-main/src/java/org/turis/dao/Turista.java</file>
+            <file>file:/C:/Users/USUARIO/Downloads/Turis-Maps-main/src/java/org/turis/service/Conexion.java</file>
         </group>
     </open-files>
 </project-private>

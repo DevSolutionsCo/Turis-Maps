@@ -21,7 +21,6 @@
 
             String id_lugar_rec = request.getParameter("id_lugar");
 
-            System.out.println(session.getAttribute("id_lugar"));
         %>
 
 
@@ -35,7 +34,7 @@
 
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-                String dbURL = "jdbc:mysql://localhost:3306/TurisMaps";
+                String dbURL = "jdbc:mysql://localhost:3306/turismaps";
                 String dbUsername = "root";
                 String dbPassword = "1234";
 
