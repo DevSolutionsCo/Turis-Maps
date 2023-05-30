@@ -1277,7 +1277,7 @@
                     <div class="container_galeria">
                         <section class="galeria_lugares">
                             <img src="../../img/batiz.jpg" alt="">
-                            <img src="../../img/berni.jpg" alt="">
+                            <img src="../../img/batizlabuena.jpg" alt="">
                             <img src="../../img/elchueck.jpg" alt="">
                             <img src="../../img/lego.jpg" alt="">
                             <img src="../../img/batiz.jpg" alt="">
