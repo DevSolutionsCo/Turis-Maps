@@ -14,20 +14,21 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema turismaps
 -- -----------------------------------------------------
+DROP DATABASES IF NOT EXISTS 'turismaps'
 CREATE SCHEMA IF NOT EXISTS `turismaps` DEFAULT CHARACTER SET utf8 ;
 USE `turismaps` ;
 
 -- -----------------------------------------------------
 -- Table `turismaps`.`lugar`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `turismaps`.`lugar` (
+CREATE TABLE IF NOT EXISTS `turismaps`.`LUGAR` (
   `id_lugar` INT NOT NULL,
   `nombre_lugar` VARCHAR(40) CHARACTER SET 'utf8' NULL DEFAULT NULL,
   PRIMARY KEY (`id_lugar`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
-insert into lugar (id_lugar, nombre_lugar) values
+insert into LUGAR (id_lugar, nombre_lugar) values
 (1, "Museo Frida Coyoacan"),
 (2, "Mercado Coyoacan"),
 (3, "Viveros Coyoacan"),
@@ -73,7 +74,7 @@ insert into lugar (id_lugar, nombre_lugar) values
 -- -----------------------------------------------------
 -- Table `turismaps`.`turista`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `turismaps`.`turista` (
+CREATE TABLE IF NOT EXISTS `turismaps`.`TURISTA` (
   `id_turista` INT NOT NULL AUTO_INCREMENT,
   `correo` VARCHAR(30) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
   `nombre` VARCHAR(40) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
@@ -92,7 +93,7 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `turismaps`.`comentarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `turismaps`.`comentarios` (
+CREATE TABLE IF NOT EXISTS `turismaps`.`COMENTARIOS` (
   `id_comentario` INT NOT NULL AUTO_INCREMENT,
   `comentario` VARCHAR(100) CHARACTER SET 'utf8' NULL DEFAULT NULL,
   `calificacion` INT NULL DEFAULT NULL,
