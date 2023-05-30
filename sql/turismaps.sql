@@ -14,7 +14,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema turismaps
 -- -----------------------------------------------------
-DROP DATABASES IF NOT EXISTS 'turismaps'
+DROP DATABASE IF NOT EXISTS `turismaps`
 CREATE SCHEMA IF NOT EXISTS `turismaps` DEFAULT CHARACTER SET utf8 ;
 USE `turismaps` ;
 
@@ -22,13 +22,13 @@ USE `turismaps` ;
 -- Table `turismaps`.`lugar`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `turismaps`.`LUGAR` (
-  `id_lugar` INT NOT NULL,
-  `nombre_lugar` VARCHAR(40) CHARACTER SET 'utf8' NULL DEFAULT NULL,
-  PRIMARY KEY (`id_lugar`))
+  `ID_LUGAR` INT NOT NULL,
+  `NOMBRE_LUGAR` VARCHAR(40) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  PRIMARY KEY (`ID_LUGAR`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
-insert into LUGAR (id_lugar, nombre_lugar) values
+insert into LUGAR (ID_LUGAR, NOMBRE_LUGAR) values
 (1, "Museo Frida Coyoacan"),
 (2, "Mercado Coyoacan"),
 (3, "Viveros Coyoacan"),
@@ -75,17 +75,17 @@ insert into LUGAR (id_lugar, nombre_lugar) values
 -- Table `turismaps`.`turista`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `turismaps`.`TURISTA` (
-  `id_turista` INT NOT NULL AUTO_INCREMENT,
-  `correo` VARCHAR(30) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
-  `nombre` VARCHAR(40) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
-  `apellido_pat` VARCHAR(40) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
-  `apellido_mat` VARCHAR(40) CHARACTER SET 'utf8' NULL DEFAULT NULL,
-  `fecha_nac` DATE NULL DEFAULT NULL,
-  `lugar_proc` VARCHAR(30) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
-  `genero` VARCHAR(10) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
-  `contrasena` VARCHAR(20) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
-  `nombre_user` VARCHAR(45) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
-  PRIMARY KEY (`id_turista`))
+  `ID_TURISTA` INT NOT NULL AUTO_INCREMENT,
+  `CORREO` VARCHAR(30) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
+  `NOMBRE` VARCHAR(40) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
+  `APELLIDO_PAT` VARCHAR(40) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
+  `APELLIDO_MAT` VARCHAR(40) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `FECHA_NAC` DATE NULL DEFAULT NULL,
+  `LUGAR_PROC` VARCHAR(30) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
+  `GENERO` VARCHAR(10) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
+  `CONTRASENA` VARCHAR(20) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
+  `NOMBRE_USER` VARCHAR(45) CHARACTER SET 'utf8'  NULL DEFAULT NULL,
+  PRIMARY KEY (`ID_TURISTA`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
@@ -94,23 +94,23 @@ DEFAULT CHARACTER SET = utf8;
 -- Table `turismaps`.`comentarios`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `turismaps`.`COMENTARIOS` (
-  `id_comentario` INT NOT NULL AUTO_INCREMENT,
-  `comentario` VARCHAR(100) CHARACTER SET 'utf8' NULL DEFAULT NULL,
-  `calificacion` INT NULL DEFAULT NULL,
-  `fecha` DATE NULL DEFAULT NULL,
-  `id_turista` INT NULL DEFAULT NULL,
-  `id_lugar` INT NULL DEFAULT NULL,
-  PRIMARY KEY (`id_comentario`),
-  INDEX `id_lugar` (`id_lugar` ASC),
-  INDEX `id_turista` (`id_turista` ASC),
+  `ID_COMENTARIO` INT NOT NULL AUTO_INCREMENT,
+  `COMENTARIO` VARCHAR(100) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `CALIFICACION` INT NULL DEFAULT NULL,
+  `FECHA` DATE NULL DEFAULT NULL,
+  `ID_TURISTA` INT NULL DEFAULT NULL,
+  `ID_LUGAR` INT NULL DEFAULT NULL,
+  PRIMARY KEY (`ID_COMENTARIO`),
+  INDEX `ID_LUGAR` (`ID_LUGAR` ASC),
+  INDEX `ID_TURISTA` (`ID_TURISTA` ASC),
   CONSTRAINT `comentarios_ibfk_1`
-    FOREIGN KEY (`id_lugar`)
-    REFERENCES `turismaps`.`lugar` (`id_lugar`)
+    FOREIGN KEY (`ID_LUGAR`)
+    REFERENCES `turismaps`.`lugar` (`ID_LUGAR`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `comentarios_ibfk_2`
-    FOREIGN KEY (`id_turista`)
-    REFERENCES `turismaps`.`turista` (`id_turista`)
+    FOREIGN KEY (`ID_TURISTA`)
+    REFERENCES `turismaps`.`turista` (`ID_TURISTA`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -120,19 +120,19 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `turismaps`.`lugar_comentarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `turismaps`.`lugar_comentarios` (
-  `id_comentario` INT NULL DEFAULT NULL,
-  `id_lugar` INT NULL DEFAULT NULL,
-  INDEX `id_comentario` (`id_comentario` ASC),
-  INDEX `id_lugar` (`id_lugar` ASC),
+CREATE TABLE IF NOT EXISTS `turismaps`.`LUGAR_COMENTARIOS` (
+  `ID_COMENTARIO` INT NULL DEFAULT NULL,
+  `ID_LUGAR` INT NULL DEFAULT NULL,
+  INDEX `ID_COMENTARIO` (`ID_COMENTARIO` ASC),
+  INDEX `ID_LUGAR` (`ID_LUGAR` ASC),
   CONSTRAINT `lugar_comentarios_ibfk_1`
-    FOREIGN KEY (`id_comentario`)
-    REFERENCES `turismaps`.`comentarios` (`id_comentario`)
+    FOREIGN KEY (`ID_COMENTARIO`)
+    REFERENCES `turismaps`.`comentarios` (`ID_COMENTARIO`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `lugar_comentarios_ibfk_2`
-    FOREIGN KEY (`id_lugar`)
-    REFERENCES `turismaps`.`lugar` (`id_lugar`)
+    FOREIGN KEY (`ID_LUGAR`)
+    REFERENCES `turismaps`.`lugar` (`ID_LUGAR`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -142,19 +142,19 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `turismaps`.`turista_comentarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `turismaps`.`turista_comentarios` (
-  `id_comentario` INT NULL DEFAULT NULL,
-  `id_turista` INT NULL DEFAULT NULL,
-  INDEX `id_comentario` (`id_comentario` ASC),
-  INDEX `id_turista` (`id_turista` ASC),
+CREATE TABLE IF NOT EXISTS `turismaps`.`TURISTA_COMENTARIOS` (
+  `ID_COMENTARIO` INT NULL DEFAULT NULL,
+  `ID_TURISTA` INT NULL DEFAULT NULL,
+  INDEX `ID_COMENTARIO` (`ID_COMENTARIO` ASC),
+  INDEX `ID_TURISTA` (`ID_TURISTA` ASC),
   CONSTRAINT `turista_comentarios_ibfk_1`
-    FOREIGN KEY (`id_comentario`)
-    REFERENCES `turismaps`.`comentarios` (`id_comentario`)
+    FOREIGN KEY (`ID_COMENTARIO`)
+    REFERENCES `turismaps`.`comentarios` (`ID_COMENTARIO`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `turista_comentarios_ibfk_2`
-    FOREIGN KEY (`id_turista`)
-    REFERENCES `turismaps`.`turista` (`id_turista`)
+    FOREIGN KEY (`ID_TURISTA`)
+    REFERENCES `turismaps`.`turista` (`ID_TURISTA`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
