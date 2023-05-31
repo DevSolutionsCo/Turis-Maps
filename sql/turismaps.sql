@@ -2,26 +2,26 @@ drop database if exists turismaps;
 create database turismaps;
 use turismaps;
 
-create table TURISTA(
-ID_TURISTA int not null auto_increment primary key,
-CORREO nvarchar(30),
-NOMBRE nvarchar(40),
-APELLIDO_PAT nvarchar(40),
-APELLIDO_MAT nvarchar(40),
-FECHA_NAC date,
-LUGAR_PROC nvarchar(30),
-GENERO nvarchar(10),
-CONTRASENA nvarchar(20),
-NOMBRE_USER nvarchar(45)
+create table turista(
+id_turista int not null auto_increment primary key,
+correo nvarchar(30),
+nombre nvarchar(40),
+apellido_pat nvarchar(40),
+apellido_mat nvarchar(40),
+fecha_nac date,
+lugar_proc nvarchar(30),
+genero nvarchar(10),
+contrasena nvarchar(20),
+nombre_user nvarchar(45)
 );
 
 
-create table LUGAR(
-ID_LUGAR int primary key not null,
-NOMBRE_LUGAR nvarchar(40)
+create table lugar(
+id_lugar int primary key not null,
+nombre_lugar nvarchar(40)
 );
 
-insert into LUGAR (ID_LUGAR, NOMBRE_LUGAR) values
+insert into lugar (id_lugar, nombre_lugar) values
 (1, "Museo Frida Coyoacan"),
 (2, "Mercado Coyoacan"),
 (3, "Viveros Coyoacan"),
@@ -64,31 +64,31 @@ insert into LUGAR (ID_LUGAR, NOMBRE_LUGAR) values
 (40, "Palacio de los deportes");
 
 
-create table COMENTARIOS(
-ID_COMENTARIO int primary key auto_increment,
-COMENTARIO nvarchar(100),
-CALIFICACION int(1),
-FECHA date,
-ID_TURISTA int,
-ID_LUGAR int,
-foreign key (ID_LUGAR) references LUGAR(ID_LUGAR) on update cascade on delete cascade,
-foreign key (ID_TURISTA) references TURISTA(ID_TURISTA) on update cascade on delete cascade
+create table comentarios(
+id_comentario int primary key auto_increment,
+comentario nvarchar(100),
+calificacion int(1),
+fecha date,
+id_turista int,
+id_lugar int,
+foreign key (id_lugar) references lugar(id_lugar) on update cascade on delete cascade,
+foreign key (id_turista) references turista(id_turista) on update cascade on delete cascade
 );
 
 
-create table TURISTA_COMENTARIOS(
-ID_COMENTARIO int,
-ID_TURISTA int,
-foreign key (ID_COMENTARIO) references COMENTARIOS(ID_COMENTARIO) on update cascade on delete cascade,
-foreign key (ID_TURISTA) references TURISTA(ID_TURISTA) on update cascade on delete cascade
+create table turista_comentarios(
+id_comentario int,
+id_turista int,
+foreign key (id_comentario) references comentarios(id_comentario) on update cascade on delete cascade,
+foreign key (id_turista) references turista(id_turista) on update cascade on delete cascade
 );
 
 
-create table LUGAR_COMENTARIOS(
-ID_COMENTARIO int,
-ID_LUGAR int,
-foreign key (ID_COMENTARIO) references COMENTARIOS(ID_COMENTARIO) on update cascade on delete cascade,
-foreign key (ID_LUGAR) references LUGAR(ID_LUGAR) on update cascade on delete cascade
+create table lugar_comentarios(
+id_comentario int,
+id_lugar int,
+foreign key (id_comentario) references comentarios(id_comentario) on update cascade on delete cascade,
+foreign key (id_lugar) references lugar	(id_lugar) on update cascade on delete cascade
 );
 
 

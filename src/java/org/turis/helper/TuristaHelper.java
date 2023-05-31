@@ -80,17 +80,7 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable {
         return false;
     }
 
-    @Override
-    public boolean deleteT() {
-        turistaService = new TuristaService();
-        t = new Turista();
-        t.setId_turista(Integer.parseInt(getParameter("rol")));
-        if (t.getId_turista() != null && t.getId_turista() > 0) {
-            return turistaService.deleteTurista(t);
-        }
-        return false;
-    }
-
+   
     @Override
     public Turista getTByKey() {
         String correo = null;
@@ -100,6 +90,11 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable {
         }
         turistaService = new TuristaService();
         return  turistaService.getTuristaByCorreo(correo);
+    }
+
+    @Override
+    public boolean deleteT() {
+        return false;
     }
 
 }

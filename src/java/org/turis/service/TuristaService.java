@@ -38,7 +38,7 @@ public class TuristaService extends Conexion<Turista>{
             if (statement == null) {
                 return null;
             }
-            resultSet = statement.executeQuery("SELECT * FROM TURISTA");
+            resultSet = statement.executeQuery("SELECT * FROM turista");
             if (resultSet == null) 
             {
                 return null;
@@ -74,7 +74,7 @@ public class TuristaService extends Conexion<Turista>{
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "INSERT INTO TURISTA( CORREO, NOMBRE, APELLIDO_PAT, APELLIDO_MAT, FECHA_NAC, LUGAR_PROC, GENERO, CONTRASENA, NOMBRE_USER) VALUES(?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO turista( correo, nombre, apellido_pat, apellido_mat, fecha_nac, lugar_proc, genero, contrasena, nombre_user) VALUES(?,?,?,?,?,?,?,?,?)";
         int row = 0;
         try 
         {
@@ -113,7 +113,7 @@ public class TuristaService extends Conexion<Turista>{
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "update TURISTA SET CORREO=?, NOMBRE=?, APELLIDO_PAT=?, APELLIDO_MAT=?, FECHA_NAC=?, LUGAR_PROC=?, GENERO=?, CONTRASENA=?, NOMBRE_USER=? WHERE CORREO = ?";
+        String sql = "update turista SET correo=?, nombre=?, apellido_pat=?, apellido_mat=?, fecha_nac=?, lugar_proc=?, genero=?, contraseña=?, nombre_user=? WHERE correo = ?";
         int row = 0;
         try 
         {
@@ -151,7 +151,7 @@ public class TuristaService extends Conexion<Turista>{
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "DELETE FROM TURISTA WHERE TURISTA = ?";
+        String sql = "DELETE FROM turista WHERE id_turista = ?";
         int row = 0;
         try 
         {
@@ -191,7 +191,7 @@ public class TuristaService extends Conexion<Turista>{
             {
                 return null;
             }
-            preparedStatement = connection.prepareStatement("SELECT * FROM TURISTA WHERE CORREO = ?" );
+            preparedStatement = connection.prepareStatement("SELECT * FROM turista WHERE correo = ?" );
             if (preparedStatement == null) 
             {
                 return null;

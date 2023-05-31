@@ -63,6 +63,7 @@
                             <li class="nav-item" id="liNav">
                                 <div class="input-group mb-3" id ="botonsesion">
                                     <%
+                                        session.removeAttribute("noSesion");
                                        int valor = 0;
                                         String signUp = (String) session.getAttribute("signUp");
 

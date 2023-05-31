@@ -294,7 +294,7 @@
                     
                     
                       
-                      if(contraseña_1.value != contraseña_2.value){
+                      if(contraseña_1.value !== contraseña_2.value){
                            a.preventDefault();
                                   Swal.fire({
                                   icon: 'error',

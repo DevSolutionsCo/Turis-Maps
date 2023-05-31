@@ -1277,7 +1277,7 @@
                     <div class="container_galeria">
                         <section class="galeria_lugares">
                             <img src="../../img/batiz.jpg" alt="">
-                            <img src="../../img/berni.jpg" alt="">
+                            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.elsoldemexico.com.mx%2Fmexico%2FVoca-9-termina-paro-IPN-reconoce-decisi%25C3%25B3n-132839.html&psig=AOvVaw3oNeVbLPECo98IwFvEG-1L&ust=1685560582221000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCIjgxNHgnf8CFQAAAAAdAAAAABAQ" alt="">
                             <img src="../../img/elchueck.jpg" alt="">
                             <img src="../../img/lego.jpg" alt="">
                             <img src="../../img/batiz.jpg" alt="">

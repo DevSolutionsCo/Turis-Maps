@@ -86,8 +86,8 @@
                 String correo_pro = request.getParameter("correo");
                 String nombre_user_pro = request.getParameter("nombre_user");
 
-                String consulta1 = "SELECT COUNT(*) FROM TURISTA WHERE CORREO = ?";
-                String consulta2 = "SELECT COUNT(*) FROM TURISTA WHERE NOMBRE_USER = ?";
+                String consulta1 = "SELECT COUNT(*) FROM turista WHERE correo = ?";
+                String consulta2 = "SELECT COUNT(*) FROM turista WHERE nombre_user= ?";
 
 
                 PreparedStatement pstmt1 = conn.prepareStatement(consulta1);
@@ -95,7 +95,6 @@
                 PreparedStatement pstmt2 = conn.prepareStatement(consulta2);
                 pstmt2.setString(1, nombre_user_pro);
 
-                // Ejecutar la consulta
                 ResultSet rs1 = pstmt1.executeQuery();
                 ResultSet rs2 = pstmt2.executeQuery();
 
