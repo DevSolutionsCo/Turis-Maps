@@ -86,8 +86,8 @@
                 String correo_pro = request.getParameter("correo");
                 String nombre_user_pro = request.getParameter("nombre_user");
 
-                String consulta1 = "SELECT COUNT(*) FROM turista WHERE correo = ?";
-                String consulta2 = "SELECT COUNT(*) FROM turista WHERE nombre_user= ?";
+                String consulta1 = "select count(*) from turista where correo = ?";
+                String consulta2 = "select count(*) from turista where nombre_user= ?";
 
 
                 PreparedStatement pstmt1 = conn.prepareStatement(consulta1);
@@ -149,7 +149,7 @@
                       Class.forName("com.mysql.jdbc.Driver");
                       conn = DriverManager.getConnection(url, usuario, contraseña);
 
-                      String sql = "INSERT INTO turista( correo, nombre, apellido_pat, apellido_mat, fecha_nac, lugar_proc, genero, contrasena, nombre_user) VALUES(?,?,?,?,?,?,?,?,?)";
+                      String sql = "insert into turista( correo, nombre, apellido_pat, apellido_mat, fecha_nac, lugar_proc, genero, contrasena, nombre_user) values(?,?,?,?,?,?,?,?,?)";
                       pstmt = conn.prepareStatement(sql);
 
                       pstmt.setString(1, correo);
@@ -201,4 +201,4 @@
             
         %>
         
-    <
+    

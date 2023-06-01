@@ -38,7 +38,7 @@
         int si = 0;
         conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
         
-        String query = "UPDATE turista SET  contrasena=?, nombre=?, apellido_pat=?, apellido_mat=?, lugar_proc=?, genero=?  WHERE correo=?";
+        String query = "update turista set contrasena=?, nombre=?, apellido_pat=?, apellido_mat=?, lugar_proc=?, genero=?  where correo=?";
         stmt = conn.prepareStatement(query);
         stmt.setString(1, passw_a);
         stmt.setString(2, nombre_a);

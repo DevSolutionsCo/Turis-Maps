@@ -31,7 +31,7 @@
         
         conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
         
-        String query = "SELECT * FROM turista WHERE correo = ? AND contrasena = ?";
+        String query = "select * from turista where correo = ? and contrasena = ?";
         stmt = conn.prepareStatement(query);
         
         stmt.setString(1, correo_signIN);
