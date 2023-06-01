@@ -80,7 +80,7 @@
                         Class.forName("com.mysql.jdbc.Driver");
                         String dbURL = "jdbc:mysql://localhost:3306/turismaps";
                         String dbUsername = "root";
-                        String dbPassword = "n0m3l0";
+                        String dbPassword = "1234";
                          conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
 
                 String correo_pro = request.getParameter("correo");
@@ -141,7 +141,7 @@
 
                     String url = "jdbc:mysql://localhost:3306/turismaps";
                     String usuario = "root";
-                    String contraseña = "n0m3l0";
+                    String contraseña = "1234";
 
                     PreparedStatement pstmt = null;
 

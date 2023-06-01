@@ -36,7 +36,7 @@
                 Class.forName("com.mysql.jdbc.Driver");
                 String dbURL = "jdbc:mysql://localhost:3306/turismaps";
                 String dbUsername = "root";
-                String dbPassword = "n0m3l0";
+                String dbPassword = "1234";
 
                 conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
 
