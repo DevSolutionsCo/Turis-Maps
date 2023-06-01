@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `turismaps`.`turista` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
-insert into turista values (1, 'administrados@gmail.com', 'admin', 'adminpat', 'adminmat', '2006-12-01', 'mexico', 'nb', '12345678', 'administrador');
+
 
 
 -- -----------------------------------------------------
