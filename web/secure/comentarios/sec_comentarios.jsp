@@ -40,7 +40,7 @@
 
                 conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
 
-                String query = "SELECT TURISTA.NOMBRE_USER, COMENTARIOS.COMENTARIO FROM COMENTARIOS INNER JOIN TURISTA ON TURISTA.ID_TURISTA=COMENTARIOS.ID_TURISTA WHERE ID_LUGAR = ?";
+                String query = "select turista.nombre_user, comentarios.comentario from comentarios inner join turista on turista.id_turista=comentarios.id_turista where id_lugar = ?";
                 stmt = conn.prepareStatement(query);
                 stmt.setInt(1, id_lugar);
                 rs = stmt.executeQuery();
