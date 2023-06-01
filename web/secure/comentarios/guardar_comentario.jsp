@@ -41,7 +41,7 @@
                 String password = "1234";
                 conn = DriverManager.getConnection(url, username, password);
 
-                String sql = "INSERT INTO comentarios (comentario, calificacion, fecha, id_turista, id_lugar) VALUES (?, ?, ?, ?, ?)";
+                String sql = "insert into comentarios (comentario, calificacion, fecha, id_turista, id_lugar) values (?, ?, ?, ?, ?)";
                 pstmt = conn.prepareStatement(sql);
                 pstmt.setString(1, comentario);
                 pstmt.setInt(2, calificacion);
