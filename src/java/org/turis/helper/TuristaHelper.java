@@ -46,7 +46,7 @@ public class TuristaHelper extends Helpers<Turista> implements Serializable {
         t.setFecha_nac(string2Date(getParameter("fecha_nac")));
         t.setLugar_proc(getParameter("lugar_proc"));
         t.setGenero(getParameter("genero"));
-        t.setContraseña(getParameter("contraseña"));
+        t.setContraseña(getParameter("contrasena"));
         if (isValidaCamposOk()) {
             return turistaService.addTurista(t);
         }

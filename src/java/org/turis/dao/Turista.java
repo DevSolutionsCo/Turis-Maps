@@ -12,6 +12,11 @@ import java.util.Date;
  * @author ruizl
  */
 public class Turista implements Serializable{
+    
+        public Turista() {
+    }
+
+    
     private Integer id_turista;
     private String correo;
     private String nombre;
@@ -22,15 +27,7 @@ public class Turista implements Serializable{
     private String genero;
     private String contraseña;
     private String nombre_user;
-    private int iniciado;
 
-    public int getIniciado() {
-        return iniciado;
-    }
-
-    public void setIniciado(int iniciado) {
-        this.iniciado = iniciado;
-    }
 
 
     public Turista (Integer id_turista) 
@@ -38,8 +35,6 @@ public class Turista implements Serializable{
         this.id_turista = id_turista;
     }
 
-    public Turista() {
-    }
 
     public Integer getId_turista() {
         return id_turista;

@@ -310,7 +310,7 @@
                             Class.forName("com.mysql.jdbc.Driver");
                             String dbURL = "jdbc:mysql://localhost:3306/turismaps";
                             String dbUsername = "root";
-                            String dbPassword = "1234";
+                            String dbPassword = "n0m3l0";
 
                             conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
 
@@ -1270,6 +1270,7 @@
 
         <!--batiz ID=10-->
 
+        <!-ARRIBA EL AMERICA Y LA PROFESORA ILIANA-!>
         <div class="overlay overflow-auto mapa" id="overlay_l5_mh">
             <div class="popup" id="popup_l5_mh">
                 <a  href="#" id="cerrar_l5_mh" class="cerrar_alca" >X</a>
@@ -1277,8 +1278,9 @@
                     <div class="container_galeria">
                         <section class="galeria_lugares">
                             <img src="../../img/batiz.jpg" alt="">
-                            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.elsoldemexico.com.mx%2Fmexico%2FVoca-9-termina-paro-IPN-reconoce-decisi%25C3%25B3n-132839.html&psig=AOvVaw3oNeVbLPECo98IwFvEG-1L&ust=1685560582221000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCIjgxNHgnf8CFQAAAAAdAAAAABAQ" alt="">
+                            <img src="https://www.capitalmexico.com.mx/wp-content/uploads/2020/09/@casaTellier.jpg" alt="">
                             <img src="../../img/elchueck.jpg" alt="">
+                            <a href="https://jaavrj.github.io/gatocorcho/"></a>
                             <img src="../../img/lego.jpg" alt="">
                             <img src="../../img/batiz.jpg" alt="">
                         </section>

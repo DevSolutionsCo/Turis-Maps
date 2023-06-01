@@ -13,12 +13,12 @@
 <%@page import="org.turis.helper.Helpers"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    
        <%
             session.removeAttribute("nombreUsado");
             session.removeAttribute("correoUsado");
@@ -80,7 +80,7 @@
                         Class.forName("com.mysql.jdbc.Driver");
                         String dbURL = "jdbc:mysql://localhost:3306/turismaps";
                         String dbUsername = "root";
-                        String dbPassword = "1234";
+                        String dbPassword = "n0m3l0";
                          conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
 
                 String correo_pro = request.getParameter("correo");
@@ -122,10 +122,10 @@
                 helpers = new TuristaHelper( ).addRequest( request );
                 if( "Guardar".equals( accion ) )
                 {
-                    flag = helpers.addT( );
+                    
                   
                  
-                    if(flag != false){
+                    
                     String nombre_user = request.getParameter("nombre_user");
                     String correo = request.getParameter("correo");
                     String nombre = request.getParameter("nombre");
@@ -134,7 +134,35 @@
                     String lugar_proc = request.getParameter("lugar_proc");
                     String genero = request.getParameter("genero");
                     String contrasena = request.getParameter("contrasena");
+                    String fecha_nac = request.getParameter("fecha_nac");
+                    java.sql.Date fecha = java.sql.Date.valueOf(fecha_nac);
 
+
+
+                    String url = "jdbc:mysql://localhost:3306/turismaps";
+                    String usuario = "root";
+                    String contraseña = "n0m3l0";
+
+                    PreparedStatement pstmt = null;
+
+                    try {
+                      Class.forName("com.mysql.jdbc.Driver");
+                      conn = DriverManager.getConnection(url, usuario, contraseña);
+
+                      String sql = "INSERT INTO turista( correo, nombre, apellido_pat, apellido_mat, fecha_nac, lugar_proc, genero, contrasena, nombre_user) VALUES(?,?,?,?,?,?,?,?,?)";
+                      pstmt = conn.prepareStatement(sql);
+
+                      pstmt.setString(1, correo);
+                      pstmt.setString(2, nombre);
+                      pstmt.setString(3, apellido_pat);
+                      pstmt.setString(4, apellido_mat);
+                      pstmt.setDate(5, fecha);
+                      pstmt.setString(6, lugar_proc);
+                      pstmt.setString(7, genero);
+                      pstmt.setString(8, contrasena);
+                      pstmt.setString(9, nombre_user);
+
+                      pstmt.executeUpdate();
 
                     session.setAttribute("signUp", "crearCuenta"); 
                     session.setAttribute("nombre_user", nombre_user);
@@ -147,37 +175,30 @@
                     session.setAttribute("contrasena", contrasena);
                     session.setAttribute("valido", "creacionValida");
                     response.sendRedirect("index.jsp");
-                    }else
-                        {
-                        
+                    } catch (Exception e) {
+                      e.printStackTrace();
                             session.setAttribute("invalido", "creacionInvalida");
                             response.sendRedirect("registro.jsp?accion=Nuevo");
-                        } 
+                    } finally {
+                      if (pstmt != null) {
+                        pstmt.close();
+                      }
+                      if (conn != null) {
+                        conn.close();
+                      }
+                    }
+
+
+
+
+
+                    }
                     
 
                 }
-                if( "Borrar".equals( accion ) )
-                {
-                    flag = helpers.deleteT( );
-                }
-                if( "Actualizar".equals( accion ) )
-                {
-                    flag = helpers.updateT( );
-                }
-                if( flag )
-                {
+               
+       
+            
         %>
         
-        <%
-                }                
-            }
-            if( accion == null || "list".equals(accion ))
-            {
-        %>
-        <jsp:forward page="index.jsp" />
-        <%
-            }
-        %>
-        
-    </body>
-</html>
+    <

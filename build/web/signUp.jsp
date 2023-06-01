@@ -21,6 +21,8 @@
 </head>
 <body>
      <div class="signUp-box">
+                 <a href="index.jsp" >Regresar</a>
+
         <h2 align="center">Creacion de la cuenta</h2>
         
                         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
@@ -299,7 +301,7 @@
                 
             </div>
             <div class="user-box">
-                <input type="password" name="contraseña" class="inputs" id="contraseña" value="${param.contraseña}">
+                <input type="password" name="contrasena" class="inputs" id="contrasena" value="${param.contraseña}">
                 <label class="labels">Contraseña</label>
             </div>
                 </div>
@@ -316,7 +318,7 @@
                     const nombre_user = document.getElementById('nombre_user');
                     const crear = document.getElementById("signUp");
                     const correo = document.getElementById("correo");
-                    const contraseña = document.getElementById("contraseña");
+                    const contrasena = document.getElementById("contrasena");
                     const apellido_pat = document.getElementById("apellido_pat");
                     const apellido_mat = document.getElementById("apellido_mat");
                     const pais = document.getElementById("lugar_proc");
@@ -348,7 +350,7 @@
                             text: 'Ingresa un email valido'
                           });
                         }else
-                            if(contraseña.value.length > 20 || contraseña.value.length < 8){
+                            if(contrasena.value.length > 20 || contrasena.value.length < 8){
                                 e.preventDefault();
                                 Swal.fire({
                                 icon: 'error',

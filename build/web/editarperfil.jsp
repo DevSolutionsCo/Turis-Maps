@@ -31,6 +31,8 @@
         
         
     <div  class="signUp-box">
+                         <a href="index.jsp" >Regresar</a>
+
         <h2>Editar Perfil</h2>
         <form id="edit" action="actualizame.jsp">
             <div class="user-box">

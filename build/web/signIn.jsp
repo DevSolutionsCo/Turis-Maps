@@ -22,6 +22,7 @@
 </head>
 <body>
     <div  class="signIn-box">
+        <a href="index.jsp" >Regresar</a>
         <h2>Inicio de Sesion</h2>
                 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 
@@ -40,6 +41,8 @@
                             </script>
                                       
                             <%
+                         session.removeAttribute("noSesion");
+
                         }
             }
         %>

@@ -32,17 +32,15 @@
             session.setAttribute("id_lugar", idLugar);
             ResultSet rs = null;
 
-            // Establece la conexión a la base de datos
             Connection conn = null;
             PreparedStatement pstmt = null;
             try {
                 Class.forName("com.mysql.jdbc.Driver");
                 String url = "jdbc:mysql://localhost:3306/turismaps";
                 String username = "root";
-                String password = "1234";
+                String password = "n0m3l0";
                 conn = DriverManager.getConnection(url, username, password);
 
-                // Inserta el comentario en la base de datos
                 String sql = "INSERT INTO comentarios (comentario, calificacion, fecha, id_turista, id_lugar) VALUES (?, ?, ?, ?, ?)";
                 pstmt = conn.prepareStatement(sql);
                 pstmt.setString(1, comentario);
@@ -60,14 +58,11 @@
 
                 }
 
-                // Redirige a la página de comentarios para mostrar el nuevo comentario
                 response.sendRedirect("mapa.jsp");
             } catch (Exception e) {
                 e.printStackTrace();
-                // Redirige a una página de error o muestra un mensaje de error
                 response.sendRedirect("mapa.jsp");
             } finally {
-                // Cierra los recursos (PreparedStatement, Connection)
                 if (pstmt != null) {
                     try {
                         pstmt.close();
