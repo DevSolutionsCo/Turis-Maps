@@ -15,6 +15,7 @@
         <h1>Hello World!</h1>
                     <%
               session.setAttribute("signUp", "sesionCerrada");
+              session.removeAttribute("admin");
               session.removeAttribute("nombre");
               session.removeAttribute("nombre_user");
               session.removeAttribute("apellido_pat");

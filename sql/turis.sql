@@ -89,6 +89,8 @@ CREATE TABLE IF NOT EXISTS `turismaps`.`turista` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
+insert into turista (id_turista, correo, nombre, apellido_pat, apellido_mat, fecha_nac, lugar_proc, genero, contrasena, nombre_user) values
+(1, "devsolutionsc@gmail.com", "Dev", "Solutions", "Corp", "2008-12-10", "México", "NB", "turismapsTuPapa", "Admin");
 
 
 

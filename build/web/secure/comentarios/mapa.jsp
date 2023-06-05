@@ -310,12 +310,12 @@
                             Class.forName("com.mysql.jdbc.Driver");
                             String dbURL = "jdbc:mysql://localhost:3306/turismaps";
                             String dbUsername = "root";
-                            String dbPassword = "1234";
+                            String dbPassword = "n0m3l0";
 
                             conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
 
                             String nombreUsuario = (String) session.getAttribute("nombre_user");
-                            String query = "SELECT ID_TURISTA FROM TURISTA WHERE NOMBRE_USER = ?";
+                            String query = "select id_turista from turista where nombre_user = ?";
                             stmt = conn.prepareStatement(query);
                             stmt.setString(1, nombreUsuario);
                             rs = stmt.executeQuery();

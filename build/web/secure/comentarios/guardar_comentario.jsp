@@ -38,7 +38,7 @@
                 Class.forName("com.mysql.jdbc.Driver");
                 String url = "jdbc:mysql://localhost:3306/turismaps";
                 String username = "root";
-                String password = "1234";
+                String password = "n0m3l0";
                 conn = DriverManager.getConnection(url, username, password);
 
                 String sql = "insert into comentarios (comentario, calificacion, fecha, id_turista, id_lugar) values (?, ?, ?, ?, ?)";

@@ -65,6 +65,7 @@
                                     <%
                                        int valor = 0;
                                         String signUp = (String) session.getAttribute("signUp");
+                                        String admin = (String) session.getAttribute("admin");
 
                                         if (signUp != null) {
                                             if ("crearCuenta".equals(signUp)) {
@@ -75,6 +76,15 @@
                                             }
                                         }else{
                                             valor = 0;
+                                        }
+                                        
+                                        if(admin != null){
+                                            if("Admin".equals(admin)){
+                                                valor=2;
+                                            }else{
+                                                valor = 0;
+                                            }
+                                            
                                         }
                                         
                                         String nombre_user = (String) session.getAttribute("nombre_user");
@@ -127,17 +137,41 @@
                                             }
 
                                         
-                                        else {
-                                        %>
-                                    <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="borderboton">Inicio de sesión</button>
+                                        else 
+                                
+           
+                                    
+                                        if (admin != null && valor == 2) {
+                                                %>
+                                                <button class="btn btn-outline-dark" type="button" id="borderboton" data-bs-toggle="dropdown"><%=admin%></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="admin.jsp">Administrar</a></li>
+                                                    <li><a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesión</a></li>
+                                                      <script>
+                                                        function cerrarSesion() {
+                                                          var xhr = new XMLHttpRequest();
+                                                          xhr.open("GET", "cerrarSesion.jsp?signUp=crearCuenta", true);
+                                                          xhr.onreadystatechange = function () {
+                                                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                                              window.location.href = "index.jsp";
+                                                            }
+                                                          };
+                                                          xhr.send();
+                                                        }
+                                                      </script>           
+                                                </ul> 
+                                        <%
+                                            }else{
+
+                                    %>                                    
+                                                        <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="borderboton">Inicio de sesión</button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="signIn.jsp">Iniciar Sesión</a></li>
                                         <li><a class="dropdown-item" href="registro.jsp?accion=Nuevo">Crear cuenta</a></li>
                                     </ul>   
-                                        <%
-                                    }
-
-                                    %>                                    
+                                                        <%
+                                                            }
+                                                        %>
                                 </div>
 
                         </ul>

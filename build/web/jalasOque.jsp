@@ -27,7 +27,7 @@
         Class.forName("com.mysql.jdbc.Driver");
         String dbURL = "jdbc:mysql://localhost:3306/turismaps";
         String dbUsername = "root";
-        String dbPassword = "1234";
+        String dbPassword = "n0m3l0";
         
         conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
         
@@ -39,30 +39,41 @@
         
         rs = stmt.executeQuery();
         
+        
+        
         if (rs.next()) {
-            String nombre_user = rs.getString("nombre_user");
-            String correo = rs.getString("correo");
-            String nombre = rs.getString("nombre");
-            String apellido_pat = rs.getString("apellido_pat");
-            String apellido_mat = rs.getString("apellido_mat");
-            String  lugar_proc = rs.getString("lugar_proc");
-            String  genero = rs.getString("genero");
-            String  contrasena = rs.getString("contrasena");
-            String  id_turista = rs.getString("id_turista");            
-            
-            session.setAttribute("nombre_user", nombre_user);
-            session.setAttribute("correo", correo);
-            session.setAttribute("nombre", nombre);
-            session.setAttribute("apellido_pat", apellido_pat);
-            session.setAttribute("apellido_mat", apellido_mat);
-            session.setAttribute("lugar_proc", lugar_proc);
-            session.setAttribute("genero", genero);
-            session.setAttribute("contrasena", contrasena);
-            session.setAttribute("id_turista", id_turista);
-            session.setAttribute("signUp", "crearCuenta"); 
-            session.setAttribute("noSesion", "siSesion");
+        
+            if("devsolutionsc@gmail.com".equals(correo_signIN)){
+                String admin = rs.getString("nombre_user");
+                session.setAttribute("admin", admin);
+                response.sendRedirect("index.jsp");
+                
 
-            response.sendRedirect("index.jsp");
+            }else{
+                String nombre_user = rs.getString("nombre_user");
+                String correo = rs.getString("correo");
+                String nombre = rs.getString("nombre");
+                String apellido_pat = rs.getString("apellido_pat");
+                String apellido_mat = rs.getString("apellido_mat");
+                String  lugar_proc = rs.getString("lugar_proc");
+                String  genero = rs.getString("genero");
+                String  contrasena = rs.getString("contrasena");
+                String  id_turista = rs.getString("id_turista");            
+
+                session.setAttribute("nombre_user", nombre_user);
+                session.setAttribute("correo", correo);
+                session.setAttribute("nombre", nombre);
+                session.setAttribute("apellido_pat", apellido_pat);
+                session.setAttribute("apellido_mat", apellido_mat);
+                session.setAttribute("lugar_proc", lugar_proc);
+                session.setAttribute("genero", genero);
+                session.setAttribute("contrasena", contrasena);
+                session.setAttribute("id_turista", id_turista);
+                session.setAttribute("signUp", "crearCuenta"); 
+                session.setAttribute("noSesion", "siSesion");
+
+                response.sendRedirect("index.jsp");
+            }
         } else {
             session.setAttribute("noSesion", "noSesion");
             response.sendRedirect("signIn.jsp");
