@@ -30,6 +30,7 @@
             ResultSet rs = null;
             String nombre_user = null;
             String comentario = null;
+            String cali = null;
             int id_lugar = Integer.parseInt(id_lugar_rec);
 
             try {
@@ -40,7 +41,7 @@
 
                 conn = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
 
-                String query = "select turista.nombre_user, comentarios.comentario from comentarios inner join turista on turista.id_turista=comentarios.id_turista where id_lugar = ?";
+                String query = "select turista.nombre_user, comentarios.comentario, comentarios.calificacion from comentarios inner join turista on turista.id_turista=comentarios.id_turista where id_lugar = ?";
                 stmt = conn.prepareStatement(query);
                 stmt.setInt(1, id_lugar);
                 rs = stmt.executeQuery();
@@ -48,11 +49,12 @@
                 while (rs.next()) {
                     nombre_user = rs.getString("nombre_user");
                     comentario = rs.getString("comentario");
+                    cali = rs.getString("calificacion");
 
         %>
         <div id="comentarios" class="contenedor-2">
             <div class="contenido-comentario">
-                <div class="nombreuser"><%=nombre_user%></div> 
+                <div class="nombreuser"><%=nombre_user%><font size="2" color="#0000ff" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calificacion: <%=cali%></font></div> 
                 <div class="texto-comentario"><%=comentario%></div>
             </div>
         </div>
