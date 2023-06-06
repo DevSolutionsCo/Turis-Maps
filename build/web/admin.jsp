@@ -63,7 +63,7 @@
                     <% } %>
                 </table>
 
-                <h2>Usuarios</h2>
+                <h2>Turistas</h2>
                 <table>
                     <tr>
                         <th>ID</th>
